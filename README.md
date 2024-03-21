@@ -24,6 +24,8 @@ These expeditions are not without danger however. An explorer may return severel
 - Integration with Full Screen Barbershop ( Optional )
 
 ## Load Order
+This mod requires [AGOT Submod Core](https://github.com/JediNick/AGOT_Submod_Core)
+
 Please follow this load order
 
 ![Load Order](https://i.imgur.com/wxgYXrZ.png)
