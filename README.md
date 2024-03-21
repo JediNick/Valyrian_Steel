@@ -1,5 +1,5 @@
 
-###Overview
+### Overview
 This mod aims to add a avenue to gain several artifacts through a unique decision.
 
 The player will have the option to fund an expedition to Old Valyria and pick an individual from their court to search for long lost artifacts in Old Valyria.
@@ -9,7 +9,7 @@ The adventurer can recover a number of Valyrian artifacts, such as unhatched dra
 These expeditions are not without danger however. An explorer may return severely injured, or afflicted with a dangerous disease...or they may not return at all.
 
 
-[Content](https://i.imgur.com/HTTubSf.png)
+![Content](https://i.imgur.com/HTTubSf.png)
 
 - Recover a number of Valyrian Steel weapons by funding an expedition to Old Valyria
 
@@ -23,10 +23,10 @@ These expeditions are not without danger however. An explorer may return severel
 
 - Integration with Full Screen Barbershop ( Optional )
 
-###Load Order
+### Load Order
 Please follow this load order
 
-[Load Order](https://i.imgur.com/wxgYXrZ.png)
+![Load Order](https://i.imgur.com/wxgYXrZ.png)
 
 ###Credits
 
@@ -34,10 +34,9 @@ chillyravenart - Allowed me to use her artwork as inspiration for some of my mod
 
 Alkir - Russian Translation
 
-Ck3 Modding Coop - For answering my modding questions & providing helpful advice.
+CK3 Modding Coop - For answering my modding questions & providing helpful advice.
 
-###LICENSE
-
+### LICENSE
 Do not re upload or modify this content.
 No Derivatives or Re-uploading.
 If you want to re-upload or make other use of this content please reach out to me
