@@ -1,5 +1,5 @@
 
-### Overview
+## Overview
 This mod aims to add a avenue to gain several artifacts through a unique decision.
 
 The player will have the option to fund an expedition to Old Valyria and pick an individual from their court to search for long lost artifacts in Old Valyria.
@@ -23,12 +23,12 @@ These expeditions are not without danger however. An explorer may return severel
 
 - Integration with Full Screen Barbershop ( Optional )
 
-### Load Order
+## Load Order
 Please follow this load order
 
 ![Load Order](https://i.imgur.com/wxgYXrZ.png)
 
-###Credits
+## Credits
 
 chillyravenart - Allowed me to use her artwork as inspiration for some of my models. [Check out her art](https://www.deviantart.com/chillyravenart).
 
