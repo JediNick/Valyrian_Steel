@@ -1,0 +1,1121 @@
+﻿
+get_random_artifact_modifier_effect = {
+		##Pick a random prowess, all artifacts get a prowess
+		hidden_effect = {
+
+			random_list = {
+			2 = {
+				add_artifact_modifier = artifact_prowess_5_modifier
+			}
+			2 = {
+				add_artifact_modifier = artifact_prowess_6_modifier
+			}
+			3 = {
+				add_artifact_modifier = artifact_prowess_7_modifier
+			}
+			4 = {
+				add_artifact_modifier = artifact_prowess_8_modifier
+			}
+			3 = {
+				add_artifact_modifier = artifact_prowess_9_modifier
+			}
+			1 = {
+				add_artifact_modifier = artifact_prowess_10_modifier
+			}
+			1 = {
+				add_artifact_modifier = artifact_prowess_11_modifier
+			}
+		}
+			get_random_artifact_modifier_martial_effect = yes
+			get_random_martial_lifestyle = yes
+			get_random_army_modifier_effect = yes
+			get_random_misc_modifier_effect = yes
+	}
+}
+
+get_random_artifact_modifier_misc_effect = {
+	get_random_misc_modifier_effect = yes
+	get_random_misc_modifier_effect = yes
+	get_random_misc_modifier_effect = yes
+}
+get_random_artifact_modifier_misc_low_effect = {
+	get_random_misc_modifier_effect = yes
+	get_random_misc_modifier_effect = yes
+}
+get_random_artifact_intrigue_modifier_effect = {
+	##Pick a random prowess, all artifacts get a prowess
+		random_list = {
+		3 = {
+			add_artifact_modifier = artifact_prowess_1_modifier
+		}
+		4 = {
+			add_artifact_modifier = artifact_prowess_2_modifier
+		}
+		3 = {
+			add_artifact_modifier = artifact_prowess_3_modifier
+		}
+		3 = {
+			add_artifact_modifier = artifact_prowess_4_modifier
+		}
+		3 = {
+			add_artifact_modifier = artifact_prowess_5_modifier
+		}
+		2 = {
+			add_artifact_modifier = artifact_prowess_6_modifier
+		}
+	}
+	get_random_intrigue_lifestyle = yes
+	get_random_scheme_modifier_effect = yes
+	get_random_misc_modifier_effect = yes
+}
+get_random_artifact_modifier_martial_effect = {
+
+		##Pick a random martial skill
+		random_list = {
+			1 = {
+				random_list = {
+					1 = {
+						add_artifact_modifier = artifact_knight_limit_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_limit_2_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_4_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_knight_effectiveness_6_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					1 = {
+						add_artifact_modifier = artifact_tolerance_advantage_mod_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_tolerance_advantage_mod_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_tolerance_advantage_mod_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_tolerance_advantage_mod_4_modifier
+					}
+				}
+			}
+	}
+}
+
+get_random_misc_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				1 = {
+					get_random_health_modifier_effect = yes
+				}
+				1 = {
+					get_random_religous_modifier_effect = yes
+				}
+				1 = {
+					get_random_opinion_modifier = yes
+				}
+				1 = {
+					get_random_vassal_modifier = yes
+				}
+				1 = {
+					get_random_dread_or_tyranny_modifier_effect = yes
+				}
+				1 = {
+					get_random_prestige_modifier_effect = yes
+				}
+				1 = {
+					get_random_dynasty_modifier_effect = yes
+				}
+				1 = {
+					get_random_granduer_modifier_effect = yes
+				}
+				1 = {
+					get_random_stress_modifier_effect = yes
+				}
+				1 = {
+					get_random_health_modifier_effect = yes
+				}
+				1 = {
+					get_random_development_modifier_effect = yes
+				}
+				1 = {
+					get_random_religous_modifier_effect = yes
+				}
+				1 = {
+					get_random_lifestyle_modifier_effect = yes
+				}
+			}
+		}
+	}
+}
+
+get_random_lifestyle_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_4_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_4_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_4_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_opinion_modifier = {
+	random_list = {
+				1 = {
+					random_list = {
+						3 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_1_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_2_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_3_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_4_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_5_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_6_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_7_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_powerful_vassal_opinion_8_modifier
+						}
+					}
+				}
+				1 = {
+					random_list = {
+						3 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_1_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_2_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_3_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_4_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_5_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_6_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_7_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_independent_ruler_opinion_8_modifier
+						}
+					}
+				}
+				1 = {
+					random_list = {
+						2 = {
+							add_artifact_modifier = artifact_vassal_opinion_1_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_vassal_opinion_2_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_vassal_opinion_3_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_vassal_opinion_4_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_general_opinion_1_modifier
+						}
+					}
+				}
+				1 = {
+					random_list = {
+						3 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_1_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_2_modifier
+						}
+						3 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_3_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_4_modifier
+						}
+						2 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_5_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_6_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_7_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_courtier_and_guest_opinion_8_modifier
+						}
+					}
+				}
+				1 = {
+					random_list = {
+						1 = {
+							add_artifact_modifier = artifact_attraction_opinion_1_modifier
+						}
+						1 = {
+							add_artifact_modifier = artifact_attraction_opinion_2_modifier
+						}
+					}
+				}
+		}
+}
+get_random_vassal_modifier = {
+	random_list = {
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_vassal_limit_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_vassal_limit_2_modifier
+					}
+				}
+			}
+		}
+}
+get_random_dread_or_tyranny_modifier_effect = {
+	random_list = {
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_monthly_tyranny_1_modifier
+					}
+					3 = {
+						add_artifact_modifier = artifact_monthly_tyranny_2_modifier
+					}
+					3 = {
+						add_artifact_modifier = artifact_monthly_tyranny_3_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_monthly_tyranny_4_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_monthly_tyranny_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_tyranny_6_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_tyranny_7_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_tyranny_8_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_dread_gain_mult_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dread_gain_mult_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dread_gain_mult_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dread_gain_mult_4_modifier
+					}
+					3 = {
+						add_artifact_modifier = artifact_dread_baseline_add_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dread_baseline_add_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dread_baseline_add_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dread_baseline_add_4_modifier
+					}
+				}
+			}
+		}
+}
+get_random_prestige_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_2_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_3_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_4_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_6_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_7_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_minor_prestige_8_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_monthly_prestige_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_prestige_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_prestige_3_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_prestige_4_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_prestige_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_6_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_7_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_8_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_gain_per_dread_add_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_gain_per_dread_add_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_gain_per_dread_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_gain_per_dread_add_4_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_dynasty_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+					1 = {
+						add_artifact_modifier = artifact_dynasty_opinion_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dynasty_opinion_2_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dynasty_opinion_3_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dynasty_opinion_4_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_dynasty_opinion_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dynasty_opinion_6_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dynasty_opinion_7_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_dynasty_opinion_8_modifier
+					}				
+				}
+			}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_dynasty_prestige_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_dynasty_prestige_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_dynasty_prestige_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_dynasty_prestige_4_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_add_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_prestige_add_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_prestige_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_add_4_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_prestige_add_5_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_army_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_enemy_hard_casualty_modifier_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_enemy_hard_casualty_modifier_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_enemy_hard_casualty_modifier_4_modifier
+				}
+			}			
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_plains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_farmlands_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_hills_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_mountains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_desert_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_desert_mountains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_jungle_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_taiga_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_wetlands_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_drylands_advantage_2_modifier
+				}
+			}				
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_plains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_farmlands_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_hills_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_mountains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_desert_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_desert_mountains_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_jungle_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_taiga_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_wetlands_advantage_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_drylands_advantage_2_modifier
+				}
+			}				
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_retreat_losses_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_retreat_losses_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_retreat_losses_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_retreat_losses_4_modifier
+				}
+			}				
+		}
+		1 = {
+			random_list = {
+
+				1 = {
+					add_artifact_modifier = artifact_pursue_efficiency_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_pursue_efficiency_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_pursue_efficiency_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_pursue_efficiency_4_modifier
+				}				
+			}
+		}
+		1 = {
+			random_list = {
+
+				3 = {
+					add_artifact_modifier = artifact_mercenary_hire_cost_mult_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_mercenary_hire_cost_mult_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_mercenary_hire_cost_mult_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_mercenary_hire_cost_mult_4_modifier
+				}				
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_heavy_cavalry_toughness_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_heavy_cavalry_toughness_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_heavy_cavalry_toughness_3_modifier
+				}			
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_heavy_infantry_toughness_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_heavy_infantry_toughness_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_heavy_infantry_toughness_3_modifier
+				}				
+			}
+		}
+		1 = {
+			random_list = {
+
+				3 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_3_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_4_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_6_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_7_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_men_at_arms_maintenance_8_modifier
+				}					
+			}
+		}
+	}
+}
+
+get_random_granduer_modifier_effect = {
+	random_list = {
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_4_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_court_grandeur_baseline_add_6_modifier
+					}
+				}
+			}
+		}
+}
+get_random_stress_modifier_effect = {
+	random_list = {
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_stress_gain_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_stress_gain_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_stress_gain_3_modifier
+					}
+				}
+			}
+		}
+}
+get_random_health_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_health_penalty_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_health_gain_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_health_gain_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_health_gain_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_health_gain_4_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_negate_health_penalty_add_1_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_negate_health_penalty_add_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_negate_health_penalty_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_negate_health_penalty_add_4_modifier
+				}
+			}		
+		}
+	}
+}
+get_random_development_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_development_growth_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_development_growth_2_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_development_growth_3_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_development_growth_4_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_development_growth_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_development_growth_6_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_development_growth_7_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_development_growth_8_modifier
+				}
+			}
+		}
+	}
+}
+get_random_religous_modifier_effect = {
+		random_list = {
+			1 = {
+				random_list = {
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_per_knight_add_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_per_knight_add_2_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_1_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_2_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_4_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_6_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_7_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_8_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					2 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_mult_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_mult_2_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_mult_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_monthly_piety_gain_mult_4_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_same_faith_opinion_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_same_faith_opinion_2_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_same_faith_opinion_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_same_faith_opinion_4_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_clergy_opinion_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_clergy_opinion_2_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_clergy_opinion_3_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_clergy_opinion_4_modifier
+					}
+				}
+			}
+			1 = {
+				random_list = {
+					3 = {
+						add_artifact_modifier = artifact_different_faith_opinion_1_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_different_faith_opinion_2_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_different_faith_opinion_3_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_different_faith_opinion_4_modifier
+					}
+					2 = {
+						add_artifact_modifier = artifact_different_faith_opinion_5_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_different_faith_opinion_6_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_different_faith_opinion_7_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_different_faith_opinion_8_modifier
+					}
+					1 = {
+						add_artifact_modifier = artifact_different_faith_opinion_9_modifier
+					}
+				}
+			}
+	}
+}
+
+
+get_random_scheme_modifier_effect = {
+	random_list = {
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_4_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_hostile_scheme_success_chance_add_6_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_4_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_5_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_6_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_seduce_scheme_power_add_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_seduce_scheme_power_add_2_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_seduce_scheme_power_add_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_seduce_scheme_power_add_4_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_scheme_resistance_add_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_scheme_resistance_add_2_modifier
+				}
+			}
+		}
+		1 = {
+			random_list = {
+				3 = {
+					add_artifact_modifier = artifact_intrigue_per_stress_level_1_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_intrigue_per_stress_level_2_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_intrigue_lifestyle = {
+	random_list = {
+		3 = {
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_intrigue_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_intrigue_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_intrigue_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_intrigue_lifestyle_xp_4_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_martial_lifestyle = {
+	random_list = {
+		3 = {
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_4_modifier
+				}
+			}
+		}
+	}
+
+}

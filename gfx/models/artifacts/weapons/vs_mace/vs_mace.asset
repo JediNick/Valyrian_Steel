@@ -1,0 +1,71 @@
+pdxmesh = {
+	name = "vs_mace_mesh"
+	file = "vs_mace.mesh"
+	meshsettings = {
+		name = "vs_mace"
+		index = 0
+		texture_diffuse = "vs_mace_diffuse.dds"
+		texture_normal = "vs_mace_normal.dds"
+		texture_specular = "vs_mace_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "vs_mace_equipped_mesh"
+	file = "vs_mace_equipped.mesh"
+	meshsettings = {
+		name = "vs_mace"
+		index = 0
+		texture_diffuse = "vs_mace_diffuse.dds"
+		texture_normal = "vs_mace_normal.dds"
+		texture_specular = "vs_mace_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+entity = {
+	name = "vs_mace_entity"
+	pdxmesh = "vs_mace_mesh"
+}
+
+entity = {
+
+	name = "vs_mace_equipped_entity"
+	pdxmesh = "vs_mace_equipped_mesh"
+}
+
+
+
+pdxmesh = {
+	name = "vs_mace_a_mesh"
+	file = "vs_mace_a.mesh"
+
+	meshsettings = {
+		name = "vs_mace"
+		index = 0
+		texture_diffuse = "vs_mace_diffuse.dds"
+		texture_normal = "vs_mace_normal.dds"
+		texture_specular = "vs_mace_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "rack"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "vs_mace_a_entity"
+	pdxmesh = "vs_mace_a_mesh"
+}

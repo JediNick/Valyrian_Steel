@@ -1,0 +1,46 @@
+﻿l_english:
+ hurt_exploring_valyria:0 "Injured exploring Valyria"
+ hurt_exploring_valyria_arm:0 "Injured exploring Valyria"
+ hurt_exploring_valyria_leg:0 "Injured exploring Valyria"
+
+ hurt_exploring_valyria_desc:0 "I was severely injured exploring while Valyria"
+ hurt_exploring_valyria_desc_second_perspective:0 "you were severely injured exploring while Valyria"
+ hurt_exploring_valyria_desc_third_perspective:0 "[owner.GetName] was severely injured while exploring Valyria"
+
+ hurt_exploring_leg_valyria_desc:0 "I lost my leg while exploring Valyria"
+ hurt_exploring_leg_valyria_desc_second_perspective:0 "you lost your leg while exploring Valyria"
+ hurt_exploring_leg_valyria_desc_third_perspective:0 "[owner.GetName] lost [owner.GetHerHis] leg while exploring Valyria"
+
+ hurt_exploring_arm_valyria_desc:0 "I lost my arm while exploring Valyria"
+ hurt_exploring_arm_valyria_desc_second_perspective:0 "you lost your arm while exploring Valyria"
+ hurt_exploring_arm_valyria_desc_third_perspective:0 "[owner.GetName] lost [owner.GetHerHis] arm while exploring Valyria"
+
+
+ funded_expedition_valyria:0 "Funded an expedition"
+
+ funded_expedition_valyria_desc:0 "I funded [adventurer.GetFullNamePossessiveRegnal] expedition to Valyria"
+ funded_expedition_valyria_desc_second_perspective:0 "you funded [adventurer.GetFullNamePossessiveRegnal] expedition to Valyria"
+ funded_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] funded [adventurer.GetFullNamePossessiveRegnal] expedition to Valyria"
+
+ funded_my_expedition_valyria:0 "Funded an expedition"
+
+ funded_my_expedition_valyria_desc:0 "[funder.GetFullNameNicknamedRegnal] funded my expedition to Valyria"
+ funded_my_expedition_valyria_desc_second_perspective:0 "[funder.GetFullNameNicknamedRegnal] funded your expedition to Valyria"
+ funded_my_expedition_valyria_desc_third_perspective:0 "[funder.GetFullNameNicknamedRegnal] funded [adventurer.GetFullNamePossessiveRegnal] expedition to Valyria"
+
+ sent_relative_to_valyria:0 "Sent relative to die in Valyria"
+
+ returned_expedition_valyria_desc:0 "I returned from my expedition to Valyria"
+ returned_expedition_valyria_desc_second_perspective:0 "you returned from your expedition to Valyria"
+ returned_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] returned from [owner.GetHerHis] expedition to Valyria"
+ returned_sick_expedition_valyria:0 "Returned from an expedition"
+ returned_expedition_valyria:0 "Returned from an expedition"
+ returned_hurt_expedition_valyria:0 "Returned from an expedition"
+
+ returned_hurt_expedition_valyria_desc:0 "I returned severely injured from my expedition to Valyria"
+ returned_hurt_expedition_valyria_desc_second_perspective:0 "you returned severely injured from your expedition to Valyria"
+ returned_hurt_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] returned severely injured from [owner.GetHerHis] expedition to Valyria"
+
+ returned_sick_expedition_valyria_desc:0 "I returned with a deadly disease from my expedition to Valyria"
+ returned_sick_expedition_valyria_desc_second_perspective:0 "you returned with a deadly disease from your expedition to Valyria"
+ returned_sick_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] returned with a deadly disease from [owner.GetHerHis] expedition to Valyria"

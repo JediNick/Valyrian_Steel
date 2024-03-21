@@ -1,0 +1,39 @@
+# Event window widget to rename a artifact
+
+vbox = {
+	name = "event_window_widget_name_artifact"
+	layoutpolicy_horizontal = expanding
+	minimumsize = { 240 -1 }
+	ignoreinvisible = yes
+	margin = { 5 0 }
+	margin_bottom = 5
+	spacing = 3
+
+	#datacontext = "[EventWindowWidgetNameCharacter.GetCharacter]"
+
+	editbox_standard = {
+		size = { 240 30 }
+		blockoverride "editbox_properties" 
+		{
+			name = "enter_text" # name referenced in code
+		    #text = "[EventWindowWidgetNameCharacter.GetCurrentName]"
+			ontextedited = "[EventWindowWidgetEnterText.OnEdit]"
+			
+			state = {
+				name = init
+				trigger_on_create = yes
+				duration = 1
+				on_finish = "[EventWindowWidgetEnterText.OnEdit]"
+
+				#next = "b"
+				#using = Animation_Refresh_FadeOut
+			}
+
+			#state = {
+			#	name = "b"
+			#	using = Animation_Refresh_FadeIn
+			#}
+		}
+	}
+	expand = {}
+}

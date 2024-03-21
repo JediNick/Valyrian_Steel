@@ -1,0 +1,93 @@
+﻿l_russian:
+ seafoam_poses_list_name:0 "Морская пена"
+ calamity_poses_list_name:0 "Бедствие"
+ subterfuge_poses_list_name:0 "Уловка"
+ darksister_poses_list_name:0 "Тёмная сестра"
+ dragon_eggs_poses_list_name:0 "Драконьи яйца"
+
+ vs_sword_1_poses_list_name:0 "Меч из валирийской стали (Вариант 1)"
+ vs_sword_2_poses_list_name:0 "Меч из валирийской стали (Вариант 2)"
+ vs_sword_3_poses_list_name:0 "Меч из валирийской стали (Вариант 3)"
+
+ vs_mace_poses_list_name:0 "Булава из валирийской стали"
+ vs_spear_1_poses_list_name:0 "Копье из валирийской стали"
+ vs_axe_poses_list_name:0 "Топор из валирийской стали"
+ 
+ orys_hammer_poses_list_name:0 "Ярость"
+ aegon_dagger_poses_list_name:0 "Кинжал Эйгона"
+ 
+ vs_dagger_1_poses_list_name:0 "Кинжал из валирийской стали"
+
+ valyrian_invasion_seafoam_1_name:0 "Морская пена внизу"
+ valyrian_invasion_seafoam_2_name:0 "Морская пена на плече"
+ valyrian_invasion_seafoam_3_name:0 "Морская пена на дуэли"
+ 
+ valyrian_invasion_calamity_1_name:0 "Бедствие внизу"
+ valyrian_invasion_calamity_2_name:0 "Бедствие на дуэли"
+ valyrian_invasion_calamity_3_name:0 "Бедствие на празднике"
+ 
+ valyrian_invasion_subterfuge_1_name:0 "Уловка тайный советник"
+ valyrian_invasion_subterfuge_2_name:0 "Уловка на дуэли"
+ valyrian_invasion_subterfuge_3_name:0 "Уловка убийца"
+ 
+ valyrian_invasion_egg_black_name:0 "Черное яйцо"
+ valyrian_invasion_egg_vhagar_name:0 "Яйцо Вхагара"
+ valyrian_invasion_egg_meraxes_name:0 "Яйцо Мераксеса"
+
+ valyrian_invasion_egg_tan_name:0 "Цветное яйцо"
+ valyrian_invasion_egg_orange_name:0 "Оранжевое яйцо"
+ valyrian_invasion_egg_grey_name:0 "Серое яйцо"
+
+ valyrian_invasion_egg_green_name:0 "Зеленое яйцо"
+ valyrian_invasion_egg_pink_name:0 "Розовое яйцо"
+ valyrian_invasion_egg_white_name:0 "Белое яйцо"
+ 
+ valyrian_invasion_egg_brown_name:0 "Коричневое яйцо"
+ valyrian_invasion_egg_red_name:0 "Красное яйцо"
+ valyrian_invasion_egg_purple_name:0 "Фиолетовое яйцо"
+
+ valyrian_invasion_egg_blue_name:0 "Синее яйцо"
+ valyrian_invasion_egg_yellow_name:0 "Жёлтое яйцо"
+ valyrian_invasion_egg_rainbow_name:0 "Радужное яйцо"
+
+ valyrian_invasion_darksister_1_name:0 "Тёмная сестра внизу"
+ valyrian_invasion_darksister_2_name:0 "Тёмная сестра на плече"
+ valyrian_invasion_darksister_3_name:0 "Тёмная сестра на дуэли"
+ 
+ valyrian_invasion_vs_sword_1_1_name:0 "Меч внизу"
+ valyrian_invasion_vs_sword_1_2_name:0 "Меч на плече"
+ valyrian_invasion_vs_sword_1_3_name:0 "Меч на дуэли"
+ 
+ valyrian_invasion_vs_sword_2_1_name:0 "Меч внизу"
+ valyrian_invasion_vs_sword_2_2_name:0 "Меч на плече"
+ valyrian_invasion_vs_sword_2_3_name:0 "Меч на дуэли"
+ 
+ valyrian_invasion_vs_sword_3_1_name:0 "Меч внизу"
+ valyrian_invasion_vs_sword_3_2_name:0 "Меч на плече"
+ valyrian_invasion_vs_sword_3_3_name:0 "Меч на дуэли"
+ 
+ valyrian_invasion_vs_mace_1_name:0 "Булава внизу"
+ valyrian_invasion_vs_mace_2_name:0 "Булава на плече"
+ valyrian_invasion_vs_mace_3_name:0 "Булава на дуэли"
+ 
+ valyrian_invasion_vs_spear_1_1_name:0 "Копьё внизу"
+ valyrian_invasion_vs_spear_1_2_name:0 "Празднование с копьём"
+ valyrian_invasion_vs_spear_1_3_name:0 "Копьё на дуэли"
+ 
+ valyrian_invasion_vs_axe_1_name:0 "Топор внизу"
+ valyrian_invasion_vs_axe_2_name:0 "Топор на дуэли"
+ valyrian_invasion_vs_axe_3_name:0 "Празднование с топором"
+ 
+ valyrian_invasion_orys_hammer_1_name:0 "Ярость внизу"
+ valyrian_invasion_orys_hammer_2_name:0 "Ярость на плече"
+ valyrian_invasion_orys_hammer_3_name:0 "Ярость на дуэли"
+ 
+ valyrian_invasion_aegon_dagger_1_name:0 "Кинжал Эйгона тайный советник"
+ valyrian_invasion_aegon_dagger_2_name:0 "Кинжал Эйгона на дуэли"
+ valyrian_invasion_aegon_dagger_3_name:0 "Кинжал Эйгона убийца"
+ valyrian_invasion_aegon_dagger_glow_1_name:0 "Пророчество о кинжале Эйгона"
+
+  
+ valyrian_invasion_vs_dagger_1_1_name:0 "Кинжал тайный советник"
+ valyrian_invasion_vs_dagger_1_2_name:0 "Кинжал на дуэли"
+ valyrian_invasion_vs_dagger_1_3_name:0 "Кинжал убийца"

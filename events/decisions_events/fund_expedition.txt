@@ -1,0 +1,1160 @@
+﻿namespace = fund_expedition
+
+########################
+# PICK COURT PHYSICIAN #
+########################
+
+scripted_trigger fund_expedition_basic_requirements_1_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	is_ruler = no
+	is_lowborn = no
+	is_clergy = no
+	is_ai = yes
+	NOT = { 
+		OR = {
+			has_trait = wounded_1
+			has_trait = wounded_2
+			has_trait = wounded_3
+			has_trait = one_legged
+			has_trait = maimed
+			has_trait = ill
+			has_trait = bubonic_plague
+			has_trait = smallpox
+			has_trait = great_pox
+		}
+	}
+	OR = {
+		AND = {
+			is_male = yes
+			is_knight = yes
+		}
+		AND = {
+			is_pregnant = no
+			is_married = no
+			is_knight = yes
+		}
+		AND = {
+			has_trait = adventurer
+		}
+	}
+}
+
+scripted_trigger fund_expedition_basic_requirements_2_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	is_ruler = no
+	is_lowborn = yes
+	is_clergy = no
+	is_ai = yes
+	NOT = { 
+		OR = {
+			has_trait = wounded_1
+			has_trait = wounded_2
+			has_trait = wounded_3
+			has_trait = one_legged
+			has_trait = maimed
+			has_trait = ill
+			has_trait = bubonic_plague
+			has_trait = smallpox
+			has_trait = great_pox
+		}
+	}
+	OR = {
+		AND = {
+			is_male = yes
+			is_knight = yes
+		}
+		AND = {
+			is_pregnant = no
+			is_married = no
+			is_knight = yes
+		}
+		AND = {
+			has_trait = adventurer
+		}
+	}
+}
+
+#Ruler picking court physician
+fund_expedition.0001 = {
+	type = character_event
+	title = fund_expedition_0001_t
+	desc = fund_expedition_0001_desc
+
+	theme = crown
+	override_background = throne_room
+	left_portrait = scope:optionTwo
+	right_portrait = scope:optionOne
+	lower_right_portrait = scope:optionThree
+
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a physician
+	
+
+	immediate = {
+		hidden_effect = {
+			#Find some appropriate options
+
+			if = { #Performance heavy option finding is only for players
+				limit = { is_ai = no }
+
+				#first pass, generate list and try to get a character who is in an existing dynasty already
+				every_courtier = {
+					limit = { fund_expedition_basic_requirements_1_trigger = yes }
+					add_to_list = advList
+				  }
+				  every_vassal_or_below = {
+					every_courtier = {
+					  limit = { fund_expedition_basic_requirements_1_trigger = yes }
+					  add_to_list = advList
+					}
+				  }
+				  random_in_list = {
+					list = advList
+					save_scope_as = optionOne
+					remove_from_list = advList
+				  }
+				  random_in_list = {
+					list = advList
+					save_scope_as = optionTwo
+					remove_from_list = advList
+				  }
+				  random_in_list = {
+					list = advList
+					save_scope_as = optionThree
+					remove_from_list = advList
+				  }
+				
+				if = {
+					limit = { 
+						OR = {
+							NOT = { exists = scope:optionOne } 
+							NOT = { exists = scope:optionTwo } 
+							NOT = { exists = scope:optionThree } 
+						}
+					}
+					every_courtier = {
+						limit = { fund_expedition_basic_requirements_2_trigger = yes }
+						add_to_list = backupList
+					  }
+					  every_vassal_or_below = {
+						every_courtier = {
+						  limit = { fund_expedition_basic_requirements_2_trigger = yes }
+						  add_to_list = backupList
+						  
+						}
+					  }
+					if = {
+						limit = { NOT = { exists = scope:optionOne } }
+							random_in_list = {
+								list = backupList
+								save_scope_as = optionOne
+								remove_from_list = backupList
+								}
+						}
+					if = {
+						limit = { NOT = { exists = scope:optionTwo } }
+							random_in_list = {
+								list = backupList
+								save_scope_as = optionTwo
+								remove_from_list = backupList
+								}
+						}
+					if = {
+						limit = { NOT = { exists = scope:optionThree } }
+							random_in_list = {
+								list = backupList
+								save_scope_as = optionThree
+								remove_from_list = backupList
+							}
+					}
+				}
+				#Backup generation
+				if = {
+					limit = { NOT = { exists = scope:optionOne } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = 10
+						template_character = root
+						faith = root.faith
+						culture = root.culture
+						random_traits = yes
+						age = { 18 55 }
+						martial = { 3 15 }
+						save_scope_as = optionOne
+					}
+				}
+				if = {
+					limit = { NOT = { exists = scope:optionTwo } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = 10
+						template_character = root
+						random_traits = yes
+						faith = root.faith
+						culture = root.culture
+						age = { 18 45 }
+						martial = { 3 15 }
+						save_scope_as = optionTwo
+					}
+				}
+				if = {
+					limit = { NOT = { exists = scope:optionThree } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = 10
+						template_character = root
+						random_traits = yes
+						faith = root.faith
+						culture = root.culture
+						age = { 18 45 }
+						martial = { 3 15 }
+						save_scope_as = optionThree
+					}
+				}
+
+			}
+			else = { #Ai get someone simple
+				every_courtier = {
+					limit = { fund_expedition_basic_requirements_1_trigger = yes }
+					add_to_list = advList
+				}
+				every_vassal_or_below = {
+					every_courtier = {
+					limit = { fund_expedition_basic_requirements_1_trigger = yes }
+					add_to_list = advList
+					}
+				}
+				random_in_list = {
+					list = advList
+					save_scope_as = optionOne
+					remove_from_list = advList
+				}
+				if = {
+					limit = { NOT = { exists = scope:optionOne } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = 10
+						template_character = root
+						faith = root.faith
+						culture = root.culture
+						random_traits = yes
+						age = { 18 55 }
+						martial = { 3 15 }
+						save_scope_as = optionOne
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			exists = scope:optionOne
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = fund_expedition_0001.a
+
+		pay_short_term_gold = {
+			target = scope:optionOne
+			gold = 500
+		}
+		scope:optionOne = {
+			save_scope_as = choice
+		}
+		custom_tooltip = fund_expedition_0001.a.tt
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				gold > 500
+				factor = 100
+			}
+		}
+		trigger_event = {
+			id = fund_expedition.0002
+			days = {5 7}
+		}
+	}
+
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+			exists = scope:optionTwo #Doesn't exists for AI
+		}
+		name = fund_expedition_0001.b
+		
+		pay_short_term_gold = {
+			target = scope:optionTwo
+			gold = 500
+		}
+		scope:optionTwo = {
+			save_scope_as = choice
+		}
+		custom_tooltip = fund_expedition_0001.b.tt
+
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+		trigger_event = {
+			id = fund_expedition.0002
+			days = {5 7}
+		}
+	}
+
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+			exists = scope:optionThree #Doesn't exists for AI
+		}
+		name = fund_expedition_0001.c
+		
+		pay_short_term_gold = {
+			target = scope:optionThree
+			gold = 500
+		}
+		scope:optionThree = {
+			save_scope_as = choice
+		}
+		
+		custom_tooltip = fund_expedition_0001.c.tt
+
+		ai_chance = {
+			factor = 0
+		}
+
+		trigger_event = {
+			id = fund_expedition.0002
+			days = {5 7}
+		}
+	}
+
+	#None...
+	option = {
+		name = health.3001.d.more
+		remove_decision_cooldown = fund_expedition_decision 
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+fund_expedition.0002 = {
+	type = character_event
+	title = fund_expedition_0001_t
+	desc = fund_expedition_0002_desc
+
+	theme = crown
+	override_background = docks
+
+	left_portrait = scope:choice
+	right_portrait = root
+
+	trigger = { exists = scope:choice } #If I lost it before I got this event, I shouldn't get a physician
+
+	option = {
+		trigger = {
+			exists = scope:choice
+		}
+
+		create_character_memory = {
+			type = funded_expedition_valyria
+			participants = {
+				adventurer = scope:choice
+			}
+		}
+		scope:choice = {
+			create_character_memory = {
+				type = funded_my_expedition_valyria
+				participants = {
+					funder = root
+				}
+			}
+			add_opinion = {
+				target = root
+				modifier = funded_my_expedition
+			}
+		}
+		
+		name = fund_expedition_0002.a
+		trigger_event = {
+			id = fund_expedition.0003
+			#days = {30 60}
+		}
+	}
+
+}
+
+fund_expedition.0003 = {
+	hidden = yes
+
+	theme = crown
+	trigger = { exists = scope:choice } #If I lost it before I got this event, I shouldn't get a physician
+
+	immediate = {
+		random_list = {
+			## Person dies/does not return
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0004
+					days = {30 60}
+				}
+			}
+			## Person returns extremely sick
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0007
+					days = {30 60}
+				}
+			}
+			## Person does return, but they are injured
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0005
+					days = {30 60}
+				}
+			}
+			##SUCCESS RETURN
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0010
+					days = {30 60}
+				}
+			}
+
+		}
+	}
+}
+
+fund_expedition.0004 = {
+	type = character_event
+	title = fund_expedition_0004_t
+	desc = fund_expedition_0004_desc
+
+	theme = death
+
+	left_portrait = scope:choice
+	right_portrait = root
+
+	immediate = {
+		scope:choice = {
+			every_close_or_extended_family_member = {
+				custom = all_family_members
+				limit = {
+					AND = {
+						is_ai = yes
+						NOT = { root = this }
+					}
+				}
+				add_opinion = {
+					modifier = sent_relative_to_valyria
+					target = root
+				}
+			}
+			death = {
+				death_reason = death_missing_valyria
+			}					
+		}
+		##Shouldnt punish the player when they didn't get a special item back
+		remove_decision_cooldown = fund_expedition_decision 
+	}
+	option = {
+		name = fund_expedition_0004.a
+	}
+}
+
+fund_expedition.0005 = {
+	type = character_event
+	title = fund_expedition_0005_t
+	desc = fund_expedition_0005_desc
+
+	theme = medicine
+	override_background = docks
+
+	left_portrait = {
+		character = scope:choice
+		animation = severelywounded
+	}
+	right_portrait = root
+
+	immediate = {
+		scope:choice = {
+			##They get some presitege, but less for semi failing
+			add_prestige = 150
+			random_list = {
+				1  = {
+					add_trait = wounded_1
+					create_character_memory = {
+						type = hurt_exploring_valyria
+					}
+				}
+				1  = {
+					add_trait = wounded_2
+					create_character_memory = {
+						type = hurt_exploring_valyria
+					}
+				}
+				1  = {
+					add_trait = wounded_3
+					create_character_memory = {
+						type = hurt_exploring_valyria
+					}
+				}
+				1  = {
+					add_trait = maimed
+					create_character_memory = {
+						type = hurt_exploring_valyria_arm
+					}
+				}
+				1  = {
+					add_trait = one_legged
+					create_character_memory = {
+						type = hurt_exploring_valyria_leg
+					}
+				}
+			}
+			create_character_memory = {
+				type = returned_hurt_expedition_valyria
+			}
+		}
+	}
+
+	option = {
+		name = fund_expedition_0005.a
+		trigger_event = {
+			id = fund_expedition.0100
+		}
+	}
+}
+
+
+
+fund_expedition.0100 = {
+	hidden = yes
+
+	theme = crown
+	trigger = { exists = scope:choice } #If I lost it before I got this event, I shouldn't get a physician
+
+	immediate = {
+		random_list = {
+			## weapon outcome
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0006
+				}
+			}
+			## Dragon egg outcome
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0008
+				}
+			}
+			## Glass Candle outcome
+			1 = {
+				trigger_event = {
+					id = fund_expedition.0009
+				}
+			}
+		}
+	}
+}
+
+fund_expedition.0006 = {
+	type = character_event
+	title = fund_expedition_0006_t
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0006_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0006_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_mace_trigger = yes }
+			animation = valyrian_invasion_vs_mace_2
+		}
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_dagger_trigger = yes }
+			animation = valyrian_invasion_vs_dagger_1_1
+		}
+		# Sword
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_sword_1_trigger = yes }
+			animation = valyrian_invasion_vs_sword_1_2 #Sword
+		}
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_sword_2_trigger = yes }
+			animation = valyrian_invasion_vs_sword_2_2 #Sword
+		}
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_sword_3_trigger = yes }
+			animation = valyrian_invasion_vs_sword_3_2 #Sword
+		}
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_sword_4_trigger = yes }
+			animation = valyrian_invasion_vs_sword_4_2 #Sword
+		}
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_axe_trigger = yes }
+			animation = valyrian_invasion_vs_axe_1 
+		}
+		# Spear
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_spear_1_trigger = yes }
+			animation = valyrian_invasion_vs_spear_1_1 #Spear
+		}
+		animation = idle
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+
+	immediate = {
+
+		if = {
+			limit = {
+				#has_dlc_feature = royal_court
+				exists = scope:choice
+			}
+			hidden_effect = {
+				get_random_valyrian_steel_artifact = { 
+					OWNER =  root
+					GIVER = scope:choice
+				}
+			}
+
+			if = {
+				limit = {exists = scope:newly_created_artifact}
+				scope:newly_created_artifact = {
+					set_variable = custom_artifact
+					set_variable = {
+						name = person
+						value = root
+					}
+					save_scope_as = custom_artifact
+				}
+			}
+			if = {
+				limit = {exists = scope:newly_created_artifact}
+				set_variable = {
+					name = selected_artifact
+					value = scope:newly_created_artifact
+				}
+			}
+		}
+
+	}
+
+	#NAMING WIDGET
+	widgets = {
+		widget = {
+			is_shown = {
+				portrait_can_be_renamed_artifact_trigger = yes
+			}
+			gui = "event_window_widget_name_artifact"
+			container = "custom_widgets_container"
+			controller = {
+				type = text
+				data = {key = custom_artifact_name default = artifact.title.default}
+			}
+			setup_scope = {save_scope_as = text_target }
+		}
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0006.a
+	}
+
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+		if = {
+			#We entered custom text into the pop up
+			limit = { 
+				is_ai = no
+				NOT = { has_variable = custom_artifact_name }
+			 }
+				scope:newly_created_artifact = {
+					set_artifact_name = custom_artifact_name
+				}
+				remove_variable = selected_artifact
+				scope:newly_created_artifact = {
+					remove_variable = custom_artifact
+					remove_variable = person
+				}
+		}
+		else = {
+			scope:newly_created_artifact = {
+				set_artifact_name = artifact.title.default
+			}	
+		}
+		remove_variable = custom_artifact_name
+	}
+}
+
+fund_expedition.0007 = {
+	type = character_event
+	title = fund_expedition_0007_t
+	desc = fund_expedition_0007_desc
+
+	theme = crown
+	override_background = docks
+
+	left_portrait = {
+		character = scope:choice
+		animation = sick
+	}
+	right_portrait = root
+
+	immediate = {
+		hidden_effect = {
+			##clean this shit up later....
+			random_list = {
+				1 = {
+					set_variable = {
+						name = epidemic_choice
+						value = flag:smallpox
+					}
+				}
+				1 = {
+					set_variable = {
+						name = epidemic_choice
+						value = flag:bubonic_plague
+					}
+				}
+				1 = {
+					set_variable = {
+						name = epidemic_choice
+						value = flag:measles
+					}
+				}
+				1 = {
+					set_variable = {
+						name = epidemic_choice
+						value = flag:ergotism
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = { var:artifact_choice = flag:smallpox }
+			root.capital_province = {
+				create_epidemic_outbreak = {
+					type = smallpox
+					intensity = major
+				}
+			}
+		}
+		else_if = {
+			limit = { var:artifact_choice = flag:bubonic_plague }
+			root.capital_province = {
+				create_epidemic_outbreak = {
+					type = bubonic_plague
+					intensity = major
+				}
+			}
+
+		}
+		else_if = {
+			limit = { var:artifact_choice = flag:measles }
+			root.capital_province = {
+				create_epidemic_outbreak = {
+					type = measles
+					intensity = major
+				}
+			}
+
+		}
+		else_if = {
+			limit = { var:artifact_choice = flag:ergotism }
+			root.capital_province = {
+				create_epidemic_outbreak = {
+					type = ergotism
+					intensity = major
+				}
+			}
+
+		}
+		every_courtier_or_guest = {
+			limit = {
+				NOR = {
+					this = scope:choice
+					is_in_list = tmp_list
+					is_ai = yes
+				}
+			}
+			add_to_temporary_list = tmp_list
+		}
+		random_in_list = {
+			list = tmp_list
+			save_scope_as = victim1
+			remove_from_list = tmp_list
+		  }
+
+		  root.capital_province = {
+			create_epidemic_outbreak = {
+				type = bubonic_plague
+				intensity = major
+			}
+		}
+		##The person who went to valyria will infect their own court, and there is a potential for them to have infected people at the docks/in root's court
+		## TODO: get the outbreak to delay to later 30-60 days
+		scope:choice = {
+			create_character_memory = {
+				type = returned_sick_expedition_valyria
+			}
+			if = {
+				limit = { var:artifact_choice = flag:smallpox }
+				 
+					contract_disease_effect = { DISEASE = smallpox TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
+					if = {
+						limit = {exists = scope:victim1}
+						random_list = {
+							1 = {
+								scope:victim1 = {
+									contract_disease_effect = { DISEASE = smallpox TREATMENT_EVENT = yes }
+								}
+							}
+							0 = {
+
+							}
+						}
+					}			
+				}
+			
+				else_if = {
+					limit = { var:artifact_choice = flag:bubonic_plague }
+
+					contract_disease_effect = { DISEASE = bubonic_plague TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
+					if = {
+						limit = {exists = scope:victim1}
+						random_list = {
+							1 = {
+								scope:victim1 = {
+									contract_disease_effect = { DISEASE = bubonic_plague TREATMENT_EVENT = yes }
+								}
+							}
+							0 = {
+
+							}
+						}
+					}			
+				}
+				else_if  = {
+					limit = { var:artifact_choice = flag:measles }
+
+					contract_disease_effect = { DISEASE = measles TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
+					if = {
+						limit = {exists = scope:victim1}
+						random_list = {
+							1 = {
+								scope:victim1 = {
+									contract_disease_effect = { DISEASE = measles TREATMENT_EVENT = yes }
+								}
+							}
+							0 = {
+
+							}
+						}
+					}			
+				}
+				else_if  = {
+					limit = { var:artifact_choice = flag:ergotism }
+
+					contract_disease_effect = { DISEASE = ergotism TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
+					if = {
+						limit = {exists = scope:victim1}
+						random_list = {
+							1 = {
+								scope:victim1 = {
+									contract_disease_effect = { DISEASE = ergotism TREATMENT_EVENT = yes }
+								}
+							}
+							0 = {
+
+							}
+						}
+					}			
+				}
+			}
+		}
+
+	
+
+	option = {
+		name = fund_expedition_0007.a
+		stress_impact = {
+			base = medium_stress_gain
+		}
+		trigger_event = {
+			id = fund_expedition.0100
+		}
+	}
+}
+
+fund_expedition.0008 = {
+	type = character_event
+	title = fund_expedition_0006_t
+	#desc = fund_expedition_0008_desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0008_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0008_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { egg_feature_color_red_trigger = yes }
+			animation = valyrian_invasion_egg_red
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_blue_trigger = yes }
+			animation = valyrian_invasion_egg_blue
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_grey_trigger = yes }
+			animation = valyrian_invasion_egg_grey
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_grey_2_trigger = yes }
+			animation = valyrian_invasion_egg_meraxes
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_yellow_trigger = yes }
+			animation = valyrian_invasion_egg_yellow
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_brown_trigger = yes }
+			animation = valyrian_invasion_egg_brown
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_tan_trigger = yes }
+			animation = valyrian_invasion_egg_tan
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_purple_trigger = yes }
+			animation = valyrian_invasion_egg_purple
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_black_trigger = yes }
+			animation = valyrian_invasion_egg_black
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_green_1_trigger = yes }
+			animation = valyrian_invasion_egg_green
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_green_2_trigger = yes }
+			animation = valyrian_invasion_egg_vhagar
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_pink_trigger = yes }
+			animation = valyrian_invasion_egg_pink
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_white_trigger = yes }
+			animation = valyrian_invasion_egg_white
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_orange_trigger = yes }
+			animation = valyrian_invasion_egg_orange
+		}
+		triggered_animation = {
+			trigger = { egg_feature_color_rainbow_trigger = yes }
+			animation = valyrian_invasion_egg_rainbow
+		}
+		animation = idle
+	}
+
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				#has_dlc_feature = royal_court
+				exists = scope:choice
+			}
+			hidden_effect = {
+				get_random_dragon_egg_artifact = { 
+					OWNER =  root
+					GIVER = scope:choice
+				}
+			}
+		}
+
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0006.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+	}
+}
+
+fund_expedition.0009 = {
+	type = character_event
+	title = fund_expedition_0006_t
+	#desc = fund_expedition_0009_desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0009_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0009_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		animation = idle
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+	immediate = {
+		if = {
+			limit = {
+				#has_dlc_feature = royal_court
+				exists = scope:choice
+			}
+			hidden_effect = {
+				get_random_glass_candle_artifact = { 
+					OWNER =  root
+					GIVER = scope:choice
+				}
+			}
+			add_gold = 200
+		}
+
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0006.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+	}
+}
+
+fund_expedition.0010 = {
+	type = character_event
+	title = fund_expedition_0005_t
+	desc = fund_expedition_0010_desc
+
+	theme = crown
+	override_background = docks
+
+	left_portrait = scope:choice
+	right_portrait = root
+
+	immediate = {
+		scope:choice = {
+			add_prestige = 500
+			if = {
+				limit = { exists = house }
+				dynasty = { add_dynasty_prestige = 250 }
+			}
+			create_character_memory = {
+				type = returned_expedition_valyria
+			}
+			add_character_flag = returned_ok	
+		}
+
+	}
+
+	option = {
+		name = fund_expedition_0010.a
+		trigger_event = {
+			id = fund_expedition.0100
+		}
+	}
+}

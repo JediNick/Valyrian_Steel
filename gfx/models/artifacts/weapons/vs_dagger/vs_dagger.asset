@@ -1,0 +1,49 @@
+pdxmesh = {
+	name = "vs_dagger_mesh"
+	file = "vs_dagger.mesh"
+	meshsettings = {
+		name = "vs_dagger"
+		index = 0
+		texture_diffuse = "vs_dagger1_diffuse.dds"
+		texture_normal = "vs_dagger1_normal.dds"
+		texture_specular = "vs_dagger1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+entity = {
+	name = "vs_dagger_1_entity"
+	pdxmesh = "vs_dagger_mesh"
+}
+
+pdxmesh = {
+	name = "vs_dagger_1_a_mesh"
+	file = "vs_dagger_a.mesh"
+
+	meshsettings = {
+		name = "vs_dagger"
+		index = 0
+		texture_diffuse = "vs_dagger1_diffuse.dds"
+		texture_normal = "vs_dagger1_normal.dds"
+		texture_specular = "vs_dagger1_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "rack"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "vs_dagger_1_a_entity"
+	pdxmesh = "vs_dagger_1_a_mesh"
+}

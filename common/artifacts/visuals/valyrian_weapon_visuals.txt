@@ -1,0 +1,102 @@
+﻿vs_sword_1 = {
+	icon = "artifact_vs_sword1.dds"
+	asset = {
+		reference = vs_sword_1_entity
+	}
+}
+vs_sword_1_court = {
+	icon = "artifact_vs_sword1.dds"
+	asset = {
+		reference = vs_sword_1_a_entity
+	}
+}
+vs_sword_2 = {
+	icon = "artifact_vs_sword2.dds"
+	asset = {
+		reference = vs_sword_2_entity
+	}
+}
+vs_sword_2_court = {
+	icon = "artifact_vs_sword2.dds"
+	asset = {
+		reference = vs_sword_2_a_entity
+	}
+}
+
+vs_sword_3 = {
+	icon = "artifact_vs_sword3.dds"
+	asset = {
+		reference = vs_sword_3_entity
+	}
+}
+vs_sword_3_court = {
+	icon = "artifact_vs_sword3.dds"
+	asset = {
+		reference = vs_sword_3_a_entity
+	}
+}
+
+vs_sword_4 = {
+	icon = "artifact_vs_sword4.dds"
+	asset = {
+		reference = vs_sword_4_entity
+	}
+}
+vs_sword_4_court = {
+	icon = "artifact_vs_sword4.dds"
+	asset = {
+		reference = vs_sword_4_a_entity
+	}
+}
+
+
+vs_spear_1 = {
+	icon = "artifact_vs_spear.dds"
+	asset = {
+		reference = vs_spear_1_entity
+	}
+}
+vs_spear_1_court = {
+	icon = "artifact_vs_spear.dds"
+	asset = {
+		reference = vs_spear_1_a_entity
+	}
+}
+
+vs_dagger_1 = {
+	icon = "artifact_vs_dagger_1.dds"
+	asset = {
+		reference = vs_dagger_1_entity
+	}
+}
+vs_dagger_1_court = {
+	icon = "artifact_vs_dagger_1.dds"
+	asset = {
+		reference = vs_dagger_1_a_entity
+	}
+}
+
+vs_mace = {
+	icon = "artifact_vs_mace.dds"
+	asset = {
+		reference = vs_mace_entity
+	}
+}
+vs_mace_court = {
+	icon = "artifact_vs_mace.dds"
+	asset = {
+		reference = vs_mace_a_entity
+	}
+}
+vs_axe = {
+	icon = "artifact_vs_axe.dds"
+	asset = {
+		reference = vs_axe_entity
+	}
+}
+vs_axe_court = {
+	icon = "artifact_vs_axe.dds"
+	asset = {
+		reference = vs_axe_a_entity
+	}
+}

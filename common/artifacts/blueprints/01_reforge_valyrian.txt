@@ -1,0 +1,111 @@
+﻿vs_sword_1_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_sword_1_court
+	out_type = sword
+	out_visuals = vs_sword_1
+}
+
+vs_sword_1_to_court = {
+	in_type = sword
+	in_visuals = vs_sword_1
+	out_type = pedestal
+	out_visuals = vs_sword_1_court
+}
+
+vs_sword_2_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_sword_2_court
+	out_type = sword
+	out_visuals = vs_sword_2
+}
+
+vs_sword_2_to_court = {
+	in_type = sword
+	in_visuals = vs_sword_2
+	out_type = pedestal
+	out_visuals = vs_sword_2_court
+}
+
+vs_sword_3_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_sword_3_court
+	out_type = sword
+	out_visuals = vs_sword_3
+}
+
+vs_sword_3_to_court = {
+	in_type = sword
+	in_visuals = vs_sword_3
+	out_type = pedestal
+	out_visuals = vs_sword_3_court
+}
+
+vs_sword_4_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_sword_4_court
+	out_type = sword
+	out_visuals = vs_sword_4
+}
+
+vs_sword_4_to_court = {
+	in_type = sword
+	in_visuals = vs_sword_4
+	out_type = pedestal
+	out_visuals = vs_sword_4_court
+}
+
+vs_spear_1_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_spear_1_court
+	out_type = spear
+	out_visuals = vs_spear_1
+}
+
+vs_spear_1_to_court = {
+	in_type = spear
+	in_visuals = vs_spear_1
+	out_type = pedestal
+	out_visuals = vs_spear_1_court
+}
+
+vs_dagger_1_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_dagger_1_court
+	out_type = dagger
+	out_visuals = vs_dagger_1
+}
+
+vs_dagger_1_to_court = {
+	in_type = dagger
+	in_visuals = vs_dagger_1
+	out_type = pedestal
+	out_visuals = vs_dagger_1_court
+}
+
+vs_mace_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_mace_court
+	out_type = mace
+	out_visuals = vs_mace
+}
+
+vs_mace_to_court = {
+	in_type = mace
+	in_visuals = vs_mace
+	out_type = pedestal
+	out_visuals = vs_mace_court
+}
+
+vs_axe_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_axe_court
+	out_type = axe
+	out_visuals = vs_axe
+}
+
+vs_axe_to_court = {
+	in_type = axe
+	in_visuals = vs_axe
+	out_type = pedestal
+	out_visuals = vs_axe_court
+}

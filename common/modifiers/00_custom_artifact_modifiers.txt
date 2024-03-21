@@ -1,0 +1,15 @@
+﻿artifact_prowess_6_modifier = { prowess_no_portrait = 6 }
+artifact_prowess_7_modifier = { prowess_no_portrait = 7 }
+artifact_prowess_8_modifier = { prowess_no_portrait = 8 }
+artifact_prowess_9_modifier = { prowess_no_portrait = 9 }
+artifact_prowess_10_modifier = { prowess_no_portrait = 10 }
+artifact_prowess_11_modifier = { prowess_no_portrait = 11 }
+
+artifact_vassal_opinion_1_modifier = { vassal_opinion = 1 }
+artifact_vassal_opinion_2_modifier = { vassal_opinion = 2 }
+artifact_vassal_opinion_3_modifier = { vassal_opinion = 3 }
+artifact_vassal_opinion_4_modifier = { vassal_opinion = 4 }
+
+
+artifact_monthly_piety_negative_1_modifier = { monthly_piety = -0.1 }
+artifact_monthly_martial_lifestyle_xp_1_negative_modifier = { monthly_martial_lifestyle_xp_gain_mult = -0.05 } #AGOT Disabled

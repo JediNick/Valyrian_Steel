@@ -1,0 +1,26 @@
+﻿#####################
+# PILGRIMAGE VALUES #
+#####################
+
+
+# Reward values
+valyria_voyage_piety_gain = {
+	value = major_piety_gain
+	multiply = 2.5
+	if = {
+		limit = {
+			exists = dynasty
+			dynasty = {
+				has_dynasty_perk = erudition_legacy_4
+			}
+		}
+		multiply = 1.3
+	}
+}
+
+valyria_voyage_cooldown_year_amount = 20
+
+valyria_voyage_cost = {
+	value = medium_gold_value
+	multiply = 5
+}

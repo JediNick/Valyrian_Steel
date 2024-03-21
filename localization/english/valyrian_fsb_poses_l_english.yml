@@ -1,0 +1,66 @@
+﻿l_english:
+ dragon_eggs_poses_list:0 "Dragon eggs"
+
+ vs_sword_1_poses_list:0 "Valyrian Steel Sword (Variant 1)"
+ vs_sword_2_poses_list:0 "Valyrian Steel Sword (Variant 2)"
+ vs_sword_3_poses_list:0 "Valyrian Steel Sword (Variant 3)"
+ vs_sword_4_poses_list:0 "Valyrian Steel Sword (Variant 4)"
+
+ vs_mace_poses_list:0 "Valyrian Steel Mace"
+ vs_spear_1_poses_list:0 "Valyrian Steel Spear"
+ vs_axe_poses_list:0 "Valyrian Steel Axe"
+ 
+ vs_dagger_1_poses_list:0 "Valyrian Steel Dagger"
+ 
+ valyrian_invasion_egg_black:0 "@valyrian_invasion_egg_blue! Black Egg"
+ valyrian_invasion_egg_vhagar:0 "@valyrian_invasion_egg_blue! Vhagar Egg"
+ valyrian_invasion_egg_meraxes:0 "@valyrian_invasion_egg_blue! Meraxes' Egg"
+
+ valyrian_invasion_egg_tan:0 "@valyrian_invasion_egg_blue! Tan Egg"
+ valyrian_invasion_egg_orange:0 "@valyrian_invasion_egg_blue! Orange Egg"
+ valyrian_invasion_egg_grey:0 "@valyrian_invasion_egg_blue! Grey Egg"
+
+ valyrian_invasion_egg_green:0 "@valyrian_invasion_egg_blue! Green Egg"
+ valyrian_invasion_egg_pink:0 "@valyrian_invasion_egg_blue! Pink Egg"
+ valyrian_invasion_egg_white:0 "@valyrian_invasion_egg_blue! White Egg"
+ 
+ valyrian_invasion_egg_brown:0 "@valyrian_invasion_egg_blue! Brown Egg"
+ valyrian_invasion_egg_red:0 "@valyrian_invasion_egg_blue! Red Egg"
+ valyrian_invasion_egg_purple:0 "@valyrian_invasion_egg_blue! Purple Egg"
+
+ valyrian_invasion_egg_blue:0 "@valyrian_invasion_egg_blue! Blue Egg"
+ valyrian_invasion_egg_yellow:0 "@valyrian_invasion_egg_blue! Yellow Egg"
+ valyrian_invasion_egg_rainbow:0 "@valyrian_invasion_egg_blue! Rainbow Egg"
+ 
+ valyrian_invasion_vs_sword_1_1:0 "@valyrian_steel_icon! Valyrian Steel Sword 1 Low"
+ valyrian_invasion_vs_sword_1_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 1 Shoulder"
+ valyrian_invasion_vs_sword_1_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 1 Duel"
+ 
+ valyrian_invasion_vs_sword_2_1:0 "@valyrian_steel_icon! Valyrian Steel Sword 2 Low"
+ valyrian_invasion_vs_sword_2_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 2 Shoulder"
+ valyrian_invasion_vs_sword_2_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 2 Duel"
+ 
+ valyrian_invasion_vs_sword_3_1:0 "@valyrian_steel_icon! Valyrian Steel Sword 3 Low"
+ valyrian_invasion_vs_sword_3_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 3 Shoulder"
+ valyrian_invasion_vs_sword_3_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 3 Duel"
+
+ 
+ valyrian_invasion_vs_sword_4_1:0 "@valyrian_steel_icon! Valyrian Steel Sword 4 Low"
+ valyrian_invasion_vs_sword_4_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 4 Shoulder"
+ valyrian_invasion_vs_sword_4_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 4 Duel"
+ 
+ valyrian_invasion_vs_mace_1:0 "@valyrian_steel_icon! Valyrian Steel Mace Low"
+ valyrian_invasion_vs_mace_2:0 "@valyrian_steel_icon! Valyrian Steel Mace Shoulder"
+ valyrian_invasion_vs_mace_3:0 "@valyrian_steel_icon! Valyrian Steel Mace Duel"
+ 
+ valyrian_invasion_vs_spear_1_1:0 "@valyrian_steel_icon! Valyrian Steel Spear Hold"
+ valyrian_invasion_vs_spear_1_2:0 "@valyrian_steel_icon! Valyrian Steel Spear Celebrate"
+ valyrian_invasion_vs_spear_1_3:0 "@valyrian_steel_icon! Valyrian Steel Spear Duel"
+ 
+ valyrian_invasion_vs_axe_1:0 "@valyrian_steel_icon! Valyrian Steel Axe Low"
+ valyrian_invasion_vs_axe_2:0 "@valyrian_steel_icon! Valyrian Steel Axe Duel"
+ valyrian_invasion_vs_axe_3:0 "@valyrian_steel_icon! Valyrian Steel Axe Celebrate"
+
+ valyrian_invasion_vs_dagger_1_1:0 "@valyrian_steel_icon! Valyrian Steel Dagger Spymaster"
+ valyrian_invasion_vs_dagger_1_2:0 "@valyrian_steel_icon! Valyrian Steel Dagger Duel"
+ valyrian_invasion_vs_dagger_1_3:0 "@valyrian_steel_icon! Valyrian Steel Dagger Assassin"

@@ -1,0 +1,19 @@
+﻿on_game_start = {
+	on_actions = {
+		valyrian_steel_start
+	}
+}
+
+valyrian_steel_start = {
+	effect = {
+       set_global_variable = {
+			name = valyrian_steel_enabled
+			value = yes
+		}
+       if = {
+           limit = {
+               exists = global_var:valyrian_steel_enabled
+			}
+		}
+	}
+}

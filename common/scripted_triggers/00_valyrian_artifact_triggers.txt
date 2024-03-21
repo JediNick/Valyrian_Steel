@@ -1,0 +1,181 @@
+﻿
+# egg_feature_color_vhagar_trigger = {
+# 	scope:newly_created_artifact = { 						
+# 		has_variable = vhagar_egg
+# 	}
+# }
+
+# egg_feature_color_merexes_trigger = {
+# 	always = yes
+# }
+
+egg_feature_color_blue_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = blue_egg
+	}
+}
+
+egg_feature_color_red_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = red_egg
+	}
+}
+
+egg_feature_color_purple_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = purple_egg
+	}
+}
+
+egg_feature_color_grey_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = grey_1_egg
+	}
+}
+
+egg_feature_color_grey_2_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = grey_2_egg
+			has_variable = merexes_egg
+		} 	
+	}
+}
+
+egg_feature_color_yellow_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = yellow_egg
+	}
+}
+
+egg_feature_color_black_trigger = {
+	scope:newly_created_artifact = {
+		OR = {
+			has_variable = black_egg
+			has_variable = balerion_egg
+		} 						
+	}
+}
+
+egg_feature_color_tan_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = tan_egg
+	}
+}
+
+egg_feature_color_orange_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = orange_egg
+	}
+}
+
+
+egg_feature_color_white_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = white_egg
+	}
+}
+
+egg_feature_color_pink_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = pink_egg
+	}
+}
+
+egg_feature_color_brown_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = brown_egg
+	}
+}
+egg_feature_color_green_1_trigger = {
+	scope:newly_created_artifact = {					
+		has_variable = green_1_egg
+	}
+}
+egg_feature_color_green_2_trigger = {
+	scope:newly_created_artifact = {
+		OR = {
+			has_variable = green_2_egg
+			has_variable = vhagar_egg
+		} 						
+	}
+}
+
+egg_feature_color_rainbow_trigger = {
+	scope:newly_created_artifact = { 						
+		has_variable = rainbow_egg
+	}
+}
+
+portrait_can_be_renamed_artifact_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_mace
+			has_variable = vs_spear_1
+			has_variable = vs_axe
+			has_variable = vs_dagger_1
+			has_variable = vs_sword_1
+			has_variable = vs_sword_2
+			has_variable = vs_sword_3
+			has_variable = vs_sword_4
+		}	
+	}
+}
+
+portrait_should_wield_vs_mace_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_mace
+		}	
+	}
+}
+portrait_should_wield_vs_spear_1_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_spear_1
+		}	
+	}
+}
+portrait_should_wield_vs_axe_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_axe
+		}	
+	}
+}
+portrait_should_wield_vs_dagger_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_dagger_1
+		}	
+	}
+}
+portrait_should_wield_vs_sword_1_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_sword_1
+		}	
+	}
+}
+portrait_should_wield_vs_sword_2_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_sword_2
+		}	
+	}
+}
+portrait_should_wield_vs_sword_3_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_sword_3
+		}	
+	}
+}
+
+portrait_should_wield_vs_sword_4_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_sword_4
+		}	
+	}
+}

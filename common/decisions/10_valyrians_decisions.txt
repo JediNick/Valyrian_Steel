@@ -1,0 +1,39 @@
+﻿fund_expedition_decision = {
+	picture = "gfx/interface/illustrations/decisions/valyria_coast.dds"
+	ai_check_interval = 60
+	
+	sort_order = 88
+
+	desc = fund_expedition_decision_desc_1
+	selection_tooltip = fund_expedition_decision_desc_2
+	is_shown = {
+		is_ai = no
+		root.culture = { agot_is_wildling_culture = no}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_at_war = no
+		gold > 500
+		is_imprisoned = no
+	}
+
+	cooldown = { years = 10 }
+	#cooldown = { days = 1 }
+
+	ai_potential = {
+		always = no
+	}
+
+	effect = {
+		custom_tooltip = fund_expedition_decision_tooltip
+		custom_tooltip = fund_expedition_decision_tooltip_2
+		custom_tooltip = fund_expedition_decision_tooltip_3
+
+		trigger_event = {
+			id = fund_expedition.0001
+			days = 14
+		}
+	}
+	
+}

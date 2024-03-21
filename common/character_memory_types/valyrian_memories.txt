@@ -1,0 +1,231 @@
+﻿hurt_exploring_valyria = {
+	categories = { negative travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = hurt_exploring_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = hurt_exploring_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = hurt_someone_close_to_me_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+hurt_exploring_valyria_arm = {
+	categories = { negative travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = hurt_exploring_arm_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = hurt_exploring_arm_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = hurt_exploring_arm_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+hurt_exploring_valyria_leg = {
+	categories = { negative travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = hurt_exploring_leg_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = hurt_exploring_leg_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = hurt_exploring_leg_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+funded_expedition_valyria = {
+	categories = { positive travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = funded_expedition_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = funded_expedition_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = funded_expedition_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { adventurer }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+
+funded_my_expedition_valyria = {
+	categories = { positive travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = funded_my_expedition_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = funded_my_expedition_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = funded_my_expedition_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { funder }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+##Returned unscathed
+returned_expedition_valyria = {
+	categories = { positive travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = returned_expedition_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = returned_expedition_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = returned_expedition_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+
+##Returned hurt
+returned_hurt_expedition_valyria = {
+	categories = { negative travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = returned_hurt_expedition_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = returned_hurt_expedition_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = returned_hurt_expedition_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+
+##Returned sick
+returned_sick_expedition_valyria = {
+	categories = { negative travel }
+	icon = "alliance.dds"
+	description = {
+		random_valid = {
+			desc = returned_sick_expedition_valyria_desc
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = returned_sick_expedition_valyria_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = returned_sick_expedition_valyria_desc_third_perspective
+		}
+	}
+
+	participants = { }
+
+	duration = {
+		years = memory_default_duration 
+	}
+}
+
+

@@ -1,0 +1,35 @@
+﻿vs_sword_1_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_1_entity" game_entity_override = weapon }	
+}
+
+vs_sword_2_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_2_entity" game_entity_override = weapon }	
+}
+
+vs_sword_3_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_3_entity" game_entity_override = weapon }	
+}
+
+vs_sword_4_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_4_entity" game_entity_override = weapon }	
+}
+
+vs_dagger_1_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_dagger_1_entity" game_entity_override = weapon }	
+}
+
+vs_spear_1_prop = {
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "vs_spear_1_entity" game_entity_override = weapon}	
+}
+
+vs_spear_1_prop_right = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_spear_1_equipped_entity" game_entity_override = weapon}	
+}
+
+vs_mace_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_mace_entity" game_entity_override = weapon }	
+}
+
+vs_axe_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_axe_entity" game_entity_override = weapon }	
+}

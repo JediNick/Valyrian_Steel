@@ -1,0 +1,632 @@
+﻿create_artifact_dragon_egg_blue_effect_vs = {
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_blue
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = blue_egg
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_dragon_egg_red_effect_vs = {
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_red
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = red_egg
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_dragon_egg_grey_1_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_grey_1
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = grey_1_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_grey_2_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_grey_2
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = grey_2_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_brown_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_brown
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = brown_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_tan_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_tan
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = tan_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_purple_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_purple
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = purple_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_yellow_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_yellow
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = yellow_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_black_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_black
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = black_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_green_1_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_green_1
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = green_1_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_green_2_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_green_2
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = green_2_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_pink_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_pink
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = pink_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_white_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_white
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = white_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_orange_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_orange
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = orange_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+create_artifact_dragon_egg_rainbow_effect_vs = {
+
+
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = dragon_egg_name
+		description = dragon_egg_description
+		template = general_unique_template
+		type = dragon_egg
+		visuals = dragon_egg_rainbow
+		wealth = 30
+		quality = 30
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_dynasty_opinion_3_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_artifact_modifier_misc_effect = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = rainbow_egg
+		save_scope_as = epic
+		set_variable = {
+ 			name = dragon_egg
+ 			value = yes
+ 		}
+	}
+}
+
+
+get_random_dragon_egg_artifact = {
+	$OWNER$ = { save_scope_as = owner }
+	$GIVER$ = { save_scope_as = giver }
+	random_list = {
+		1 = {
+			create_artifact_dragon_egg_red_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_blue_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_grey_1_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_grey_2_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_brown_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_tan_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_purple_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_yellow_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_black_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_green_1_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_green_2_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_pink_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_white_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_orange_effect_vs = yes
+		}
+		1 = {
+			create_artifact_dragon_egg_rainbow_effect_vs = yes
+		}
+	}
+}

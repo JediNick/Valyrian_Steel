@@ -1,0 +1,98 @@
+﻿l_english:
+ voyage_to_valyria_decision:0 "Voyage to Valyria"
+ go_on_voyage_decision_tooltip:1 "Undertake a [voyage|E] to find long lost Valyrian artifacts and to gain [piety|E] and [prestige|E]."
+ voyage_to_valyria_desc:1 "Undertake a voyage to find long lost Valyrian artifacts. Traveling to the smoking seas is incredibly dangerous, most who travel there do not return."
+ voyage_to_valyria_decision_confirm:0 "Prepare my ship."
+ voyage_effect_1:0 "A voyage into the smoking sea is dangerous, but keep in mind, with great risk comes great reward."
+ voyage_effect_2:0 "A successful voyage to valyria will yield [piety|E] and [prestige|E]. There is also the chance of finding ancient Valyrian Steel, dragon eggs, and more."
+ voyage_illness_warning:0 "@warning_icon! #X It is dangerous to voyage while [GetTrait('ill').GetName( GetPlayer )]#!"
+ 
+ game_concept_voyage:0 "Voyage"
+ game_concept_voyage_desc:0 "A voyage to Valyria is a dangerous yet rewarding risk that Valyrian characters can undertake. It is the only remaining way to acquire new Valyrian steel and Dragon eggs."
+
+
+
+
+fund_expedition_decision:0 "Fund an Expedition to Old Valyria"
+fund_expedition_decision_desc_1:4 "Voyages into Old Valyria are extremely dangerous. Most that venture into the smoking sea do not return...and those that do tell stories of horrible monsters and deadly diseases...Old Valyria is also the only place to recover long lost Valyrian artifacts."
+fund_expedition_decision_desc_2:0 "Fund a brave explorer to travel into the smoking sea. The journey will be incredibly dangerous, but can yield rare Valyrian Artifacts..."
+
+fund_expedition_decision_tooltip:4 "You will be presented with a group of brave explorers that are willing to lead a voyage into Old Valyria and may hire one of them for [gold_i]500.\n"
+fund_expedition_decision_tooltip_2:4 "The leader of the expedition can potentially return with a rare Valyrian artifact, such as Valyrian Steel, a Dragon Egg, or minor Valyrian artifacts\n"
+fund_expedition_decision_tooltip_3:4 "The leader of the expedition can also be severely hurt, killed, or return with a deadly disease\n"
+
+fund_expedition_decision_confirm:0 "Find me someone to lead this trip..."
+fund_expedition_0001_t:0 "A journey into the Smoking Sea"
+fund_expedition_0001_desc:0 "Word of my interest in funding a voyage to Old Valyria has spread quickly within my realm. Despite the danger posed by travelling there, a handful of brave souls have answered my call.\n\n[optionOne.GetFirstName], [optionTwo.GetFirstName], and [optionThree.GetFirstName] stand before me, each petitioning me to lead the expedition."
+
+fund_expedition_0001.a:0 "[optionOne.GetFirstName] seems brave, [optionOne.GetSheHe] will not fail me."
+fund_expedition_0001.b:0 "I believe that [optionTwo.GetFirstName] has the skill to accomplish this adventure."
+fund_expedition_0001.c:0 "[optionThree.GetFirstName] seems promising...Send [optionThree.GetHerHim] to the smoking sea!"
+fund_expedition_0001.d:0 "They all fail to impress me."
+
+ fund_expedition_0001.a.tt:1 "[optionOne.GetFirstName] will lead the expedition to Old Valyria."
+ fund_expedition_0001.b.tt:1 "[optionTwo.GetFirstName] will lead the expedition to Old Valyria."
+ fund_expedition_0001.c.tt:1 "[optionThree.GetFirstName] will lead the expedition to Old Valyria."
+
+fund_expedition_0002.a:0 "Farewell [choice.GetFirstName]..."
+fund_expedition_0002_desc:0 "[choice.GetFirstName] meets me at the docks, [choice.GetSheHe] has collected a decent crew and enough men to carry out the voyage to Old Valyria. [choice.GetSheHe|U] bows before me and speaks.\n\n"[ROOT.Char.GetTitledFirstName], I will not fail you. I will return to you with the treasures that were lost long ago in the Doom. You have my word"\n\nWith that [choice.GetSheHe] departs, taking [choice.GetHerHis] ship and [choice.GetHerHis] men westward into the Smoking Sea"
+
+fund_expedition_0004_t:0 "A failed expedition"
+fund_expedition_0004_desc:0 "At this point [choice.GetFirstName] and [choice.GetHerHis] crew are long overdue...\n\nI fear that Valyria has claimed yet another soul..."
+fund_expedition_0004.a:0 "What a disaster..."
+
+
+
+fund_expedition_0005_t:0 "The expedition returns"
+fund_expedition_0005_desc:0 "I hear word that [choice.GetFirstNamePossessive] ship has been sighted. In time the ship makes its way to dock...\n\nAs I arrive to congratulate [choice.GetFirstName] for [choice.GetHerHis] safe return I spot [choice.GetHerHim] being dragged off the ship by [choice.GetHerHis] crew. Something clearly went horribly wrong during the journey."
+fund_expedition_0005.a:0 "I pray for [choice.GetHerHis] speedy recovery..."
+
+
+fund_expedition_0006_t:0 "A remnant of Old Valyria"
+fund_expedition_0006_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]!"
+fund_expedition_0006_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]!\n\n"Valyrian Steel my [ROOT.Char.GetLadyLord]. May it serve you well." [choice.GetSheHe|U] says."
+
+fund_expedition_0006.a:0 "Impressive..."
+
+
+fund_expedition_0008_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]!\n\nWhile it likely will never hatch, this egg is a reminder of what gave the Valyrians their power and gives hope that the might of Dragons may one day return."
+
+fund_expedition_0008_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me an unhatched [newly_created_artifact.GetName]!\n\nWhile it likely will never hatch, this egg is a reminder of what gave the Valyrians their power and gives hope that the might of Dragons may one day return.\n\n"A dragon egg my [ROOT.Char.GetLadyLord]. May it bring you good fortune." [choice.GetSheHe|U] says."
+
+
+fund_expedition_0009_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]!\n\nGlass candles are rumored to allow sorcerers can see across mountains, seas and deserts. It is said that the flame of the candle can give men visions and dreams and allow them communicate with one another half a world apart.\n\nThe bottom of the chest is filled with gold aswell, which will partially cover the cost of the expedition."
+
+fund_expedition_0009_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]!\n\nGlass candles are rumored to allow sorcerers can see across mountains, seas and deserts. It is said that the flame of the candle can give men visions and dreams and allow them communicate with one another half a world apart.\n\n[choice.GetSheHe|U] also hands me a purse of gold. "Gold to cover some of the expenses of the journey, my [ROOT.Char.GetLadyLord]" [choice.GetSheHe|U] says."
+
+artifact.title.default:0 "[newly_created_artifact.GetNameNoTooltip]"
+
+custom_artifact_name:0  "[ROOT.Var('selected_artifact').Var('person').Char.GetLocalizedText('custom_artifact_name')]"
+artifact_cust_name:1 "[ROOT.Char.GetLocalizedText( 'custom_artifact_name' )]"
+
+vs_default:0 "default text"
+
+fund_expedition_0007_t:0 "The expedition returns"
+fund_expedition_0007_desc:0 "I hear word that [choice.GetFirstNamePossessive] ship has been sighted. In time the ship makes its way to dock...\n\nAs I arrive to congratulate [choice.GetFirstName] for [choice.GetHerHis] safe return I immediately notice something is wrong. [choice.GetFirstName] is visibly sick. [choice.GetSheHe|U] approaches me and begins to speak. \n\n"[ROOT.Char.GetTitledFirstName]...I...never..." before [choice.GetSheHe] could finish [choice.GetSheHe] collapses in front of me. My men drag [choice.GetHerHim] to the healers for further examination...\n\nI also notice that several of [choice.GetFirstNamePossessive] crew are also suffering from the same illness..."
+fund_expedition_0007.a:0 "[choice.GetFirstName] may have brought back more than just treasure..."
+
+
+dragon_egg_name:0 "Dragon Egg"
+artifact_dragon_egg:0 "Dragon Egg"
+
+dragon_egg_description:0 "This dragon egg once belonged to one of the creatures that gave the Valyrians their power. A dragon. Unfortunately, a dragon egg hasn't been hatched in some time. Many rulers have attempted to hatch such eggs through...unorthodox methods..."
+
+artifact_glass_candle:0 "Glass Candle"
+artifact_glass_candle_name:0 "Glass Candle"
+artifact_glass_candle_desc:0 "This glass candle burned a bright flame long ago within Old Valyria. Since then, candles such as these no longer burn a flame. Their light died with Old Valyria."
+
+
+
+
+fund_expedition_0010_desc:0 "I hear word that [choice.GetFirstNamePossessive] ship has been sighted. In time the ship makes its way to dock...\n\nAs I arrive to congratulate [choice.GetFirstName] for [choice.GetHerHis] safe return. I spot [choice.GetHerHim] walk off the ship with a wide grin on [choice.GetHerHis] face.\n\n"[ROOT.Char.GetTitledFirstName]! As promised I have returned! My crew sailed the smoking sea, explored the lost cities of Valyria, and witnessed the many horrors that plague that land. During the journey we found many artifacts, the greatest of which I have saved just for you my [ROOT.Char.GetLadyLord|U]."\n\nHe walks back onto his ship leading me toward a box. "
+fund_expedition_0010.a:0 "Oh? What have you brought me?"
+funded_my_expedition:0 "Funded expedition"
+
+
+  sea_province_023:0 "Old Valyria"
+
+  impassable_sea_2:0 "Old Valyria"
