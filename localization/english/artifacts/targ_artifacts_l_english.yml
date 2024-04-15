@@ -22,3 +22,7 @@
 
  artifact_vs_dagger_1_name:0 "Valyrian Steel Dagger"
  artifact_vs_dagger_1_description:1 "This dagger was discovered during a voyage to Old Valyria. It is one of the few remaining Valyrian Steel weapons, which draws respect and intrigue, as well as enormous jealousy from those who lay their eyes upon it."
+
+
+ artifact_vs_halberd_name:0 "Valyrian Steel Halberd"
+ artifact_vs_halberd_description:1 "This Halberd was discovered during a voyage to Old Valyria. It is one of the few remaining Valyrian Steel weapons, which draws respect and intrigue, as well as enormous jealousy from those who lay their eyes upon it.\n\nThe Halberd pole is made of a black colored wood, and the weapon is made of Valyrian Steel, which still retains the sharp edge from the day it was crafted long ago"

@@ -49,6 +49,19 @@ vs_sword_4_court = {
 	}
 }
 
+vs_sword_5 = {
+	icon = "artifact_vs_sword5.dds"
+	asset = {
+		reference = vs_sword_5_entity
+	}
+}
+vs_sword_5_court = {
+	icon = "artifact_vs_sword5.dds"
+	asset = {
+		reference = vs_sword_5_a_entity
+	}
+}
+
 
 vs_spear_1 = {
 	icon = "artifact_vs_spear.dds"
@@ -60,6 +73,19 @@ vs_spear_1_court = {
 	icon = "artifact_vs_spear.dds"
 	asset = {
 		reference = vs_spear_1_a_entity
+	}
+}
+
+vs_halberd = {
+	icon = "artifact_vs_halberd.dds"
+	asset = {
+		reference = vs_halberd_entity
+	}
+}
+vs_halberd_court = {
+	icon = "artifact_vs_halberd.dds"
+	asset = {
+		reference = vs_halberd_a_entity
 	}
 }
 
@@ -88,6 +114,20 @@ vs_mace_court = {
 		reference = vs_mace_a_entity
 	}
 }
+
+vs_mace_2 = {
+	icon = "artifact_vs_mace2.dds"
+	asset = {
+		reference = vs_mace_2_entity
+	}
+}
+vs_mace_2_court = {
+	icon = "artifact_vs_mace2.dds"
+	asset = {
+		reference = vs_mace_2_a_entity
+	}
+}
+
 vs_axe = {
 	icon = "artifact_vs_axe.dds"
 	asset = {

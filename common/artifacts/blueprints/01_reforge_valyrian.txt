@@ -54,6 +54,20 @@ vs_sword_4_to_court = {
 	out_visuals = vs_sword_4_court
 }
 
+vs_sword_5_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_sword_4_court
+	out_type = sword
+	out_visuals = vs_sword_4
+}
+
+vs_sword_5_to_court = {
+	in_type = sword
+	in_visuals = vs_sword_5
+	out_type = pedestal
+	out_visuals = vs_sword_5_court
+}
+
 vs_spear_1_to_inventory = {
 	in_type = pedestal
 	in_visuals = vs_spear_1_court
@@ -68,6 +82,19 @@ vs_spear_1_to_court = {
 	out_visuals = vs_spear_1_court
 }
 
+vs_halberd_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_halberd_court
+	out_type = spear
+	out_visuals = vs_halberd
+}
+
+vs_halberd_to_court = {
+	in_type = spear
+	in_visuals = vs_halberd
+	out_type = pedestal
+	out_visuals = vs_halberd_court
+}
 vs_dagger_1_to_inventory = {
 	in_type = pedestal
 	in_visuals = vs_dagger_1_court
@@ -94,6 +121,20 @@ vs_mace_to_court = {
 	in_visuals = vs_mace
 	out_type = pedestal
 	out_visuals = vs_mace_court
+}
+
+vs_mace_2_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_mace_2_court
+	out_type = mace
+	out_visuals = vs_mace_2
+}
+
+vs_mace_2_to_court = {
+	in_type = mace
+	in_visuals = vs_mace_2
+	out_type = pedestal
+	out_visuals = vs_mace_2_court
 }
 
 vs_axe_to_inventory = {

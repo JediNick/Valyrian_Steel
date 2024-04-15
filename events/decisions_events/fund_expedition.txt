@@ -599,6 +599,10 @@ fund_expedition.0006 = {
 			animation = valyrian_invasion_vs_mace_2
 		}
 		triggered_animation = {
+			trigger = { portrait_should_wield_vs_mace_2_trigger = yes }
+			animation = valyrian_invasion_vs_mace_2_2
+		}
+		triggered_animation = {
 			trigger = { portrait_should_wield_vs_dagger_trigger = yes }
 			animation = valyrian_invasion_vs_dagger_1_1
 		}
@@ -620,6 +624,10 @@ fund_expedition.0006 = {
 			animation = valyrian_invasion_vs_sword_4_2 #Sword
 		}
 		triggered_animation = {
+			trigger = { portrait_should_wield_vs_sword_5_trigger = yes }
+			animation = valyrian_invasion_vs_sword_5_2 #Sword
+		}
+		triggered_animation = {
 			trigger = { portrait_should_wield_vs_axe_trigger = yes }
 			animation = valyrian_invasion_vs_axe_1 
 		}
@@ -627,6 +635,11 @@ fund_expedition.0006 = {
 		triggered_animation = {
 			trigger = { portrait_should_wield_vs_spear_1_trigger = yes }
 			animation = valyrian_invasion_vs_spear_1_1 #Spear
+		}
+		#halberd
+		triggered_animation = {
+			trigger = { portrait_should_wield_vs_halberd_trigger = yes }
+			animation = valyrian_invasion_vs_halberd_1
 		}
 		animation = idle
 	}

@@ -22,6 +22,7 @@
 	}
 	scope:newly_created_artifact = {
 		get_random_artifact_modifier_effect = yes
+		equip_artifact_to_owner_replace = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
 			name = valyrian_steel
@@ -55,6 +56,7 @@ create_artifact_vs_sword_2_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = {
@@ -89,6 +91,7 @@ create_artifact_vs_sword_3_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_sword_3
@@ -123,9 +126,45 @@ create_artifact_vs_sword_4_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_sword_4
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_vs_sword_5_effect = {
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_sword_4_name
+		description = artifact_vs_sword_4_description
+		template = general_unique_template
+		type = sword
+		visuals = vs_sword_5
+		wealth = 60
+		quality = 70
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+
+		modifier = artifact_prowess_1_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
+		get_random_artifact_modifier_effect = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_sword_5
 		set_variable = {
 			name = valyrian_steel
 			value = yes
@@ -157,6 +196,7 @@ create_artifact_vs_dagger_1_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_intrigue_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_dagger_1
@@ -191,9 +231,45 @@ create_artifact_vs_spear_1_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_spear_1
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_vs_halberd_effect = {
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_halberd_name
+		description = artifact_vs_halberd_description
+		template = general_unique_template
+		type = spear
+		visuals = vs_halberd
+		wealth = 50
+		quality = 50
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+
+		modifier = artifact_prowess_1_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
+		get_random_artifact_modifier_effect = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_halberd
 		set_variable = {
 			name = valyrian_steel
 			value = yes
@@ -226,9 +302,46 @@ create_artifact_vs_mace_effect = {
 		decaying = no
 	}
 	scope:newly_created_artifact = {
+		equip_artifact_to_owner_replace = yes
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_mace
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_vs_mace_2_effect = {
+
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_mace_name
+		description = artifact_vs_mace_description
+		template = general_unique_template
+		type = mace
+		visuals = vs_mace_2
+		wealth = 50
+		quality = 50
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_prowess_1_modifier
+
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact = {
+		get_random_artifact_modifier_effect = yes
+		equip_artifact_to_owner_replace = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_mace_2
 		set_variable = {
 			name = valyrian_steel
 			value = yes
@@ -261,6 +374,7 @@ create_artifact_vs_axe_effect = {
 	}
 	scope:newly_created_artifact = {
 		get_random_artifact_modifier_effect = yes
+		equip_artifact_to_owner_replace = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_axe
 		set_variable = {
@@ -282,7 +396,13 @@ get_random_valyrian_steel_artifact = {
 			create_artifact_vs_mace_effect = yes
 		}
 		1 = {
+			create_artifact_vs_mace_2_effect = yes
+		}
+		1 = {
 			create_artifact_vs_spear_1_effect = yes
+		}
+		1 = {
+			create_artifact_vs_halberd_effect = yes
 		}
 		1 = {
 			create_artifact_vs_dagger_1_effect = yes
@@ -299,57 +419,9 @@ get_random_valyrian_steel_artifact = {
 		1 = {
 			create_artifact_vs_sword_4_effect = yes
 		}
+		1 = {
+			create_artifact_vs_sword_5_effect = yes
+		}
 	}
 }
-
-get_default_valyrian_steel_effect = {
-	if = {
-		limit = {
-			scope:newly_created_artifact = {
-				has_variable = vs_axe
-			}
-		}
-		add_character_flag = vs_axe_default
-	}
-	else_if = {
-		limit = {
-			scope:newly_created_artifact = {
-				OR = {
-					has_variable = vs_sword_1
-					has_variable = vs_sword_2
-					has_variable = vs_sword_3
-				}
-			}
-		}
-		add_character_flag = vs_sword_default
-	}
-	else_if = {
-		limit = {
-			scope:newly_created_artifact = {
-				has_variable = vs_dagger_1
-			}
-		}
-		add_character_flag = vs_dagger_default
-	}
-	else_if = {
-		limit = {
-			scope:newly_created_artifact = {
-				has_variable = vs_spear_1
-			}
-		}
-		add_character_flag = vs_spear_default
-	}
-	else_if = {
-		limit = {
-			scope:newly_created_artifact = {
-				has_variable = vs_mace
-			}
-		}
-		add_character_flag = vs_mace_default
-	}
-	else = {
-		add_character_flag = vs_default
-	}
-}
-
 

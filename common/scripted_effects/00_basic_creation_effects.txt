@@ -123,6 +123,37 @@ create_artifact_vs_sword_4_basic_effect = {
 	}
 }
 
+create_artifact_vs_sword_5_basic_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_sword_4_name
+		description = artifact_vs_sword_4_description
+		template = general_unique_template
+		type = sword
+		visuals = vs_sword_5
+		wealth = 60
+		quality = 70
+
+
+		modifier = artifact_prowess_1_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		get_random_artifact_modifier_effect = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_sword_5
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
 create_artifact_vs_dagger_1_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
 	set_artifact_rarity_illustrious = yes
@@ -185,6 +216,37 @@ create_artifact_vs_spear_1_basic_effect = {
 	}
 }
 
+create_artifact_vs_halberd_basic_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_halberd_name
+		description = artifact_vs_halberd_description
+		template = general_unique_template
+		type = spear
+		visuals = vs_halberd
+		wealth = 50
+		quality = 50
+
+
+		modifier = artifact_prowess_1_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		get_random_artifact_modifier_effect = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_halberd
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
 create_artifact_vs_mace_basic_effect = {
 
 	$OWNER$ = { save_scope_as = owner }
@@ -209,6 +271,38 @@ create_artifact_vs_mace_basic_effect = {
 		get_random_artifact_modifier_effect = yes
 		set_variable = { name = historical_unique_artifact value = yes }
 		set_variable = vs_mace
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_vs_mace_2_basic_effect = {
+
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_vs_mace_name
+		description = artifact_vs_mace_description
+		template = general_unique_template
+		type = mace
+		visuals = vs_mace_2
+		wealth = 50
+		quality = 50
+
+		modifier = artifact_prowess_1_modifier
+
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		get_random_artifact_modifier_effect = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = vs_mace_2
 		set_variable = {
 			name = valyrian_steel
 			value = yes

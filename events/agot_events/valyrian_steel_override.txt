@@ -238,6 +238,16 @@ agot_valyrian_steel.8001 = {
 						target = scope:newly_created_artifact
 					}
 				}
+
+				##SUBMOD - VALYRIAN STEEL
+				create_artifact_vs_sword_5_basic_effect = { OWNER = this }
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = scope:newly_created_artifact
+					}
+				}
+
 				##SUBMOD - VALYRIAN STEEL
 				create_artifact_vs_dagger_1_basic_effect = { OWNER = this }
 				root = {
@@ -262,6 +272,25 @@ agot_valyrian_steel.8001 = {
 						target = scope:newly_created_artifact
 					}
 				}
+
+				##SUBMOD - VALYRIAN STEEL
+				create_artifact_vs_mace_2_basic_effect = { OWNER = this }
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = scope:newly_created_artifact
+					}
+				}
+
+				##SUBMOD - VALYRIAN STEEL
+				create_artifact_vs_halberd_basic_effect = { OWNER = this }
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = scope:newly_created_artifact
+					}
+				}
+
 				##SUBMOD - VALYRIAN STEEL
 				create_artifact_vs_axe_basic_effect = { OWNER = this }
 				root = {

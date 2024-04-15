@@ -49,9 +49,9 @@
  valyrian_invasion_vs_sword_4_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 4 Shoulder"
  valyrian_invasion_vs_sword_4_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 4 Duel"
  
- valyrian_invasion_vs_mace_1:0 "@valyrian_steel_icon! Valyrian Steel Mace Low"
- valyrian_invasion_vs_mace_2:0 "@valyrian_steel_icon! Valyrian Steel Mace Shoulder"
- valyrian_invasion_vs_mace_3:0 "@valyrian_steel_icon! Valyrian Steel Mace Duel"
+ valyrian_invasion_vs_mace_1:0 "@valyrian_steel_icon! Valyrian Steel Mace 1 Low"
+ valyrian_invasion_vs_mace_2:0 "@valyrian_steel_icon! Valyrian Steel Mace 1 Shoulder"
+ valyrian_invasion_vs_mace_3:0 "@valyrian_steel_icon! Valyrian Steel Mace 1 Duel"
  
  valyrian_invasion_vs_spear_1_1:0 "@valyrian_steel_icon! Valyrian Steel Spear Hold"
  valyrian_invasion_vs_spear_1_2:0 "@valyrian_steel_icon! Valyrian Steel Spear Celebrate"
@@ -64,3 +64,15 @@
  valyrian_invasion_vs_dagger_1_1:0 "@valyrian_steel_icon! Valyrian Steel Dagger Spymaster"
  valyrian_invasion_vs_dagger_1_2:0 "@valyrian_steel_icon! Valyrian Steel Dagger Duel"
  valyrian_invasion_vs_dagger_1_3:0 "@valyrian_steel_icon! Valyrian Steel Dagger Assassin"
+
+valyrian_invasion_vs_sword_5_1:0 "@valyrian_steel_icon! Valyrian Steel Sword 5 Low"
+valyrian_invasion_vs_sword_5_2:0 "@valyrian_steel_icon! Valyrian Steel Sword 5 Shoulder"
+valyrian_invasion_vs_sword_5_3:0 "@valyrian_steel_icon! Valyrian Steel Sword 5 Duel"
+
+valyrian_invasion_vs_mace_2_2_1:0 "@valyrian_steel_icon! Valyrian Steel Mace 2 Low"
+valyrian_invasion_vs_mace_2_2:0 "@valyrian_steel_icon! Valyrian Steel Mace 2 Shoulder"
+valyrian_invasion_vs_mace_2_3:0 "@valyrian_steel_icon! Valyrian Steel Mace 2 Duel"
+
+valyrian_invasion_vs_halberd_1:0 "@valyrian_steel_icon! Valyrian Steel Halberd Hold"
+valyrian_invasion_vs_halberd_2:0 "@valyrian_steel_icon! Valyrian Steel Halberd Celebrate"
+valyrian_invasion_vs_halberd_3:0 "@valyrian_steel_icon! Valyrian Steel Halberd Duel"

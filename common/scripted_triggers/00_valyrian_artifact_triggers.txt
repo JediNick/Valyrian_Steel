@@ -111,6 +111,7 @@ portrait_can_be_renamed_artifact_trigger = {
 	scope:newly_created_artifact = { 						
 		OR = {
 			has_variable = vs_mace
+			has_variable = vs_mace_2
 			has_variable = vs_spear_1
 			has_variable = vs_axe
 			has_variable = vs_dagger_1
@@ -118,6 +119,9 @@ portrait_can_be_renamed_artifact_trigger = {
 			has_variable = vs_sword_2
 			has_variable = vs_sword_3
 			has_variable = vs_sword_4
+			has_variable = vs_sword_5
+			has_variable = vs_halberd
+
 		}	
 	}
 }
@@ -129,10 +133,29 @@ portrait_should_wield_vs_mace_trigger = {
 		}	
 	}
 }
+
+
+portrait_should_wield_vs_mace_2_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_mace_2
+		}	
+	}
+}
+
 portrait_should_wield_vs_spear_1_trigger = {
 	scope:newly_created_artifact = { 						
 		OR = {
 			has_variable = vs_spear_1
+		}	
+	}
+}
+
+
+portrait_should_wield_vs_halberd_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_halberd
 		}	
 	}
 }
@@ -176,6 +199,14 @@ portrait_should_wield_vs_sword_4_trigger = {
 	scope:newly_created_artifact = { 						
 		OR = {
 			has_variable = vs_sword_4
+		}	
+	}
+}
+
+portrait_should_wield_vs_sword_5_trigger = {
+	scope:newly_created_artifact = { 						
+		OR = {
+			has_variable = vs_sword_5
 		}	
 	}
 }
