@@ -1583,7 +1583,7 @@ agot_valyrian_steel.8001 = {
 			gui = "event_window_artifact_selection"
 			container = "custom_widgets_container"
 		}
-		widget = { 
+		widget = {
 			gui = "event_window_widget_enter_text_artifact"
 			container = "dynamic_birth_name"
 			controller = {
@@ -1756,7 +1756,6 @@ agot_valyrian_steel.8001 = {
 						target = scope:newly_created_artifact
 					}
 				}
-
 				agot_create_artifact_vs_valyrian_longsword_silver_effect = { OWNER = this }
 				root = {
 					add_to_variable_list = {
@@ -1764,7 +1763,6 @@ agot_valyrian_steel.8001 = {
 						target = scope:newly_created_artifact
 					}
 				}
-				
 				##SUBMOD - VALYRIAN STEEL
 				create_artifact_vs_sword_1_basic_effect = { OWNER = this }
 				root = {
@@ -1857,6 +1855,270 @@ agot_valyrian_steel.8001 = {
 						name = possible_artifacts
 						target = scope:newly_created_artifact
 					}
+				}
+			}
+		}
+	}
+
+	#This one
+	option = {
+		name = agot_valyrian_steel.8001.a
+		add_prestige_level = -1
+		add_prestige = massive_prestige_loss
+		remove_short_term_gold = 1000
+
+		if = {
+			limit = {
+				var:selected_artifact = { has_variable = black_death_artifact }
+			}
+			agot_create_artifact_vs_black_death_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = mothers_grief_artifact }
+			}
+			agot_create_artifact_vs_mothers_grief_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = talon_artifact }
+			}
+			agot_create_artifact_vs_talon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = glory_artifact }
+			}
+			agot_create_artifact_vs_glory_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = stormy_nights_artifact }
+			}
+			agot_create_artifact_vs_stormy_nights_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = strangers_touch_artifact }
+			}
+			agot_create_artifact_vs_strangers_touch_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = dragonbane_artifact }
+			}
+			agot_create_artifact_vs_dragonbane_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = andal_armingsword_gold_artifact }
+			}
+			agot_create_artifact_vs_andal_armingsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = andal_armingsword_silver_artifact }
+			}
+			agot_create_artifact_vs_andal_armingsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = andal_longsword_gold_artifact }
+			}
+			agot_create_artifact_vs_andal_longsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = andal_longsword_silver_artifact }
+			}
+			agot_create_artifact_vs_andal_longsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_armingsword_gold_artifact }
+			}
+			agot_create_artifact_vs_firstman_armingsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_armingsword_silver_artifact }
+			}
+			agot_create_artifact_vs_firstman_armingsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_armingsword_bronze_artifact }
+			}
+			agot_create_artifact_vs_firstman_armingsword_bronze_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_longsword_gold_artifact }
+			}
+			agot_create_artifact_vs_firstman_longsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_longsword_silver_artifact }
+			}
+			agot_create_artifact_vs_firstman_longsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = firstman_longsword_bronze_artifact }
+			}
+			agot_create_artifact_vs_firstman_longsword_bronze_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = valyrian_armingsword_gold_artifact }
+			}
+			agot_create_artifact_vs_valyrian_armingsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = valyrian_armingsword_silver_artifact }
+			}
+			agot_create_artifact_vs_valyrian_armingsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = valyrian_longsword_gold_artifact }
+			}
+			agot_create_artifact_vs_valyrian_longsword_gold_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = valyrian_longsword_silver_artifact }
+			}
+			agot_create_artifact_vs_valyrian_longsword_silver_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = widows_wail_artifact }
+			}
+			agot_create_artifact_vs_widows_wail_effect = { OWNER = this }
+		}
+		##SWORDS
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_sword_1 }
+			}
+			create_artifact_vs_sword_1_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_sword_2 }
+			}
+			create_artifact_vs_sword_2_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_sword_3 }
+			}
+			create_artifact_vs_sword_3_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_sword_4 }
+			}
+			create_artifact_vs_sword_4_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_sword_5 }
+			}
+			create_artifact_vs_sword_5_basic_effect = { OWNER = this }
+		}
+		##DAGGER
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_dagger_1 }
+			}
+			create_artifact_vs_dagger_1_basic_effect = { OWNER = this }
+		}
+		#SPEAR
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_spear_1 }
+			}
+			create_artifact_vs_spear_1_basic_effect = { OWNER = this }
+		}
+		#HALBERD
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_halberd }
+			}
+			create_artifact_vs_halberd_basic_effect = { OWNER = this }
+		}
+		#MACE
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_mace }
+			}
+			create_artifact_vs_mace_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_mace_2 }
+			}
+			create_artifact_vs_mace_2_basic_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_variable = vs_axe }
+			}
+			create_artifact_vs_axe_basic_effect = { OWNER = this }
+		}
+		#something broke
+		else = {
+			agot_create_artifact_forged_sword_effect = { OWNER = this }
+		}
+
+		scope:sacrifice = {
+			every_artifact_claimant = {
+				limit = {
+					NOT = { dynasty ?= root.dynasty }
+				}
+				add_opinion = {
+					modifier = angry_opinion
+					target = root
+					opinion = -40
+				}
+			}
+			destroy_artifact = this
+		}
+
+		if = {
+			limit = { has_variable = new_artifact_name }
+			scope:newly_created_artifact = {
+				set_artifact_name = rename_artifact_default_key
+			}
+		}
+		else = {
+			scope:newly_created_artifact = {
+				set_artifact_name = rename_artifact_entered_text
+			}
+		}
+	}
+
+	#Nevermind
+	option = {
+		name = agot_valyrian_steel.8001.b
+	}
+
+	after = {
+		remove_variable = selected_artifact
+		clear_variable_list = possible_artifacts
+		if = {
+			limit = { has_variable = new_artifact_name }
+			remove_variable = new_artifact_name
+		}
+
+		hidden_effect = {
+			title:c_ruins.holder = {
+				every_character_artifact = {
+					destroy_artifact = this
 				}
 			}
 		}
