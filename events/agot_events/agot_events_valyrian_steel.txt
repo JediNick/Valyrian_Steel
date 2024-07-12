@@ -1863,8 +1863,16 @@ agot_valyrian_steel.8001 = {
 	#This one
 	option = {
 		name = agot_valyrian_steel.8001.a
+
+		if = {
+			limit = {
+				NOT = {
+					scope:sacrifice = { has_variable = valyrian_steel_generic }
+				}
+			}
 		add_prestige_level = -1
 		add_prestige = massive_prestige_loss
+		}
 		remove_short_term_gold = 1000
 
 		if = {

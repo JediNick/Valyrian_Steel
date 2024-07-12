@@ -404,7 +404,7 @@ fund_expedition.0003 = {
 	immediate = {
 		random_list = {
 			## Person dies/does not return
-			1 = {
+			3 = {
 				trigger_event = {
 					id = fund_expedition.0004
 					days = {30 60}
@@ -412,20 +412,25 @@ fund_expedition.0003 = {
 			}
 			## Person returns extremely sick
 			1 = {
+				trigger = {
+					NOT = {
+						has_game_rule = epidemic_frequency_disabled
+					}
+				}
 				trigger_event = {
 					id = fund_expedition.0007
 					days = {30 60}
 				}
 			}
 			## Person does return, but they are injured
-			1 = {
+			3 = {
 				trigger_event = {
 					id = fund_expedition.0005
 					days = {30 60}
 				}
 			}
 			##SUCCESS RETURN
-			1 = {
+			3 = {
 				trigger_event = {
 					id = fund_expedition.0010
 					days = {30 60}
