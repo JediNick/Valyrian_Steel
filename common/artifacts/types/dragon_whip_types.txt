@@ -1,0 +1,4 @@
+﻿dragon_whip = {
+	slot = miscellaneous
+	required_features = { dragon_whip_color }
+}

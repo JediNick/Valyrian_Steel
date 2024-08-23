@@ -1,51 +1,192 @@
 ﻿vs_sword_1_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_1_entity" game_entity_override = weapon }	
 }
 
 vs_sword_2_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_2_entity" game_entity_override = weapon }	
 }
 
 vs_sword_3_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_3_entity" game_entity_override = weapon }	
 }
 
 vs_sword_4_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_4_entity" game_entity_override = weapon }	
 }
 
 vs_sword_5_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_sword_5_entity" game_entity_override = weapon }	
 }
 
 vs_dagger_1_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_dagger_1_entity" game_entity_override = weapon }	
 }
 
 vs_spear_1_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
 	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "vs_spear_1_entity" game_entity_override = weapon}	
 }
 
 vs_spear_1_prop_right = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_spear_1_equipped_entity" game_entity_override = weapon}	
 }
 
 vs_halberd_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
 	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "vs_halberd_entity" game_entity_override = weapon}	
 }
 
 vs_halberd_prop_right = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_halberd_equipped_entity" game_entity_override = weapon}	
 }
 
 vs_mace_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_mace_entity" game_entity_override = weapon }	
 }
 
 vs_mace_2_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_mace_2_entity" game_entity_override = weapon }	
 }
 
 vs_axe_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
 	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "vs_axe_entity" game_entity_override = weapon }	
 }
+
+
+
+dragon_horn_black_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_black_entity" }	
+}
+
+dragon_horn_tan_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_tan_entity" }	
+}
+
+dragon_horn_red_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_red_entity" }	
+}
+
+dragon_horn_silver_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_silver_entity" }	
+}
+
+dragon_horn_brown_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_brown_entity" }	
+}
+
+dragon_horn_blackGold_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_blackGold_entity" }	
+}
+
+
+dragon_horn_black_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_black_glow_entity" }	
+}
+
+dragon_horn_tan_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_tan_glow_entity" }	
+}
+
+dragon_horn_red_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_red_glow_entity" }	
+}
+
+dragon_horn_silver_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_silver_glow_entity" }	
+}
+
+dragon_horn_brown_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_brown_glow_entity" }	
+}
+
+dragon_horn_blackGold_glow_right_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "dragon_horn_blackGold_glow_entity" }	
+}
+
+
+##Used for blow animation
+dragon_horn_black_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_black_glow_blow_entity" }	
+}
+
+dragon_horn_tan_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_tan_glow_blow_entity" }	
+}
+
+dragon_horn_red_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_red_glow_blow_entity" }	
+}
+
+dragon_horn_silver_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_silver_glow_blow_entity" }	
+}
+
+dragon_horn_brown_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_brown_glow_blow_entity" }	
+}
+
+dragon_horn_blackGold_glow_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "dragon_horn_blackGold_glow_blow_entity" }	
+}
+
+##Dragon Whip
+dragon_whip_black_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "valyrianWhip_black_entity" }	
+}
+
+dragon_whip_bronze_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "valyrianWhip_bronze_entity" }	
+}
+
+dragon_whip_silver_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "valyrianWhip_silver_entity" }	
+}
+
+vs_goblet_prop = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "valyrianCup_entity" }	
+}
+
+##Books
+valyrian_paged_book_01_a = {
+	entity = {	required_tags = "dragon"        node = "bn_l_prop"		 }
+	entity = {	required_tags = ""        node = "bn_l_prop"		entity = "valyrian_book_open_entity" } 
+}
+
+valyrian_book_01 = {
+	entity = {	required_tags = "dragon"        node = "bn_r_prop"		 }
+	entity = {	required_tags = ""        node = "bn_r_prop"		entity = "valyrian_book_closed_entity" } 
+}
+

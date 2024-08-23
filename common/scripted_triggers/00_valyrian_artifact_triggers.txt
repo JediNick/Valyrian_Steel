@@ -1,111 +1,184 @@
 ﻿
-# egg_feature_color_vhagar_trigger = {
-# 	scope:newly_created_artifact = { 						
-# 		has_variable = vhagar_egg
-# 	}
-# }
-
-# egg_feature_color_merexes_trigger = {
-# 	always = yes
-# }
-
-egg_feature_color_blue_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = blue_egg
-	}
-}
-
-egg_feature_color_red_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = red_egg
-	}
-}
-
-egg_feature_color_purple_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = purple_egg
-	}
-}
-
-egg_feature_color_grey_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = grey_1_egg
-	}
-}
-
-egg_feature_color_grey_2_trigger = {
-	scope:newly_created_artifact = { 						
-		OR = {
-			has_variable = grey_2_egg
-			has_variable = merexes_egg
-		} 	
-	}
+egg_feature_color_rainbow_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:rainbow
 }
 
 egg_feature_color_yellow_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = yellow_egg
-	}
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:yellow 
 }
 
-egg_feature_color_black_trigger = {
-	scope:newly_created_artifact = {
-		OR = {
-			has_variable = black_egg
-			has_variable = balerion_egg
-		} 						
-	}
+egg_feature_color_blue_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:blue   
 }
 
-egg_feature_color_tan_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = tan_egg
-	}
+egg_feature_color_purple_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:purple 
 }
 
-egg_feature_color_orange_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = orange_egg
-	}
-}
-
-
-egg_feature_color_white_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = white_egg
-	}
-}
-
-egg_feature_color_pink_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = pink_egg
-	}
+egg_feature_color_red_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:red    
 }
 
 egg_feature_color_brown_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = brown_egg
-	}
-}
-egg_feature_color_green_1_trigger = {
-	scope:newly_created_artifact = {					
-		has_variable = green_1_egg
-	}
-}
-egg_feature_color_green_2_trigger = {
-	scope:newly_created_artifact = {
-		OR = {
-			has_variable = green_2_egg
-			has_variable = vhagar_egg
-		} 						
-	}
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:brown
 }
 
-egg_feature_color_rainbow_trigger = {
-	scope:newly_created_artifact = { 						
-		has_variable = rainbow_egg
-	}
+egg_feature_color_orange_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:orange
 }
+
+egg_feature_color_white_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:white
+}
+
+egg_feature_color_tan_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:tan
+}
+
+egg_feature_color_black_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:black
+}
+
+egg_feature_color_blackDarkRed_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:blackDarkRed
+}
+
+egg_feature_color_grey_1_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:grey_1
+}
+
+egg_feature_color_grey_2_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:grey_2
+}
+
+egg_feature_color_green_1_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:green_1
+}
+
+egg_feature_color_green_2_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:green_2
+}
+
+egg_feature_color_pink_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:pink
+}
+
+egg_feature_color_gold_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:gold
+}
+
+egg_feature_color_whitegold_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:whitegold
+}
+
+egg_feature_color_purplegold_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:purplegold
+}
+
+egg_feature_color_flame_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:flame
+}
+
+egg_feature_color_blackred_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:blackred
+}
+
+egg_feature_color_brownspots_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:brownspots
+}
+
+egg_feature_color_redblackgold_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:redblackgold
+}
+
+egg_feature_color_palered_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:palered
+}
+
+egg_feature_color_darkblue_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:darkblue
+}
+
+egg_feature_color_darkred_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:darkred
+}
+
+egg_feature_color_frost_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:frost
+}
+
+egg_feature_color_greengrey_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:greengrey
+}
+
+egg_feature_color_magma_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:magma
+}
+
+egg_feature_color_darkpurple_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:darkpurple
+}
+
+egg_feature_color_palepink_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:palepink
+}
+
+egg_feature_color_palebluepink_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:palebluepink
+}
+
+egg_feature_color_pinkspot_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:pinkspot
+}
+
+egg_feature_color_rainbowgold_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:rainbowgold
+}
+
+egg_feature_color_sunburst_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:sunburst
+}
+
+egg_feature_color_goldpink_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:goldpink
+}
+
+egg_feature_color_bluebronze_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:bluebronze
+}
+
+egg_feature_color_greenorange_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:greenorange
+}
+
+egg_feature_color_bronze_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:bronze
+}
+
+egg_feature_color_blackgreen_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:blackgreen
+}
+
+egg_feature_color_greygreenyellow_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:greygreenyellow
+}
+
+egg_feature_color_blackyellow_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:blackyellow
+}
+
+egg_feature_color_yellowgreen_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:yellowgreen
+}
+
+egg_feature_color_silver_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:silver
+}
+
+egg_feature_color_iceFire_trigger = {
+    scope:newly_created_artifact.var:dragon_egg_color ?= flag:iceFire
+}
+
 
 portrait_can_be_renamed_artifact_trigger = {
 	scope:newly_created_artifact = { 						
@@ -208,5 +281,72 @@ portrait_should_wield_vs_sword_5_trigger = {
 		OR = {
 			has_variable = vs_sword_5
 		}	
+	}
+}
+
+portrait_should_hold_black_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:black
+	}
+}
+
+
+portrait_should_hold_red_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:red
+	}
+}
+
+
+portrait_should_hold_tan_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:tan
+	}
+}
+
+
+portrait_should_hold_silver_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:silver
+	}
+}
+
+
+portrait_should_hold_blackGold_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:blackGold
+	}
+}
+
+
+portrait_should_hold_brown_horn_trigger = {
+	scope:dragon_horn_artifact = {
+		has_variable = dragon_horn_color
+		var:dragon_horn_color = flag:brown
+	}
+}
+
+
+dragon_whip_black_trigger = {
+	scope:newly_created_artifact = { 						
+		has_artifact_feature = dragon_whip_black
+	}
+}
+
+dragon_whip_bronze_trigger = {
+	scope:newly_created_artifact = { 						
+		has_artifact_feature = dragon_whip_bronze
+	}
+}
+
+
+dragon_whip_silver_trigger = {
+	scope:newly_created_artifact = { 						
+		has_artifact_feature = dragon_whip_silver
 	}
 }

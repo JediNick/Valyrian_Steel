@@ -1,0 +1,77 @@
+﻿enchant_dragon_horn = {
+	picture = "gfx/interface/illustrations/decisions/dragon_horn_enchant.dds"
+	ai_check_interval = 60
+	
+	sort_order = 88
+	cost = {
+		piety = 500
+	}
+	desc = enchant_dragon_horn_desc
+	selection_tooltip = enchant_dragon_horn_tt
+	is_shown = {
+		is_ai = no
+		
+		any_equipped_character_artifact = {
+			artifact_type = dragon_horn_inactive
+		}
+
+		OR = {
+			AND = {
+				has_game_rule = dragons_dragonblood_only
+				agot_has_dragonblood_heritage = yes
+			}
+			has_game_rule = dragons_anyone
+		}
+	
+	}
+
+	cooldown = { years = 10 }
+
+	ai_potential = {
+		NOT = { has_trait = dragonrider }
+		OR = {
+			has_trait = ambitious
+			has_trait = lunatic
+		}
+	}
+
+	effect = {
+		custom_tooltip = enchant_dragon_horn_tooltip
+		custom_tooltip = enchant_dragon_horn_tooltip_2
+
+		trigger_event = {
+			id = dragon_horn_decision.0001
+		}
+	}
+	
+}
+
+un_enchant_dragon_horn = {
+	picture = "gfx/interface/illustrations/decisions/dragon_horn_unenchant.dds"
+	ai_check_interval = 60
+	
+	sort_order = 88
+	cost = {
+		piety = 100
+		prestige = 100
+	}
+	desc = un_enchant_dragon_horn_desc
+	selection_tooltip = un_enchant_dragon_horn_tt
+	is_shown = {
+		is_ai = no
+		any_equipped_character_artifact = {
+			artifact_type = dragon_horn
+			has_variable = dragon_horn_color
+		}
+	}
+
+	effect = {
+		custom_tooltip = un_enchant_dragon_horn_tooltip
+		custom_tooltip = un_enchant_dragon_horn_tooltip_2
+
+		trigger_event = {
+			id = dragon_horn_decision.0003
+		}
+	}
+	
+}

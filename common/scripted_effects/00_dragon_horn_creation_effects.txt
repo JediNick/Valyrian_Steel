@@ -1,0 +1,98 @@
+﻿get_random_dragon_horn_artifact = {
+	$OWNER$ = { save_scope_as = owner }
+	$GIVER$ = { save_scope_as = giver }
+	random_list = {
+		1 = {
+			create_artifact_dragon_horn_black_effect = yes
+		}
+		1 = {
+			create_artifact_dragon_horn_silver_effect = yes
+		}
+		1 = {
+			create_artifact_dragon_horn_red_effect = yes
+		}
+		1 = {
+			create_artifact_dragon_horn_tan_effect  = yes
+		}
+		1 = {
+			create_artifact_dragon_horn_brown_effect = yes
+		}
+		1 = {
+			create_artifact_dragon_horn_blackGold_effect = yes
+		}
+	}
+}
+
+create_artifact_dragon_horn_black_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = black
+	}
+}
+
+create_artifact_dragon_horn_silver_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = silver
+	}
+}
+
+create_artifact_dragon_horn_red_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = red
+	}
+}
+
+create_artifact_dragon_horn_tan_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = tan
+	}
+}
+
+create_artifact_dragon_horn_brown_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = brown
+	}
+}
+
+create_artifact_dragon_horn_blackGold_effect = {
+	create_artifact_dragon_horn_effect = {
+		COLOR = blackGold
+	}
+}
+
+create_artifact_dragon_horn_effect = {
+
+	#$COLOR$ = { save_scope_as = color }
+	# Get the character the artifact is being made for.
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_dragon_horn_name
+		description = dragon_horn_$COLOR$_desc
+		template = dragon_horn_template
+		type = dragon_horn_inactive
+		visuals = dragon_horn_$COLOR$
+		wealth = 50
+		quality = 50
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_monthly_minor_prestige_2_modifier
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_bond_modifier = yes
+			get_random_dragon_horn_modifier = yes
+		}
+		set_variable = { name = dragon_horn_color value = flag:$COLOR$ }
+
+		set_variable = { name = historical_unique_artifact value = yes }
+		save_scope_as = epic
+	}
+}

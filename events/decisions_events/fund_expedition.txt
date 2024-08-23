@@ -12,6 +12,7 @@ scripted_trigger fund_expedition_basic_requirements_1_trigger = {
 	is_lowborn = no
 	is_clergy = no
 	is_ai = yes
+	is_travelling = no 
 	NOT = { 
 		OR = {
 			has_trait = wounded_1
@@ -49,6 +50,7 @@ scripted_trigger fund_expedition_basic_requirements_2_trigger = {
 	is_lowborn = yes
 	is_clergy = no
 	is_ai = yes
+	is_travelling = no 
 	NOT = { 
 		OR = {
 			has_trait = wounded_1
@@ -261,9 +263,9 @@ fund_expedition.0001 = {
 		}
 		name = fund_expedition_0001.a
 
-		pay_short_term_gold = {
-			target = scope:optionOne
-			gold = 500
+
+		scope:optionOne = {
+			add_gold = 500
 		}
 		scope:optionOne = {
 			save_scope_as = choice
@@ -278,7 +280,7 @@ fund_expedition.0001 = {
 			}
 		}
 		trigger_event = {
-			id = fund_expedition.0002
+			id = fund_expedition.00021
 			days = {5 7}
 		}
 	}
@@ -290,9 +292,8 @@ fund_expedition.0001 = {
 		}
 		name = fund_expedition_0001.b
 		
-		pay_short_term_gold = {
-			target = scope:optionTwo
-			gold = 500
+		scope:optionTwo = {
+			add_gold = 500
 		}
 		scope:optionTwo = {
 			save_scope_as = choice
@@ -306,7 +307,7 @@ fund_expedition.0001 = {
 			}
 		}
 		trigger_event = {
-			id = fund_expedition.0002
+			id = fund_expedition.00021
 			days = {5 7}
 		}
 	}
@@ -318,9 +319,8 @@ fund_expedition.0001 = {
 		}
 		name = fund_expedition_0001.c
 		
-		pay_short_term_gold = {
-			target = scope:optionThree
-			gold = 500
+		scope:optionThree = {
+			add_gold = 500
 		}
 		scope:optionThree = {
 			save_scope_as = choice
@@ -333,7 +333,7 @@ fund_expedition.0001 = {
 		}
 
 		trigger_event = {
-			id = fund_expedition.0002
+			id = fund_expedition.00021
 			days = {5 7}
 		}
 	}
@@ -342,9 +342,99 @@ fund_expedition.0001 = {
 	option = {
 		name = health.3001.d.more
 		remove_decision_cooldown = fund_expedition_decision 
-
+		add_gold = 500
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+fund_expedition.00021 = {
+	type = character_event
+	title = fund_expedition_0001_t
+	desc = fund_expedition_00021_desc
+
+	theme = crown
+	override_background = docks
+
+	left_portrait = scope:choice
+	right_portrait = root
+
+	trigger = { exists = scope:choice } #If I lost it before I got this event, I shouldn't get a physician
+
+	###Find me a Dragon egg
+	option = {
+		trigger = {
+			gold > 200
+		}
+		custom_tooltip = fund_expedition.00021.tt.a
+		show_as_unavailable = {
+			always = yes
+		}
+		set_variable = {
+			name = focus_choice
+			value = flag:egg
+		}
+
+		remove_short_term_gold = 200
+		name = fund_expedition_00021.a
+		trigger_event = {
+			id = fund_expedition.0002
+			#days = {30 60}
+		}
+	}
+
+	##Find me a Valyrian Steel Weapon
+	option = {
+		trigger = {
+			gold > 200
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		set_variable = {
+			name = focus_choice
+			value = flag:weapon
+		}
+		custom_tooltip = fund_expedition.00021.tt.b
+		remove_short_term_gold = 200
+
+		name = fund_expedition_00021.b
+		trigger_event = {
+			id = fund_expedition.0002
+			#days = {30 60}
+		}
+	}
+	##Find me a Trinket
+	option = {
+		trigger = {
+			gold > 100
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		set_variable = {
+			name = focus_choice
+			value = flag:trinket
+		}
+		custom_tooltip = fund_expedition.00021.tt.c
+		remove_short_term_gold = 100
+
+		
+		name = fund_expedition_00021.c
+		trigger_event = {
+			id = fund_expedition.0002
+			#days = {30 60}
+		}
+	}
+	##Find me anything
+	option = {
+		custom_tooltip = fund_expedition.00021.tt.d
+
+		name = fund_expedition_00021.d
+		trigger_event = {
+			id = fund_expedition.0002
+			#days = {30 60}
 		}
 	}
 }
@@ -430,7 +520,7 @@ fund_expedition.0003 = {
 				}
 			}
 			##SUCCESS RETURN
-			3 = {
+			4 = {
 				trigger_event = {
 					id = fund_expedition.0010
 					days = {30 60}
@@ -544,6 +634,7 @@ fund_expedition.0005 = {
 
 
 
+## Determine aritfact outcome
 fund_expedition.0100 = {
 	hidden = yes
 
@@ -551,23 +642,111 @@ fund_expedition.0100 = {
 	trigger = { exists = scope:choice } #If I lost it before I got this event, I shouldn't get a physician
 
 	immediate = {
-		random_list = {
-			## weapon outcome
-			1 = {
-				trigger_event = {
-					id = fund_expedition.0006
+		if = {
+			limit = {
+				var:focus_choice ?= flag:weapon
+			}
+			trigger_event = {
+				id = fund_expedition.0006
+			}
+		}
+		else_if = {
+			limit = {
+				var:focus_choice ?= flag:egg
+			}
+			trigger_event = {
+				id = fund_expedition.0008
+			}
+		}
+		else_if = {
+			limit = {
+				var:focus_choice ?= flag:trinket
+			}
+			random_list = {
+				##DragonHorn
+				1 = {
+					trigger_event = {
+						id = fund_expedition.0011
+					}
+				}
+				## Dragon Whip
+				1 = {
+					trigger_event = {
+						id = fund_expedition.0012
+					}
+				}
+				##DragonLoreBook
+				1 = {
+					trigger_event = {
+						id = fund_expedition.0013
+					}
+				}
+				## Glass Candle outcome
+				1 = {
+					trigger_event = {
+						id = fund_expedition.0009
+					}
+				}
+				##VS_Goblet
+				1 = {
+					trigger_event = {
+						id = fund_expedition.0014
+					}
 				}
 			}
-			## Dragon egg outcome
-			1 = {
-				trigger_event = {
-					id = fund_expedition.0008
+		}
+		else = {
+			random_list = {
+				## weapon outcome
+				33 = {
+					trigger_event = {
+						id = fund_expedition.0006
+					}
 				}
-			}
-			## Glass Candle outcome
-			1 = {
-				trigger_event = {
-					id = fund_expedition.0009
+				## Dragon egg outcome
+				33 = {
+					trigger_event = {
+						id = fund_expedition.0008
+					}
+				}
+				15 = {
+					random_list = {
+						##DragonHorn
+						1 = {
+							trigger_event = {
+								id = fund_expedition.0011
+							}
+						}
+						## Dragon Whip
+						1 = {
+							trigger_event = {
+								id = fund_expedition.0012
+							}
+						}
+						##DragonLoreBook
+						1 = {
+							trigger_event = {
+								id = fund_expedition.0013
+							}
+						}
+					}
+				}
+				##Misc artifact
+				15 = {
+					random_list = {
+						## Glass Candle outcome
+						1 = {
+							trigger_event = {
+								id = fund_expedition.0009
+							}
+						}
+						##VS_Goblet
+						1 = {
+							trigger_event = {
+								id = fund_expedition.0014
+							}
+						}
+					}
 				}
 			}
 		}
@@ -793,7 +972,7 @@ fund_expedition.0007 = {
 		}
 
 		if = {
-			limit = { var:artifact_choice = flag:smallpox }
+			limit = { var:epidemic_choice ?= flag:smallpox }
 			root.capital_province = {
 				create_epidemic_outbreak = {
 					type = smallpox
@@ -802,7 +981,7 @@ fund_expedition.0007 = {
 			}
 		}
 		else_if = {
-			limit = { var:artifact_choice = flag:bubonic_plague }
+			limit = { var:epidemic_choice ?= flag:bubonic_plague }
 			root.capital_province = {
 				create_epidemic_outbreak = {
 					type = bubonic_plague
@@ -812,7 +991,7 @@ fund_expedition.0007 = {
 
 		}
 		else_if = {
-			limit = { var:artifact_choice = flag:measles }
+			limit = { var:epidemic_choice ?= flag:measles }
 			root.capital_province = {
 				create_epidemic_outbreak = {
 					type = measles
@@ -822,35 +1001,12 @@ fund_expedition.0007 = {
 
 		}
 		else_if = {
-			limit = { var:artifact_choice = flag:ergotism }
+			limit = { var:epidemic_choice ?= flag:ergotism }
 			root.capital_province = {
 				create_epidemic_outbreak = {
 					type = ergotism
 					intensity = major
 				}
-			}
-
-		}
-		every_courtier_or_guest = {
-			limit = {
-				NOR = {
-					this = scope:choice
-					is_in_list = tmp_list
-					is_ai = yes
-				}
-			}
-			add_to_temporary_list = tmp_list
-		}
-		random_in_list = {
-			list = tmp_list
-			save_scope_as = victim1
-			remove_from_list = tmp_list
-		  }
-
-		  root.capital_province = {
-			create_epidemic_outbreak = {
-				type = bubonic_plague
-				intensity = major
 			}
 		}
 		##The person who went to valyria will infect their own court, and there is a potential for them to have infected people at the docks/in root's court
@@ -860,14 +1016,14 @@ fund_expedition.0007 = {
 				type = returned_sick_expedition_valyria
 			}
 			if = {
-				limit = { var:artifact_choice = flag:smallpox }
+				limit = { var:epidemic_choice ?= flag:smallpox }
 				 
 					contract_disease_effect = { DISEASE = smallpox TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
 					if = {
-						limit = {exists = scope:victim1}
+						limit = {exists = scope:choice}
 						random_list = {
 							1 = {
-								scope:victim1 = {
+								scope:choice = {
 									contract_disease_effect = { DISEASE = smallpox TREATMENT_EVENT = yes }
 								}
 							}
@@ -879,14 +1035,14 @@ fund_expedition.0007 = {
 				}
 			
 				else_if = {
-					limit = { var:artifact_choice = flag:bubonic_plague }
+					limit = { var:epidemic_choice ?= flag:bubonic_plague }
 
 					contract_disease_effect = { DISEASE = bubonic_plague TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
 					if = {
-						limit = {exists = scope:victim1}
+						limit = {exists = scope:choice}
 						random_list = {
 							1 = {
-								scope:victim1 = {
+								scope:choice = {
 									contract_disease_effect = { DISEASE = bubonic_plague TREATMENT_EVENT = yes }
 								}
 							}
@@ -897,14 +1053,14 @@ fund_expedition.0007 = {
 					}			
 				}
 				else_if  = {
-					limit = { var:artifact_choice = flag:measles }
+					limit = { var:epidemic_choice ?= flag:measles }
 
 					contract_disease_effect = { DISEASE = measles TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
 					if = {
-						limit = {exists = scope:victim1}
+						limit = {exists = scope:choice}
 						random_list = {
 							1 = {
-								scope:victim1 = {
+								scope:choice = {
 									contract_disease_effect = { DISEASE = measles TREATMENT_EVENT = yes }
 								}
 							}
@@ -915,14 +1071,14 @@ fund_expedition.0007 = {
 					}			
 				}
 				else_if  = {
-					limit = { var:artifact_choice = flag:ergotism }
+					limit = { var:epidemic_choice ?= flag:ergotism }
 
 					contract_disease_effect = { DISEASE = ergotism TREATMENT_EVENT = yes } #Adds the trait, sends event "health.2201" to those who care if health is brought too low	
 					if = {
-						limit = {exists = scope:victim1}
+						limit = {exists = scope:choice}
 						random_list = {
 							1 = {
-								scope:victim1 = {
+								scope:choice = {
 									contract_disease_effect = { DISEASE = ergotism TREATMENT_EVENT = yes }
 								}
 							}
@@ -972,65 +1128,229 @@ fund_expedition.0008 = {
 	override_background = docks
 	left_portrait = {
 		character = root
-		triggered_animation = {
-			trigger = { egg_feature_color_red_trigger = yes }
-			animation = valyrian_invasion_egg_red
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_blue_trigger = yes }
-			animation = valyrian_invasion_egg_blue
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_grey_trigger = yes }
-			animation = valyrian_invasion_egg_grey
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_grey_2_trigger = yes }
-			animation = valyrian_invasion_egg_meraxes
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_yellow_trigger = yes }
-			animation = valyrian_invasion_egg_yellow
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_brown_trigger = yes }
-			animation = valyrian_invasion_egg_brown
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_tan_trigger = yes }
-			animation = valyrian_invasion_egg_tan
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_purple_trigger = yes }
-			animation = valyrian_invasion_egg_purple
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_black_trigger = yes }
-			animation = valyrian_invasion_egg_black
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_green_1_trigger = yes }
-			animation = valyrian_invasion_egg_green
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_green_2_trigger = yes }
-			animation = valyrian_invasion_egg_vhagar
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_pink_trigger = yes }
-			animation = valyrian_invasion_egg_pink
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_white_trigger = yes }
-			animation = valyrian_invasion_egg_white
-		}
-		triggered_animation = {
-			trigger = { egg_feature_color_orange_trigger = yes }
-			animation = valyrian_invasion_egg_orange
-		}
+
 		triggered_animation = {
 			trigger = { egg_feature_color_rainbow_trigger = yes }
-			animation = valyrian_invasion_egg_rainbow
+			animation = agot_egg_rainbow
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_yellow_trigger = yes }
+			animation = agot_egg_yellow
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_blue_trigger = yes }  
+			animation = agot_egg_blue
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_purple_trigger = yes }
+			animation = agot_egg_purple
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_red_trigger = yes }
+			animation = agot_egg_red
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_brown_trigger = yes }
+			animation = agot_egg_brown
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_orange_trigger = yes }
+			animation = agot_egg_orange
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_white_trigger = yes }
+			animation = agot_egg_white
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_tan_trigger = yes }
+			animation = agot_egg_tan
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_black_trigger = yes }
+			animation = agot_egg_black
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_grey_1_trigger = yes }
+			animation = agot_egg_meraxes
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_grey_2_trigger = yes }
+			animation = agot_egg_grey
+			}
+
+		triggered_animation = {
+			trigger = { egg_feature_color_blackDarkRed_trigger = yes }
+			animation = agot_egg_blackDarkRed
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_green_1_trigger = yes }
+			animation = agot_egg_green
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_green_2_trigger = yes }
+			animation = agot_egg_vhagar
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_pink_trigger = yes }
+			animation = agot_egg_pink
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_gold_trigger = yes }
+			animation = agot_egg_gold
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_whitegold_trigger = yes }
+			animation = agot_egg_whitegold
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_purplegold_trigger = yes }
+			animation = agot_egg_purplegold
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_flame_trigger = yes }
+			animation = agot_egg_flame
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_blackred_trigger = yes }
+			animation = agot_egg_blackred
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_brownspots_trigger = yes }
+			animation = agot_egg_brownspots
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_redblackgold_trigger = yes }
+			animation = agot_egg_redblackgold
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_palered_trigger = yes }
+			animation = agot_egg_palered
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_darkblue_trigger = yes }
+			animation = agot_egg_darkblue
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_darkred_trigger = yes }
+			animation = agot_egg_darkred
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_frost_trigger = yes }
+			animation = agot_egg_frost
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_greengrey_trigger = yes }
+			animation = agot_egg_greengrey
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_magma_trigger = yes }
+			animation = agot_egg_magma
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_darkpurple_trigger = yes }
+			animation = agot_egg_darkpurple
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_palepink_trigger = yes }
+			animation = agot_egg_palepink
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_palebluepink_trigger = yes }
+			animation = agot_egg_palebluepink
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_pinkspot_trigger = yes }
+			animation = agot_egg_pinkspot
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_rainbowgold_trigger = yes }
+			animation = agot_egg_rainbowgold
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_sunburst_trigger = yes }
+			animation = agot_egg_sunburst
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_goldpink_trigger = yes }
+			animation = agot_egg_goldpink
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_bluebronze_trigger = yes }
+			animation = agot_egg_bluebronze
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_greenorange_trigger = yes }
+			animation = agot_egg_greenorange
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_bronze_trigger = yes }
+			animation = agot_egg_bronze
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_blackgreen_trigger = yes }
+			animation = agot_egg_blackgreen
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_greygreenyellow_trigger = yes }
+			animation = agot_egg_greygreenyellow
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_blackyellow_trigger = yes }
+			animation = agot_egg_blackyellow
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_yellowgreen_trigger = yes }
+			animation = agot_egg_yellowgreen
+			}
+		
+		triggered_animation = {
+			trigger = { egg_feature_color_silver_trigger = yes }
+			animation = agot_egg_silver
+			}
+		triggered_animation = {
+				trigger = { egg_feature_color_iceFire_trigger = yes }
+				animation = agot_egg_iceFire
 		}
 		animation = idle
 	}
@@ -1052,9 +1372,11 @@ fund_expedition.0008 = {
 				exists = scope:choice
 			}
 			hidden_effect = {
-				get_random_dragon_egg_artifact = { 
+				agot_create_random_dragon_egg_artifact = { 
 					OWNER =  root
-					GIVER = scope:choice
+				}
+				scope:newly_created_artifact = {
+					get_random_misc_modifier_effect = yes
 				}
 			}
 		}
@@ -1173,6 +1495,329 @@ fund_expedition.0010 = {
 		name = fund_expedition_0010.a
 		trigger_event = {
 			id = fund_expedition.0100
+		}
+	}
+}
+
+fund_expedition.0011 = {
+	type = character_event
+	title = fund_expedition_0011_t
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+					knows_language = language_valyrian
+				 } 
+				desc = fund_expedition_0011_valyrian_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0011_alt_desc
+			}
+			triggered_desc = {
+				trigger = { 
+					knows_language = language_valyrian
+				 } 
+				desc = fund_expedition_0011_valyrian_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0011_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:black
+			} }
+			animation = dragon_horn_black_1
+		}
+
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:tan
+			} }
+			animation = dragon_horn_tan_1
+		}
+
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:silver
+			} }
+			animation = dragon_horn_silver_1
+		}
+
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:red
+			} }
+			animation = dragon_horn_red_1
+		}
+
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:blackGold
+			} }
+			animation = dragon_horn_blackGold_1
+		}
+
+		triggered_animation = {
+			trigger = { scope:newly_created_artifact = {
+				has_variable = dragon_horn_color
+				var:dragon_horn_color = flag:brown
+			} }
+			animation = dragon_horn_brown_1
+		}
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:choice
+			}
+			hidden_effect = {
+				get_random_dragon_horn_artifact = { 
+					OWNER = root
+					GIVER = scope:choice
+				}
+			}
+		}
+
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0011.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+	}
+}
+
+fund_expedition.0012 = {
+	type = character_event
+	title = fund_expedition_0012_t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0012_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0012_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { dragon_whip_bronze_trigger = yes }
+			animation = dragon_whip_bronze
+		}
+		triggered_animation = {
+			trigger = { dragon_whip_silver_trigger = yes }
+			animation = dragon_whip_silver
+		}
+		triggered_animation = {
+			trigger = { dragon_whip_black_trigger = yes }
+			animation = dragon_whip_black
+		}
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+	immediate = {
+		if = {
+			limit = {
+				#has_dlc_feature = royal_court
+				exists = scope:choice
+			}
+			hidden_effect = {
+				get_random_dragon_whip_artifact = { 
+					OWNER =  root
+					GIVER = scope:choice
+				}
+			}
+		}
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0006.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+	}
+}
+
+fund_expedition.0013 = {
+	type = character_event
+	title = fund_expedition_0013_t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0013_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0013_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		animation = valyrian_page_flipping
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:choice
+			}
+			create_valyrian_book_effect = { 
+				OWNER = root
+				GIVER = scope:choice
+			}
+		}
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0006.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
+		}
+	}
+}
+
+fund_expedition.0014 = {
+	type = character_event
+	title = fund_expedition_0014_t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:choice = {
+						has_character_flag = returned_ok
+					}
+				 } 
+				desc = fund_expedition_0014_alt_desc
+			}
+			triggered_desc = { 
+				desc =  fund_expedition_0014_desc
+			}
+		}
+	}
+
+	theme = crown
+	override_background = docks
+	left_portrait = {
+		character = root
+		animation = toast_vs_goblet
+	}
+	right_portrait = {
+		trigger = { 
+			scope:choice = {
+				has_character_flag = returned_ok
+			}
+		 }
+		 character = scope:choice
+		 animation = idle 
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:choice
+			}
+			create_artifact_vs_goblet_effect = { 
+				OWNER = root
+				GIVER = scope:choice
+			}
+		}
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}	
+
+	option = {
+		name = fund_expedition_0014.a
+	}
+	after = {
+		scope:choice = {
+			remove_character_flag = returned_ok
 		}
 	}
 }

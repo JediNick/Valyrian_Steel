@@ -1,221 +1,97 @@
-﻿create_artifact_glass_candle_black_effect = {
+﻿create_artifact_glass_candle_effect = {
 	# Get the character the artifact is being made for.
 	# Not really used, but if we don't set the scopes we get errors in the feature selection
 	set_artifact_rarity_illustrious = yes
 
+	save_scope_value_as = {
+		name = candle_color
+		value = flag:$COLOR$
+	}
+
 	# Create the artifact
 	create_artifact = {
-		name = artifact_glass_candle_name
+		name = artifact_glass_candle
 		description = artifact_glass_candle_desc
-		template = general_unique_template
+		template = glass_candle_artifact_template
 		type = glass_candle
-		visuals = glass_candle_black 
-		wealth = 20
-		quality = 20
+		visuals = glass_candle
+		wealth = scope:wealth
+		quality = scope:quality
 		history = {
 			type = discovered
 			actor = scope:giver
 			recipient = scope:owner
 			location = province:6620
 		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
+		modifier = glass_candle_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
+	
+	hidden_effect_new_object = {
+		scope:newly_created_artifact = {
+			hidden_effect = {
+				get_random_artifact_modifier_misc_low_effect = yes
+			}
+			
+			set_artifact_feature_group = glass_candle_color
+			set_artifact_description = agot_artifact_glass_candle_desc
+			set_variable = { name = historical_unique_artifact value = yes }
+			set_variable = {
+				name = glass_candle
+				value = yes
+			}
+
+			save_scope_as = epic
+
+			if = {
+				limit = {
+					global_var:magic_level = 2
+				}
+				reforge_artifact = {
+					type = glass_candle
+					description = agot_artifact_glass_candle_desc
+					modifier = glass_candle_modifier_higher
+					generate_history = no
+				}
+			}
 		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
 	}
 }
 
-create_artifact_glass_candle_blue_effect = {
-	# Get the character the artifact is being made for.
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = artifact_glass_candle_name
-		description = artifact_glass_candle_desc
-		template = general_unique_template
-		type = glass_candle
-		visuals = glass_candle_blue
-		wealth = 20
-		quality = 20
-		history = {
-			type = discovered
-			actor = scope:giver
-			recipient = scope:owner
-			location = province:6620
-		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
-		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
-	}
-}
-
-create_artifact_glass_candle_green_effect = {
-	# Get the character the artifact is being made for.
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = artifact_glass_candle_name
-		description = artifact_glass_candle_desc
-		template = general_unique_template
-		type = glass_candle
-		visuals = glass_candle_green
-		wealth = 20
-		quality = 20
-		history = {
-			type = discovered
-			actor = scope:giver
-			recipient = scope:owner
-			location = province:6620
-		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
-		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
-	}
-}
-
-create_artifact_glass_candle_red_effect = {
-	# Get the character the artifact is being made for.
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = artifact_glass_candle_name
-		description = artifact_glass_candle_desc
-		template = general_unique_template
-		type = glass_candle
-		visuals = glass_candle_red
-		wealth = 20
-		quality = 20
-		history = {
-			type = discovered
-			actor = scope:giver
-			recipient = scope:owner
-			location = province:6620
-		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
-		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
-	}
-}
-
-create_artifact_glass_candle_purple_effect = {
-	# Get the character the artifact is being made for.
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = artifact_glass_candle_name
-		description = artifact_glass_candle_desc
-		template = general_unique_template
-		type = glass_candle
-		visuals = glass_candle_purple
-		wealth = 20
-		quality = 20
-		history = {
-			type = discovered
-			actor = scope:giver
-			recipient = scope:owner
-			location = province:6620
-		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
-		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
-	}
-}
-
-create_artifact_glass_candle_white_effect = {
-	# Get the character the artifact is being made for.
-	# Not really used, but if we don't set the scopes we get errors in the feature selection
-	set_artifact_rarity_illustrious = yes
-
-	# Create the artifact
-	create_artifact = {
-		name = artifact_glass_candle_name
-		description = artifact_glass_candle_desc
-		template = general_unique_template
-		type = glass_candle
-		visuals = glass_candle_white
-		wealth = 20
-		quality = 20
-		history = {
-			type = discovered
-			actor = scope:giver
-			recipient = scope:owner
-			location = province:6620
-		}
-		modifier = artifact_court_grandeur_baseline_add_1_modifier
-		save_scope_as = newly_created_artifact
-		decaying = no
-	}
-	scope:newly_created_artifact = {
-		hidden_effect = {
-			get_random_artifact_modifier_misc_low_effect = yes
-		}
-		set_variable = { name = historical_unique_artifact value = yes }
-		save_scope_as = epic
-	}
-}
 get_random_glass_candle_artifact = {
 	$OWNER$ = { save_scope_as = owner }
 	$GIVER$ = { save_scope_as = giver }
 	random_list = {
 		1 = {
-			create_artifact_glass_candle_white_effect = yes
+			create_artifact_glass_candle_effect = { 
+				COLOR = white
+			}
 		}
 		1 = {
-			create_artifact_glass_candle_purple_effect = yes
+			create_artifact_glass_candle_effect = {
+				COLOR = purple
+			}
 		}
 		1 = {
-			create_artifact_glass_candle_red_effect = yes
+			create_artifact_glass_candle_effect = {
+				COLOR = red
+			}
 		}
 		1 = {
-			create_artifact_glass_candle_black_effect = yes
+			create_artifact_glass_candle_effect = {
+				COLOR = black	
+			}
 		}
 		1 = {
-			create_artifact_glass_candle_blue_effect = yes
+			create_artifact_glass_candle_effect = {
+				COLOR = blue	
+			}
 		}
 		1 = {
-			create_artifact_glass_candle_green_effect = yes
+			create_artifact_glass_candle_effect = {
+				COLOR = green
+			}
 		}
 	}
 }

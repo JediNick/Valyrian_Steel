@@ -26,3 +26,25 @@
 
  artifact_vs_halberd_name:0 "Valyrian Steel Halberd"
  artifact_vs_halberd_description:1 "This Halberd was discovered during a voyage to Old Valyria. It is one of the few remaining Valyrian Steel weapons, which draws respect and intrigue, as well as enormous jealousy from those who lay their eyes upon it.\n\nThe Halberd pole is made of a black colored wood, and the weapon is made of Valyrian Steel, which still retains the sharp edge from the day it was crafted long ago"
+
+ artifact_dragon_horn_name:0 "Dragon Horn"
+
+ dragon_horn_desc:0 "An ancient dragon horn crafted from the horn of a mighty dragon, this relic is imbued with the essence and power of its legendary origin. The horn’s surface is intricately etched with Valyrian glyphs, hinting at the potent magic within. \n\n#COLOR:{1.0,1.0,1.0};FONT:ValyrianGlyphsFont;SIZE:20 ;Mc:ÆÊU;#!\n"
+
+ dragon_horn_end_desc:0 "\n\nAccording to some, dragon horns can be used for taming ancient beasts..."
+ dragon_horn_silver_desc:0 "$dragon_horn_desc$\nThis horn shines with a soft silver metal with a pale white trim. $dragon_horn_end_desc$"
+ dragon_horn_black_desc:0 "$dragon_horn_desc$\nThis horn features a sleek, polished surface that exudes a sense of dark elegance and formidable power. $dragon_horn_end_desc$"
+ dragon_horn_red_desc:0 "$dragon_horn_desc$\nThis horn is constructed with striking red metal inlays and trim, creating a dramatic contrast that accentuates its formidable presence. $dragon_horn_end_desc$"
+ dragon_horn_brown_desc:0 "$dragon_horn_desc$\nThis horn features a rich, textured surface with natural grain patterns, accented by vibrant orange trim that highlights its warm beauty. $dragon_horn_end_desc$"
+ dragon_horn_blackGold_desc:0 "$dragon_horn_desc$\nThis horn was crafted from a dragon's dark horn, and features a sleek, ebony surface accented with intricate golden trim that highlights its majestic and powerful appearance. $dragon_horn_end_desc$"
+ dragon_horn_tan_desc:0 "$dragon_horn_desc$\nThis horn has a smooth, sandy-colored surface with subtle natural striations and a warm, earthy glow. $dragon_horn_end_desc$"
+
+artifact_dragon_whip:0 "Dragon Whip"
+artifact_dragon_whip_desc:0 "A Dragon Whip of Old Valyria is a fearsome artifact, forged in the fires of the Fourteen Flames. Made from a rare metals and and dragon leather, this whip was a tool of domination, used by the dragonlords to command and tame their majestic beasts. The whip's lash, lined with tiny, razor-sharp scales, could cut through the thickest of hides, leaving a trail of shimmering silver sparks in its wake. This relic is a reminder of the might and mastery the Valyrians held over their draconic allies.\n\nIn the right hands, such a tool could prove useful in taming a dragon..."
+
+artifact_valyrian_book:0 "Valyrian Book"
+valyrian_book_desc:0 "An ancient Valyrian book, bound in leather, is a relic from the lost civilization. The pages, delicate and aged, are inscribed with cryptic glyphs and arcane knowledge. This tome is said to contain powerful spells, dragon lore, and secrets of the Valyrian steel, making it a coveted artifact for scholars and sorcerers alike.\n\nIt is said that ancient Dragonlore can be learned through books such as this one..."
+
+artifact_vs_goblet_name:0 "Valyrian Steel Goblet"
+artifact_vs_goblet:0 "Valyrian Steel Goblet"
+artifact_vs_goblet_description:0 "A Valyrian steel cup, forged in the fires of ancient Valyria, gleams with an otherworldly sheen. The cup's surface is etched with intricate patterns resembling dragon scales, and it feels both light and indestructible in hand. Its edges are smooth yet sharp, a testament to the legendary craftsmanship that created it.\n\nThere is enough Valyrian Steel within the cup that it could be smelted down and reforged...with the right smith."

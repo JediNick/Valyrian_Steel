@@ -1,0 +1,169 @@
+﻿# First bond modifier
+custom_bonding_scheme_modifier = {
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_low_add_1
+			}
+		}
+		add = 10
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_low_add_1
+			}
+		}
+		add = 15
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_low_add_1
+			}
+		}
+		add = 20
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_low_add_1
+			}
+		}
+		add = 25
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_mid_add_2
+			}
+		}
+		add = 30
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_mid_add_3
+			}
+		}
+		add = 35
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_mid_add_1
+			}
+		}
+		add = 40
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_high_add_2
+			}
+		}
+		add = 45
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_high_add_3
+			}
+		}
+		add = 50
+		desc = scheme_dragon_horn
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_bond_enchanted
+			}
+		}
+		add = 15
+		desc = scheme_dragon_horn_enchanted
+	}
+
+	##Whip
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_whip_add_1
+			}
+		}
+		add = 10
+		desc = scheme_dragon_whip
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_whip_add_2
+			}
+		}
+		add = 15
+		desc = scheme_dragon_whip
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_whip_add_3
+			}
+		}
+		add = 20
+		desc = scheme_dragon_whip
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_dragon_whip_add_4
+			}
+		}
+		add = 25
+		desc = scheme_dragon_whip
+	}
+	##Book
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_valyrian_book_add_1
+			}
+		}
+		add = 12
+		desc = scheme_valyrian_book
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_valyrian_book_add_2
+			}
+		}
+		add = 16
+		desc = scheme_valyrian_book
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_valyrian_book_add_3
+			}
+		}
+		add = 20
+		desc = scheme_valyrian_book
+	}
+	modifier = {
+		scope:owner = { 
+			any_equipped_character_artifact = {
+				has_artifact_modifier = artifact_valyrian_book_add_4
+			}
+		}
+		add = 40
+		desc = scheme_valyrian_book
+	}
+}
+

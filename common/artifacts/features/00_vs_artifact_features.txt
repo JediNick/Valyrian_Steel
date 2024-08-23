@@ -1,0 +1,23 @@
+﻿dragon_whip_black = {
+    group = dragon_whip_color
+    trigger = {
+        scope:whip_color = flag:black
+    }
+    weight = 1
+}
+
+dragon_whip_silver = {
+    group = dragon_whip_color
+    trigger = {
+        scope:whip_color = flag:silver
+    }
+    weight = 1
+}
+
+dragon_whip_bronze = {
+    group = dragon_whip_color
+    trigger = {
+        scope:whip_color = flag:bronze
+    }
+    weight = 1
+}

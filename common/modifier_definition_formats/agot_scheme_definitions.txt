@@ -1,0 +1,18 @@
+﻿bond_with_dragon_scheme_scheme_power_add = {
+	prefix = DRAGON_PREFIX
+	decimals = 0
+}
+
+bond_with_dragon_scheme_scheme_power_mult = {
+	decimals = 0
+	percent = yes
+}
+
+deepen_bond_with_dragon_scheme_scheme_power_add = {
+	decimals = 0
+}
+
+deepen_bond_with_dragon_scheme_scheme_power_mult = {
+	decimals = 0
+	percent = yes
+}

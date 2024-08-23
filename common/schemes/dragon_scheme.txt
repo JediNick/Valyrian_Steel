@@ -1,0 +1,288 @@
+﻿bond_with_dragon_scheme = {
+	skill = diplomacy
+	desc = bond_with_dragon_scheme_desc
+	icon = icon_scheme_dragon
+
+	allow = {
+		can_use_bond_with_dragon_scheme = { TARGET = scope:target }
+		age >= 6
+		is_imprisoned = no
+		scope:target = {
+			age >= 6
+			is_imprisoned = no
+		}
+	}
+	uses_agents = no
+	is_secret = no
+	hostile = no
+	uses_resistance = no
+
+	power_per_skill_point = 4.0
+	resistance_per_skill_point = 0
+	spymaster_resistance_per_skill_point = 0
+	minimum_progress_chance = 1
+	maximum_progress_chance = 95
+	minimum_success = 0
+	maximum_success = 99
+
+	valid = {
+		scope:owner = { # The owner can't be bonded with a dragon
+			any_relation = {
+				type = agot_dragon
+				count = 0
+			}
+			NOT = { has_trait = dragonwidowed }
+		}
+		scope:target = {
+			has_trait = dragon
+			any_relation = { # The target can't be bonded with a human
+				type = agot_dragon
+				count = 0
+			}
+		}
+
+		agot_can_tame_or_bond_or_etc_with_pitted_dragons = {
+			DRAGON = scope:target ACTOR = scope:owner
+		}
+
+	}
+
+	cooldown = { years = 5 }
+
+	on_ready = {
+		scheme_owner = {
+			trigger_event = dragon_bond_events.0001 # Roll % Event
+		}
+	}
+
+	base_success_chance = {
+		base = 0
+		agot_dragon_bonding_scheme_modifier = yes
+		custom_bonding_scheme_modifier = yes
+	}
+
+	on_invalidated = {
+		scheme_target = { save_scope_as = target }
+		scheme_owner = { save_scope_as = owner}
+		if = {
+			limit = {
+				scope:target = { is_alive = no }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = bond_with_dragon_scheme_invalidated_dead
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = { 
+					NOT = { in_diplomatic_range = scope:owner } 
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_description_no_bullet = {
+						object = scope:target
+						text = scheme_target_not_in_diplomatic_range
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = {
+					any_relation = { # It's bonded with someone else
+						type = agot_dragon
+						count = 1
+					}
+					NOT = { # And it's not the owner of the scheme
+						any_relation = {
+							type = agot_dragon
+							this = scope:owner
+						}
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = bond_with_dragon_scheme_invalidated_bonded_someone_else
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = {
+					has_character_flag = in_dragonpit
+					has_variable = pitted_dragon_location
+				}
+				scope:target.var:pitted_dragon_location.holder = {
+					has_realm_law = dragonpit_close_family_law
+				}
+				NOT = {
+					scope:owner = {
+						is_close_family_of = scope:target.var:pitted_dragon_location.holder
+					}
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = bond_with_dragon_scheme_invalidated_dragonpit_law_close_family
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = {
+					has_character_flag = in_dragonpit
+					has_variable = pitted_dragon_location
+				}
+				scope:target.var:pitted_dragon_location.holder = {
+					has_realm_law = dragonpit_house_law
+				}
+				NOT = { scope:owner.house = scope:target.var:pitted_dragon_location.holder.house }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = bond_with_dragon_scheme_invalidated_dragonpit_law_house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = {
+					has_character_flag = in_dragonpit
+					has_variable = pitted_dragon_location
+				}
+				scope:target.var:pitted_dragon_location.holder = {
+					has_realm_law = dragonpit_dynasty_law
+				}
+				NOT = { scope:owner.dynasty = scope:target.var:pitted_dragon_location.holder.dynasty }
+				
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = bond_with_dragon_scheme_invalidated_dragonpit_law_dynasty
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		save_scope_as = scheme
+		scheme_target = { save_scope_as = target }
+		scheme_owner = { save_scope_as = owner }
+		scheme_owner = {
+			trigger_event = { on_action = dragon_bonding_ongoing }
+		}
+	}
+
+	success_desc = "BOND_DRAGON_SUCCESS_DESC"
+}
+
+deepen_bond_with_dragon_scheme = {
+	skill = diplomacy
+	desc = deepen_bond_with_dragon_scheme_desc
+	icon = icon_scheme_dragon
+
+	allow = {
+		can_use_deepen_bond_with_dragon_scheme = { TARGET = scope:target }
+		age >= 6
+		is_imprisoned = no
+		scope:target = {
+			age >= 6
+			is_imprisoned = no
+		}
+	}
+	uses_agents = no
+	is_secret = no
+	hostile = no
+	uses_resistance = no
+
+	power_per_skill_point = 6.0
+	resistance_per_skill_point = 0
+	spymaster_resistance_per_skill_point = 0
+	minimum_progress_chance = 1
+	maximum_progress_chance = 95
+
+	valid = {
+		has_relation_agot_dragon = scope:target
+		scope:target = {
+			has_trait = dragon
+		}
+	}
+
+	cooldown = { years = 2 }
+
+	on_ready = {
+		scheme_owner = {
+			trigger_event = dragon_bond_events.2000
+		}
+	}
+
+	base_success_chance = {
+		base = 0
+		agot_dragon_deepen_bonding_scheme_modifier = yes
+	}
+
+	on_invalidated = {
+		scheme_target = {
+			save_scope_as = target
+		}
+		scheme_owner = {
+			save_scope_as = owner
+		}
+		if = {
+			limit = {
+				scope:target = { is_alive = no }
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = deepen_bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_tooltip = deepen_bond_with_dragon_scheme_invalidated_dead
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target = { 
+					NOT = { in_diplomatic_range = scope:owner } 
+				}
+			}
+			scope:owner = {
+				send_interface_toast = {
+					title = deepen_bond_with_dragon_scheme_invalidated_title
+					left_icon = scope:target
+					custom_description_no_bullet = {
+						object = scope:target
+						text = scheme_target_not_in_diplomatic_range
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		save_scope_as = scheme
+		scheme_target = { save_scope_as = target }
+		scheme_owner = { save_scope_as = owner }
+		scheme_owner = {
+			trigger_event = { on_action = dragon_strengthen_bonding_ongoing }
+		}
+	}
+
+	success_desc = "DEEPEN_BOND_DRAGON_SUCCESS_DESC"
+}

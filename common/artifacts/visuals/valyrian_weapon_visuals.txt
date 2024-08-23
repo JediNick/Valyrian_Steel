@@ -140,3 +140,11 @@ vs_axe_court = {
 		reference = vs_axe_a_entity
 	}
 }
+
+vs_goblet = {
+	icon = "artifact_vs_cup.dds"
+	pedestal = "tall"
+	asset = {
+		reference = valyrianCup_court_entity
+	}
+}

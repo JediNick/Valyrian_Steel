@@ -1,0 +1,62 @@
+pdxmesh = {
+	name = "valyrianWhip_bronze_mesh"
+	file = "valyrianWhip.mesh"
+
+
+	meshsettings = {
+		name = "valyrianWhip"
+		index = 0
+		texture_diffuse = "valyrianWhip_bronze_diffuse.dds"
+		texture_normal = "valyrianWhip_normal.dds"
+		texture_specular = "valyrianWhip_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "valyrianWhip_bronze_entity"
+	pdxmesh = "valyrianWhip_bronze_mesh"
+}
+
+pdxmesh = {
+	name = "valyrianWhip_silver_mesh"
+	file = "valyrianWhip.mesh"
+
+
+	meshsettings = {
+		name = "valyrianWhip"
+		index = 0
+		texture_diffuse = "valyrianWhip_silver_diffuse.dds"
+		texture_normal = "valyrianWhip_normal.dds"
+		texture_specular = "valyrianWhip_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "valyrianWhip_silver_entity"
+	pdxmesh = "valyrianWhip_silver_mesh"
+}
+
+pdxmesh = {
+	name = "valyrianWhip_black_mesh"
+	file = "valyrianWhip.mesh"
+
+
+	meshsettings = {
+		name = "valyrianWhip"
+		index = 0
+		texture_diffuse = "valyrianWhip_black_diffuse.dds"
+		texture_normal = "valyrianWhip_normal.dds"
+		texture_specular = "valyrianWhip_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "valyrianWhip_black_entity"
+	pdxmesh = "valyrianWhip_black_mesh"
+}

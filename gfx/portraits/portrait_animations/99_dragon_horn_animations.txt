@@ -1,0 +1,2381 @@
+﻿dragon_horn_black_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_black_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_black_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_black_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_tan_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_tan_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_tan_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_tan_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_silver_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_silver_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_silver_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_silver_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_red_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_red_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_red_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_red_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_blackGold_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_blackGold_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_blackGold_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_blackGold_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_brown_1 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_brown_2 = {
+	male = { 
+		default = { head = "council_spymaster" torso = "council_spymaster" } 
+
+		throneRoom_one_handed_passive_1_basic = {
+			animation = { head = "council_spymaster" torso = "council_spymaster" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }					
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 40
+						NOT = { has_trait = dwarf }
+						NOT = { has_trait = pregnant }		
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 50
+						has_trait = dwarf
+						NOT = { has_trait = pregnant }						
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 45
+						has_trait = pregnant
+						NOT = { has_trait = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight < 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+
+		throneRoom_one_handed_passive_1_pregnant_fat_dwarf = {
+			animation = { head = "council_spymaster" torso = "council_spymasterFatDwarf" }
+
+			weight = {
+				base = 0
+
+				modifier = {
+					add = 100
+					AND = {
+						current_weight > 60
+						has_trait = pregnant
+						has_trait = dwarf
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_right_prop
+				animations = council_spymaster_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}
+
+dragon_horn_brown_3 = {
+	male = { 
+		default = { head = "hunting_horn_entry" torso = "hunting_horn_entry" } 
+
+		hunting_horn = {
+			animation = { head = "hunting_horn_entry" torso = "hunting_horn_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						NOT = { portrait_has_trait_trigger = { TRAIT = pregnant } }             
+					}
+				}
+			}
+			portrait_modifier = {
+				animations_props = artifact_dragon_horn_brown_glow_prop
+				animations = fat_additive
+				animations = dwarf_additive
+            	animations = female_prop_fix_additive
+			}
+		}
+
+		hunting_horn_pregnant = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnant_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						NOT = { portrait_has_trait_trigger = { TRAIT = dwarf } }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFat_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight < 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+
+		hunting_horn_pregnant_fat_dwarf = {
+			animation = { head = "misc_pregnant_entry" torso = "misc_pregnantFatDwarf_entry" }
+			weight = {
+				base = 0
+				modifier = {
+					add = 100
+					AND = {
+						scope:current_weight >= 60
+						portrait_has_trait_trigger = { TRAIT = pregnant }
+						portrait_has_trait_trigger = { TRAIT = dwarf }
+					}					
+				}
+			}
+			portrait_modifier = {
+				animations = emotion_happy_decal
+			}
+		}
+	}
+
+	female = male
+	girl = male
+	boy = male
+}

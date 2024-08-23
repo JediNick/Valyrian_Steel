@@ -1,0 +1,290 @@
+pdxmesh = {
+	name = "dragon_horn_black_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_red_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackRedHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_brown_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "brownHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_tan_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "tanHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "dragon_horn_tan_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_blackGold_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackGoldHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_silver_court"
+	file = "dragon_horn_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "silverHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+entity = {
+	name = "dragon_horn_black_court_entity"
+	pdxmesh = "dragon_horn_black_court"
+}
+
+entity = {
+	name = "dragon_horn_red_court_entity"
+	pdxmesh = "dragon_horn_red_court"
+}
+
+entity = {
+	name = "dragon_horn_brown_court_entity"
+	pdxmesh = "dragon_horn_brown_court"
+}
+
+entity = {
+	name = "dragon_horn_tan_court_entity"
+	pdxmesh = "dragon_horn_tan_court"
+}
+
+entity = {
+	name = "dragon_horn_blackGold_court_entity"
+	pdxmesh = "dragon_horn_blackGold_court"
+}
+
+entity = {
+	name = "dragon_horn_silver_court_entity"
+	pdxmesh = "dragon_horn_silver_court"
+}
+
+
+pdxmesh = {
+	name = "dragon_horn_black_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_red_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackRedHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_brown_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "brownHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_tan_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "tanHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "dragon_horn_tan_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_blackgold_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackGoldHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_silver_glow_court"
+	file = "dragon_horn_glow_court.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "silverHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "dragon_horn_black_glow_court_entity"
+	pdxmesh = "dragon_horn_black_glow_court"
+}
+
+entity = {
+	name = "dragon_horn_red_glow_court_entity"
+	pdxmesh = "dragon_horn_red_glow_court"
+}
+
+entity = {
+	name = "dragon_horn_brown_glow_court_entity"
+	pdxmesh = "dragon_horn_brown_glow_court"
+}
+
+entity = {
+	name = "dragon_horn_tan_glow_court_entity"
+	pdxmesh = "dragon_horn_tan_glow_court"
+}
+
+entity = {
+	name = "dragon_horn_blackGold_glow_court_entity"
+	pdxmesh = "dragon_horn_blackgold_glow_court"
+}
+
+entity = {
+	name = "dragon_horn_silver_glow_court_entity"
+	pdxmesh = "dragon_horn_silver_glow_court"
+}

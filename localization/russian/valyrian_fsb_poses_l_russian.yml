@@ -1,8 +1,4 @@
 ﻿l_russian:
- seafoam_poses_list_name:0 "Морская пена"
- calamity_poses_list_name:0 "Бедствие"
- subterfuge_poses_list_name:0 "Уловка"
- darksister_poses_list_name:0 "Тёмная сестра"
  dragon_eggs_poses_list_name:0 "Драконьи яйца"
 
  vs_sword_1_poses_list_name:0 "Меч из валирийской стали (Вариант 1)"
@@ -12,9 +8,6 @@
  vs_mace_poses_list_name:0 "Булава из валирийской стали"
  vs_spear_1_poses_list_name:0 "Копье из валирийской стали"
  vs_axe_poses_list_name:0 "Топор из валирийской стали"
- 
- orys_hammer_poses_list_name:0 "Ярость"
- aegon_dagger_poses_list_name:0 "Кинжал Эйгона"
  
  vs_dagger_1_poses_list_name:0 "Кинжал из валирийской стали"
 
@@ -77,16 +70,6 @@
  valyrian_invasion_vs_axe_1_name:0 "Топор внизу"
  valyrian_invasion_vs_axe_2_name:0 "Топор на дуэли"
  valyrian_invasion_vs_axe_3_name:0 "Празднование с топором"
- 
- valyrian_invasion_orys_hammer_1_name:0 "Ярость внизу"
- valyrian_invasion_orys_hammer_2_name:0 "Ярость на плече"
- valyrian_invasion_orys_hammer_3_name:0 "Ярость на дуэли"
- 
- valyrian_invasion_aegon_dagger_1_name:0 "Кинжал Эйгона тайный советник"
- valyrian_invasion_aegon_dagger_2_name:0 "Кинжал Эйгона на дуэли"
- valyrian_invasion_aegon_dagger_3_name:0 "Кинжал Эйгона убийца"
- valyrian_invasion_aegon_dagger_glow_1_name:0 "Пророчество о кинжале Эйгона"
-
   
  valyrian_invasion_vs_dagger_1_1_name:0 "Кинжал тайный советник"
  valyrian_invasion_vs_dagger_1_2_name:0 "Кинжал на дуэли"

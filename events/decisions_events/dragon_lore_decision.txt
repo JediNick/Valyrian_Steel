@@ -1,0 +1,27 @@
+﻿namespace = research_dragonlore
+
+#activate the horn
+research_dragonlore.0001 = {
+	type = character_event
+	title = research_dragonlore_0001_t
+	desc = research_dragonlore_0001_desc
+
+	theme = crown
+	override_background = study
+
+	left_portrait = {
+		character = root
+		animation = valyrian_page_flipping
+	}
+
+	immediate = {
+		add_character_modifier = {
+			modifier = agot_taught_dragonlore
+			years = 15
+		}
+	}
+
+	option = {
+		name = research_dragonlore.a
+	}
+}

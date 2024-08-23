@@ -1,0 +1,64 @@
+﻿dragon_horn_black = {
+	icon = "artifact_horn_2.dds"
+	pedestal = "tall"
+	asset = dragon_horn_black_court_entity
+}
+dragon_horn_red = {
+	icon = "artifact_horn_3.dds"
+	pedestal = "tall"
+	asset = dragon_horn_red_court_entity
+}
+dragon_horn_tan = {
+	icon = "artifact_horn_6.dds"
+	pedestal = "tall"
+	asset = dragon_horn_tan_court_entity
+}
+dragon_horn_blackGold = {
+	icon = "artifact_horn_1.dds"
+	pedestal = "tall"
+	asset = dragon_horn_blackGold_court_entity
+}
+dragon_horn_brown = {
+	icon = "artifact_horn_4.dds"
+	pedestal = "tall"
+	asset = dragon_horn_brown_court_entity
+}
+dragon_horn_silver = {
+	icon = "artifact_horn_5.dds"
+	pedestal = "tall"
+	asset = dragon_horn_silver_court_entity
+}
+
+
+
+
+dragon_horn_black_glow = {
+	icon = "artifact_horn_2_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_black_glow_court_entity
+}
+dragon_horn_red_glow = {
+	icon = "artifact_horn_3_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_red_glow_court_entity
+}
+dragon_horn_tan_glow = {
+	icon = "artifact_horn_6_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_tan_glow_court_entity
+}
+dragon_horn_blackGold_glow = {
+	icon = "artifact_horn_1_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_blackGold_glow_court_entity
+}
+dragon_horn_brown_glow = {
+	icon = "artifact_horn_4_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_brown_glow_court_entity
+}
+dragon_horn_silver_glow = {
+	icon = "artifact_horn_5_glow.dds"
+	pedestal = "tall"
+	asset = dragon_horn_silver_glow_court_entity
+}

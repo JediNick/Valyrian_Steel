@@ -8,6 +8,7 @@
  voyage_illness_warning:0 "@warning_icon! #X It is dangerous to voyage while [GetTrait('ill').GetName( GetPlayer )]#!"
  
  game_concept_voyage:0 "Voyage"
+ game_concept_voyages:0 "Voyages"
  game_concept_voyage_desc:0 "A voyage to Valyria is a dangerous yet rewarding risk that Valyrian characters can undertake. It is the only remaining way to acquire new Valyrian steel and Dragon eggs."
 
 
@@ -93,6 +94,121 @@ fund_expedition_0010.a:0 "Oh? What have you brought me?"
 funded_my_expedition:0 "Funded expedition"
 
 
-  sea_province_023:0 "Old Valyria"
+fund_expedition_0012_t:0 "A remnant of Old Valyria"
+fund_expedition_0012_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]! As you take the whip, you feel a surge of connection to the ancient dragonlords, a sense of awe at holding such a potent piece of history.
 
-  impassable_sea_2:0 "Old Valyria"
+
+
+
+
+fund_expedition_0012_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]!\n\n"A Dragon whip once wielded by an ancient Dragon Lord. May it serve you well." [choice.GetSheHe|U] says.\n\nAs you take the whip, you feel a surge of connection to the ancient dragonlords, a sense of awe at holding such a potent piece of history."
+
+
+fund_expedition_0013_t:0 "Knowledge from Old Valyria"
+fund_expedition_0013_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]! Ancient and long lost knowlege in the forms of Valyrian script line the pages...\n\nPerhaps you could gleam the ways of ancient Dragonlords from these pages?"
+
+fund_expedition_0013_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]! Ancient and long lost knowlege in the forms of Valyrian script line the pages...\n\nPerhaps you could gleam the ways of ancient Dragonlords from these pages?"
+
+
+fund_expedition_0014_t:0 "Good things come in small packages..."
+fund_expedition_0014_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]! The cup, though finely made, lacks the awe-inspiring presence one might have hoped for—a simple drinking vessel instead of a legendary weapon or powerful artifact. The layered surface, though impressive, feels underwhelming compared to the dangerous ruins that were ventured through to retrieve it...\n\nIt seems as if with the right smith this cup could be reforged into a greater item..."
+
+fund_expedition_0014_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]! The cup, though finely made, lacks the awe-inspiring presence one might have hoped for—a simple drinking vessel instead of a legendary weapon or powerful artifact. The layered surface, though impressive, feels underwhelming compared to the dangerous ruins that were ventured through to retrieve it.\n\nIt seems as if with the right smith this cup could be reforged into a greater item..."
+fund_expedition_0014.a:0 "Interesting..."
+
+sea_province_023:0 "Old Valyria"
+
+impassable_sea_2:0 "Old Valyria"
+ 
+ 
+ 
+ 
+is_dragon_blood:0 "Has [Concept('dragonblood','Dragonblood')|E]."
+ 
+bond_with_dragon_scheme_scheme_power_add:0 "Dragon Horn Bond/Tame Chance"
+
+DEBUG_I_HAVE_MORE_GOLD_TRIGGER:0 "Not enough gold"
+
+fund_expedition_0011_t:0 "A power man should never have trifled with..."
+
+fund_expedition_0011_alt_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]!\n\nDragon horns are ancient devices used by the Dragon Lords of Old Valyria.\n\nWith some strange sorcery such an item could help to tame a Dragon...or so the legends say.\n\nAncient glpyhs decorate the horn.\n\n#COLOR:{1.0,1.0,1.0};FONT:ValyrianGlyphsFont;SIZE:20 ;Mc:ÆÊU;#!\n\nHowever their meanings seem lost to time..."
+
+fund_expedition_0011_valyrian_desc:0 "[choice.GetFirstName] slowly opens the box and pulls out the artifact. [choice.GetSheHe|U] hands me a [newly_created_artifact.GetName]!\n\nDragon horns are ancient devices used by the Dragon Lords of Old Valyria.\n\nWith some strange sorcery such an item could help to tame a Dragon...or so the legends say.\n\nAncient glpyhs decorate the horn.\n\n#COLOR:{1.0,1.0,1.0};FONT:ValyrianGlyphsFont;SIZE:20 ;Mc:ÆÊU;#!\n\n"All Dragons Must Serve" "
+
+fund_expedition_0011_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]!\n\nDragon horns are ancient devices used by the Dragon Lords of Old Valyria.\n\nWith some strange sorcery such an item could help to tame a Dragon...or so the legends say.\n\nAncient glpyhs decorate the horn.\n\n#COLOR:{1.0,1.0,1.0};FONT:ValyrianGlyphsFont;SIZE:20 ;Mc:ÆÊU;#!\n\nHowever their meanings seem lost to time..."
+
+fund_expedition_0011_valyrian_alt_desc:0 "One of the crew members approaches me afterward and brings me to a box that [choice.GetFirstName] had set aside for me. I open the box to discover a [newly_created_artifact.GetName]!\n\nDragon horns are ancient devices used by the Dragon Lords of Old Valyria.\n\nWith some strange sorcery such an item could help to tame a Dragon...or so the legends say.\n\n#COLOR:{1.0,1.0,1.0};FONT:ValyrianGlyphsFont;SIZE:20 ;Mc:ÆÊU;#!\n\n"All Dragons Must Serve""
+
+fund_expedition_0011.a:0 "Such power..."
+
+fund_expedition_00021.a:0 "Find me a Dragon Egg..."
+fund_expedition_00021.b:0 "Bring me a weapon of Valyrian Steel..."
+fund_expedition_00021.c:0 "Bring back a Trinket..."
+fund_expedition_00021.d:0 "Anything will do..."
+fund_expedition_00021.e:0 "Nevermind, cancel the trip..."
+
+fund_expedition.00021.tt.a:0 "For 200 Gold [choice.GetFirstName] will focus on finding Dragon Eggs"
+fund_expedition.00021.tt.b:0 "For 200 Gold [choice.GetFirstName] will focus on finding Valyrian Steel Weapons"
+fund_expedition.00021.tt.c:0 "For 100 Gold [choice.GetFirstName] will focus on finding Minor Trinkets"
+fund_expedition.00021.tt.d:0 "[choice.GetFirstName] will focus on finding Dragon Eggs at no additional cost"
+
+
+enchant_dragon_horn:0 "Enchant Dragon Horn"
+enchant_dragon_horn_desc:0 "With a bit of my own blood I could unlock the full potential of this Dragon Horn."
+enchant_dragon_horn_confirm:0 "Lets begin..."
+enchant_dragon_horn_tt:0 "Unlock the secrets within this Dragon Horn"
+
+enchant_dragon_horn_tooltip:0 "Enchanting this Dragon Horn will allow you to perform a ritual using the horn at a later date."
+enchant_dragon_horn_tooltip_2:0 "An enchanted Dragon Horn will slowly wittle away at your health. Beware."
+
+dragon_horn_decision_0001_t:0 "The Dragon Horn comes to life..."
+dragon_horn_decision.a:0 "I will proceed."
+dragon_horn_decision.b:0 "I can feel its power..."
+dragon_horn_decision.c:0 "I feel its power fade..."
+
+dragon_horn_decision.0001.a: "Perhaps another time..."
+dragon_horn_decision_0001_desc: "Stories of Old Valyria tell of Dragon Horns with great power...the ability to tame a Dragon...\n\n The horn I possess cannot do such things...yet.\n\nWith a offering of my own blood, the full potential of this Horn can be unlocked...However I suspect that such a powerful artifact will have unintended side effects..."
+dragon_horn_decision.a.tt:0 "This Dragon Horn can now be binded using a blood sacrifice."
+dragon_horn_decision.c.tt:0 "This Dragon Horn can no longer be binded using a blood sacrifice."
+
+dragon_horn_decision_0002_desc: "I slowly cut across my hand with a knife, my blood drips into the Dragon Horn...\n\nMoments later the glyphs on the horn glow to life.\n\nIt is done.\n\nI now wield the power to tame a beast..."
+
+un_enchant_dragon_horn:0 "Un Enchant Dragon Horn"
+un_enchant_dragon_horn_desc:0 "The burden of carrying a Dragon Horn is heavy...however there are reportedly ways to reduce its effect on those it is near."
+
+un_enchant_dragon_horn_tooltip:0 "The enchantment benefits and penalties will be removed"
+un_enchant_dragon_horn_tooltip_2:0 "The Dragon Horn will no longer be able to be used in the binding ritual."
+
+un_enchant_dragon_horn_confirm:0 "Let me be rid of this cursed artifact..."
+un_enchant_dragon_horn_tt:0 "The enchantment benefits and penalties will be removed, and the horn will no longer be able to be used in the binding ritual."
+
+dragon_horn_decision_0003_desc: "Thankfully, the process to unenchant the Dragon Horn is easy enough...With enough reading and research I am able to release the power within the Dragon Horn...\n\nIts effects will no longer impact my health.\n\nAnd its power greatly diminished."
+dragon_horn_decision_0003_t: "Lifting the burden"
+
+
+artifact_dragon_horn_inactive: 0 "Dragon Horn"
+
+
+hire_master_smith_decision:0 "Hire Master Blacksmith"
+hire_master_smith_decision_desc:0 "Long has the knowledge of how to rework Valyrian Steel been lost...however it is said that the master smiths of Qohor can still work the steel."
+
+hire_master_smith_effect_tooltip:0 "A Master Blacksmith from Qohor will be appointed as your Court Smith."
+hire_master_smith_decision_confirm:0 "Find me one of these 'Master Smiths'"
+hire_master_smith_tooltip:0 "Find a master smith capable of forging Valyrian Steel"
+
+hire_master_smith.0001.t:0 "A Master Smith of Qohor"
+hire_master_smith.0001_desc:0 "[smith.GetFirstName] is brought before me. With [smith.GetHerHim] is an assortment of various weapons and trinkets [smith.GetSheHe] has forged over the years...\n\nThe craftmanship leaves little doubt in my mind that [smith.GetFirstName] is what I need.\n\nI ask [smith.GetHerHim] if he is familiar with working Valyrian Steel.\n\n"Yes my [ROOT.Char.GetLadyLord], I can work it into anything you desire...If you have the material of course." "
+hire_master_smith.0001.a:0 "I need a master smith in my court"
+hire_master_smith.0001.b:0 "Perhaps another time..."
+hire_master_smith.0001.tt:0 "You will be able to reforge Valyrian Steel"
+
+research_dragonlore_decision:0 "Research Dragonlore"
+research_dragonlore_decision_desc:0 "Much can be learned from the text within your Valyrian Book...Perhaps knowledge of Dragons can be rediscovered?"
+
+research_dragonlore_effect_tooltip:0 "You will learn Dragonlore that has been lost to time."
+research_dragonlore_tooltip:0 "You will learn Dragonlore."
+research_dragonlore_decision_confirm:0 "Lets see what I can find..."
+
+research_dragonlore_0001_t:0 "Long Lost Knowledge"
+research_dragonlore_0001_desc:0 "A portion of the book is dedicated to the study of a bond between Dragonrider and Dragon. Such a bond sacred bond forged between rider and dragon is not merely one of dominance but of mutual respect and understanding. The rider was required to undergo intense preparation, learning the ways of the dragon's mind, the nuances of its temperament.\n\nOnly then could they attempt the first flight together, a perilous and exhilarating test that either sealed their fates together or ended in tragedy."
+research_dragonlore.a:0 "Interesting..."

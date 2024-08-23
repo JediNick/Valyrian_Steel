@@ -1,0 +1,5 @@
+﻿valyrian_book = {
+	icon = "artifact_valyrian_book.dds"
+	pedestal = "tall"
+	asset = valyrian_book_closed_court_entity
+}

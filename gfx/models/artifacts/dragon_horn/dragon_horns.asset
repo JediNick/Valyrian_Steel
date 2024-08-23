@@ -1,0 +1,468 @@
+pdxmesh = {
+	name = "dragon_horn_black"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_red"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackRedHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_brown"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "brownHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_tan"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "tanHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "dragon_horn_tan_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_blackGold"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackGoldHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_silver"
+	file = "dragon_horn_base.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "silverHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+
+entity = {
+	name = "dragon_horn_black_entity"
+	pdxmesh = "dragon_horn_black"
+}
+
+entity = {
+	name = "dragon_horn_red_entity"
+	pdxmesh = "dragon_horn_red"
+}
+
+entity = {
+	name = "dragon_horn_brown_entity"
+	pdxmesh = "dragon_horn_brown"
+}
+
+entity = {
+	name = "dragon_horn_tan_entity"
+	pdxmesh = "dragon_horn_tan"
+}
+
+entity = {
+	name = "dragon_horn_blackGold_entity"
+	pdxmesh = "dragon_horn_blackGold"
+}
+
+entity = {
+	name = "dragon_horn_silver_entity"
+	pdxmesh = "dragon_horn_silver"
+}
+
+
+pdxmesh = {
+	name = "dragon_horn_black_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_red_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackRedHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_brown_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "brownHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_tan_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "tanHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "dragon_horn_tan_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_blackgold_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackGoldHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_silver_glow"
+	file = "dragon_horn_glow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "silverHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+
+entity = {
+	name = "dragon_horn_black_glow_entity"
+	pdxmesh = "dragon_horn_black_glow"
+}
+
+entity = {
+	name = "dragon_horn_red_glow_entity"
+	pdxmesh = "dragon_horn_red_glow"
+}
+
+entity = {
+	name = "dragon_horn_brown_glow_entity"
+	pdxmesh = "dragon_horn_brown_glow"
+}
+
+entity = {
+	name = "dragon_horn_tan_glow_entity"
+	pdxmesh = "dragon_horn_tan_glow"
+}
+
+entity = {
+	name = "dragon_horn_blackGold_glow_entity"
+	pdxmesh = "dragon_horn_blackgold_glow"
+}
+
+entity = {
+	name = "dragon_horn_silver_glow_entity"
+	pdxmesh = "dragon_horn_silver_glow"
+}
+
+
+##For the hold in hand horn blow animations
+pdxmesh = {
+	name = "dragon_horn_black_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_red_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackRedHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_brown_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "brownHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_tan_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "tanHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "dragon_horn_tan_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_blackgold_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "blackGoldHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "dragon_horn_silver_glow_blow"
+	file = "dragon_horn_glow_blow.mesh"
+	meshsettings = {
+		name = "dragon_horn"
+		index = 0
+		texture_diffuse = "silverHorn_diffuse.dds"
+		texture_normal = "Horn_normal.dds"
+		texture_specular = "Horn_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "glyph"
+		index = 0
+		texture_diffuse = "glyphs_diffuse.dds"
+		texture_normal = "glyph_normal.dds"
+		texture_specular = "no_properties.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "dragon_horn_black_glow_blow_entity"
+	pdxmesh = "dragon_horn_black_glow_blow"
+}
+
+entity = {
+	name = "dragon_horn_red_glow_blow_entity"
+	pdxmesh = "dragon_horn_red_glow_blow"
+}
+
+entity = {
+	name = "dragon_horn_brown_glow_blow_entity"
+	pdxmesh = "dragon_horn_brown_glow_blow"
+}
+
+entity = {
+	name = "dragon_horn_tan_glow_blow_entity"
+	pdxmesh = "dragon_horn_tan_glow_blow"
+}
+
+entity = {
+	name = "dragon_horn_blackGold_glow_blow_entity"
+	pdxmesh = "dragon_horn_blackgold_glow_blow"
+}
+
+entity = {
+	name = "dragon_horn_silver_glow_blow_entity"
+	pdxmesh = "dragon_horn_silver_glow_blow"
+}

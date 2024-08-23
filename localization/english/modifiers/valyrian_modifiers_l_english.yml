@@ -1,0 +1,8 @@
+﻿l_english:
+ DRAGON_PREFIX:0 "@temperament_icon!"
+ scheme_dragon_horn:0 "Dragon Horn: $VALUE|+0=-+$"
+ scheme_dragon_whip:0 "Dragon Whip: $VALUE|+0=-+$"
+ scheme_valyrian_book:0 "Valyrian Book: $VALUE|+0=-+$"
+ scheme_dragon_horn_enchanted:0 "Enchanted Artifact: $VALUE|+0=-+$"
+ artifact_dragon_bond_enchanted:0 "Enchanted Artifact"
+ artifact_health_penalty_4_modifier:0 "Enchantment side effect"

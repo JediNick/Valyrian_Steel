@@ -1,0 +1,52 @@
+﻿dragon_whip = {
+	icon = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_black
+			}
+		}
+		reference = "artifact_black_whip.dds"
+	}
+	icon = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_silver
+			}
+		}
+		reference = "artifact_silver_whip.dds"
+	}
+	icon = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_bronze
+			}
+		}
+		reference = "artifact_bronze_whip.dds"
+	}
+	pedestal = "tall"
+
+	asset = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_black
+			}
+		}
+		reference = valyrianWhip_black_entity
+	}
+	asset = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_silver
+			}
+		}
+		reference = valyrianWhip_silver_entity
+	}
+	asset = {
+		trigger = {
+			scope:artifact = {
+				has_artifact_feature = dragon_whip_bronze
+			}
+		}
+		reference = valyrianWhip_bronze_entity
+	}
+}

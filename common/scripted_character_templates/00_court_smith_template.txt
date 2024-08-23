@@ -1,0 +1,33 @@
+﻿qohorik_smith_character = { #Intrigue
+	age = { 21 60 }
+
+	faith = faith:the_seven_main #AGOT TODO Change to Moonsinger/death god later
+	culture = culture:qohorik
+
+
+	random_traits_list = {
+		count = 1
+		strong = {}
+		athletic = {}
+	}
+
+	random_traits_list = {
+		count = 1
+		shy = {}
+		administrator = {}
+	}
+
+	random_traits_list = {
+		count = 1
+		education_learning_4 = {}
+		education_stewardship_4 = {}
+	}
+
+	learning = 50
+	stewardship = 50`
+
+	gender_female_chance = 10
+
+	after_creation = {
+	}
+}

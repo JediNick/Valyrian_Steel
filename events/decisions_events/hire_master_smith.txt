@@ -1,0 +1,104 @@
+﻿namespace = hire_master_smith
+
+#Ruler picking court physician
+hire_master_smith.0001 = {
+	type = character_event
+	title = hire_master_smith.0001.t
+	desc = hire_master_smith.0001_desc
+	theme = court
+	
+	left_portrait = {
+		character = root
+		animation = idle
+	}
+	right_portrait = {
+		character = scope:smith
+		animation = idle
+	}
+
+	trigger = { #If I lost it before I got this event, I shouldn't get a physician
+		exists = capital_province
+	}
+
+	immediate = {
+		hidden_effect = {
+					create_character = {
+						location = root.capital_province
+						template = qohorik_smith_character
+						save_scope_as = smith
+					}
+					add_courtier = scope:smith
+		}
+	}
+
+	#Amazing skill
+	option = {
+		trigger = {
+			exists = scope:smith
+		}
+		name = hire_master_smith.0001.a
+
+		custom_tooltip = hire_master_smith.0001.tt
+		
+		scope:smith = {
+			add_gold = 300
+		}
+
+
+		##Hire them.
+		root = {
+			#Replace existing court physician if one exists
+			if = {
+				limit = {
+					employs_court_position = court_smith_court_position
+					any_court_position_holder = {
+						type = court_smith_court_position
+						count > 0
+					}
+				}
+				every_court_position_holder = {
+					type = court_smith_court_position
+					save_temporary_scope_as = old_smith
+	
+					root = {
+						replace_court_position = {
+							recipient = scope:smith
+							holder = scope:old_smith
+							court_position = court_smith_court_position
+						}
+						reverse_add_opinion = {
+							target = scope:old_smith
+							modifier = disappointed_opinion
+							opinion = -15
+						}
+						reverse_add_opinion = {
+							target = scope:smith
+							modifier = hired_me_opinion
+						}
+					}
+				}
+			}
+			#Else just straight up appoint
+			else = {
+				appoint_court_position = {
+					recipient = scope:smith
+					court_position = court_smith_court_position
+				}
+				reverse_add_opinion = {
+					target = scope:smith
+					modifier = hired_me_opinion
+				}
+			}
+		}
+	}
+
+	#None...
+	option = {
+		name = hire_master_smith.0001.b
+		scope:smith = {
+			silent_disappearance_effect = yes
+		}
+		add_gold = 300
+		##custom_tooltip = health.3001.d.tt
+	}
+}

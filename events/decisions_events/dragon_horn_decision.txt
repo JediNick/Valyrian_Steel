@@ -1,0 +1,351 @@
+﻿namespace = dragon_horn_decision
+
+#activate the horn
+dragon_horn_decision.0001 = {
+	type = character_event
+	title = dragon_horn_decision_0001_t
+	desc = dragon_horn_decision_0001_desc
+
+	theme = crown
+	override_background = study
+
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_black_horn_trigger = yes
+			}
+			animation = dragon_horn_black_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_tan_horn_trigger = yes
+			}
+			animation = dragon_horn_tan_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_silver_horn_trigger = yes
+			}
+			animation = dragon_horn_silver_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_red_horn_trigger = yes
+			}
+			animation = dragon_horn_red_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_blackGold_horn_trigger = yes
+			}
+			animation = dragon_horn_blackGold_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_brown_horn_trigger = yes
+			}
+			animation = dragon_horn_brown_1
+		}
+	}
+
+	immediate = {
+		random_equipped_character_artifact = {
+			limit = {
+				artifact_type = dragon_horn_inactive
+				has_variable = dragon_horn_color
+			}
+			save_scope_as = dragon_horn_artifact
+		}
+	}
+
+	option = {
+		name = dragon_horn_decision.a
+
+		custom_tooltip = dragon_horn_decision.a.tt
+
+		scope:dragon_horn_artifact = {
+			add_artifact_modifier = artifact_dragon_bond_enchanted
+			add_artifact_modifier = artifact_health_penalty_4_modifier
+		}
+
+		trigger_event = {
+			id = dragon_horn_decision.0002
+		}
+	}
+
+	#None...
+	option = {
+		name = dragon_horn_decision.0001.a
+		remove_decision_cooldown = enchant_dragon_horn 
+		add_piety = 500
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+dragon_horn_decision.0002 = {
+	type = character_event
+	title = dragon_horn_decision_0001_t
+	desc = dragon_horn_decision_0002_desc
+
+	theme = crown
+	override_background = study
+	
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:dragon_horn_artifact
+		position = lower_center_portrait
+	}	
+
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_black_horn_trigger = yes
+			}
+			animation = dragon_horn_black_3
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_tan_horn_trigger = yes
+			}
+			animation = dragon_horn_tan_3
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_silver_horn_trigger = yes
+			}
+			animation = dragon_horn_silver_3
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_red_horn_trigger = yes
+			}
+			animation = dragon_horn_red_3
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_blackGold_horn_trigger = yes
+			}
+			animation = dragon_horn_blackGold_3
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_brown_horn_trigger = yes
+			}
+			animation = dragon_horn_brown_3
+		}
+	}
+
+	immediate = {
+		scope:dragon_horn_artifact = {
+			if = {
+				limit = {
+					var:dragon_horn_color = flag:black
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_black_glow
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:tan
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_tan_glow
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:silver
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_silver_glow
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:blackGold
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_blackGold_glow
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:brown
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_brown_glow
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:red
+				}
+				reforge_artifact = {
+					type = dragon_horn
+					visuals = dragon_horn_red_glow
+				}
+			}
+		}
+	}
+
+	option = {
+		name = dragon_horn_decision.b
+	}
+}
+
+#deactivate the horn
+dragon_horn_decision.0003 = {
+	type = character_event
+	title = dragon_horn_decision_0003_t
+	desc = dragon_horn_decision_0003_desc
+
+	theme = crown
+	override_background = study
+
+	
+	artifact = { # To display the artifact in the event-window
+		target = scope:dragon_horn_artifact
+		position = lower_center_portrait
+	}	
+
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_black_horn_trigger = yes
+			}
+			animation = dragon_horn_black_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_tan_horn_trigger = yes
+			}
+			animation = dragon_horn_tan_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_silver_horn_trigger = yes
+			}
+			animation = dragon_horn_silver_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_red_horn_trigger = yes
+			}
+			animation = dragon_horn_red_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_blackGold_horn_trigger = yes
+			}
+			animation = dragon_horn_blackGold_1
+		}
+
+		triggered_animation = {
+			trigger = { 
+				portrait_should_hold_brown_horn_trigger = yes
+			}
+			animation = dragon_horn_brown_1
+		}
+	}
+
+	immediate = {
+		random_equipped_character_artifact = {
+			limit = {
+				artifact_type = dragon_horn
+				has_variable = dragon_horn_color
+			}
+			save_scope_as = dragon_horn_artifact
+		}
+	}
+
+	option = {
+		name = dragon_horn_decision.c
+
+		custom_tooltip = dragon_horn_decision.c.tt
+
+		scope:dragon_horn_artifact = {
+			remove_artifact_modifier = artifact_dragon_bond_enchanted
+			remove_artifact_modifier = artifact_health_penalty_4_modifier
+
+			if = {
+				limit = {
+					var:dragon_horn_color = flag:black
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_black
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:tan
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_tan
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:silver
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_silver
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:blackGold
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_blackGold
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:brown
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_brown
+				}
+			}
+			else_if = {
+				limit = {
+					var:dragon_horn_color = flag:red
+				}
+				reforge_artifact = {
+					type = dragon_horn_inactive
+					visuals = dragon_horn_red
+				}
+			}
+	}
+  }
+}

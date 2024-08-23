@@ -1,0 +1,3 @@
+﻿dragon_horn_inactive = {
+	slot = miscellaneous
+}

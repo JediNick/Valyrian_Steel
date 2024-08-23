@@ -1,0 +1,62 @@
+﻿create_dragon_whip_effect = {
+	# Get the character the artifact is being made for.
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	save_scope_value_as = {
+		name = whip_color
+		value = flag:$COLOR$
+	}
+
+	# Create the artifact
+	create_artifact = {
+		name = artifact_dragon_whip
+		description = artifact_dragon_whip_desc
+		template = dragon_whip_template
+		type = dragon_whip
+		visuals = dragon_whip
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = discovered
+			actor = scope:giver
+			recipient = scope:owner
+			location = province:6620
+		}
+		modifier = artifact_monthly_minor_prestige_2_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			get_random_whip_modifier = yes
+			get_random_dragon_horn_modifier = yes
+		}
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_artifact_feature_group = dragon_whip_color
+		save_scope_as = epic
+	}
+}
+
+get_random_dragon_whip_artifact = {
+	$OWNER$ = { save_scope_as = owner }
+	$GIVER$ = { save_scope_as = giver }
+	random_list = {
+		1 = {
+			create_dragon_whip_effect = { 
+				COLOR = silver
+			}
+		}
+		1 = {
+			create_dragon_whip_effect = {
+				COLOR = bronze
+			}
+		}
+		1 = {
+			create_dragon_whip_effect = {
+				COLOR = black
+			}
+		}
+	}
+}

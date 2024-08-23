@@ -1,0 +1,68 @@
+pdxmesh = {
+	name = "valyrian_book_open_mesh"
+	file = "valyrianBook_open.mesh"
+
+	meshsettings = {
+		name = "valyrian_book"
+		index = 0
+		texture_diffuse = "valyrianBook_diffuse.dds"
+		texture_normal = "valyrianBook_normal.dds"
+		texture_specular = "valyrianBook_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	animation = { id = "page_flipping"				type = "valyrianBook_open.anim" }
+	animation = { id = "page_flipping_loop"			type = "valyrianBook_open.anim" }
+}
+
+entity = {
+	name = "valyrian_book_open_entity"
+	pdxmesh = "valyrian_book_open_mesh"
+
+	default_state = "page_flipping"
+
+	state = {	name = "page_flipping"										animation = "page_flipping"	looping = no	next_state = "page_flipping_loop" }
+	state = {	name = "page_flipping_loop"									animation = "page_flipping_loop"	looping = no	next_state = "page_flipping_loop" }
+}
+
+
+pdxmesh = {
+	name = "valyrianBook_closed_mesh"
+	file = "valyrianBook_closed.mesh"
+
+	meshsettings = {
+		name = "valyrian_book"
+		index = 0
+		texture_diffuse = "valyrianBook_diffuse.dds"
+		texture_normal = "valyrianBook_normal.dds"
+		texture_specular = "valyrianBook_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "valyrian_book_closed_entity"
+	pdxmesh = "valyrianBook_closed_mesh"
+}
+
+pdxmesh = {
+	name = "valyrian_book_closed_court_mesh"
+	file = "valyrianBook_closed_court.mesh"
+
+	meshsettings = {
+		name = "valyrian_book"
+		index = 0
+		texture_diffuse = "valyrianBook_diffuse.dds"
+		texture_normal = "valyrianBook_normal.dds"
+		texture_specular = "valyrianBook_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "valyrian_book_closed_court_entity"
+	pdxmesh = "valyrian_book_closed_court_mesh"
+}

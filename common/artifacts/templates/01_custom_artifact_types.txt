@@ -1,0 +1,73 @@
+﻿dragon_horn_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+
+		trigger_if = {
+			limit = { has_game_rule = dragons_dragonblood_only }
+			custom_tooltip = {
+				text = is_dragon_blood
+				agot_has_dragonblood_heritage = yes
+			}
+		}
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_prestige = 0.05
+		monthly_piety_gain_mult = 0.05
+		monthly_dread = 0.05
+	}
+}
+
+dragon_whip_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+
+		trigger_if = {
+			limit = { has_game_rule = dragons_dragonblood_only }
+			custom_tooltip = {
+				text = is_dragon_blood
+				agot_has_dragonblood_heritage = yes
+			}
+		}
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_prestige = 0.05
+		monthly_piety_gain_mult = 0.05
+		monthly_dread = 0.05
+	}
+}
+
+valyrian_book_template = {
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+
+		trigger_if = {
+			limit = { has_game_rule = dragons_dragonblood_only }
+			knows_language = language_valyrian
+			custom_tooltip = {
+				text = is_dragon_blood
+				agot_has_dragonblood_heritage = yes
+			}
+		}
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		monthly_learning_lifestyle_xp_gain_mult= 0.10
+	}
+}

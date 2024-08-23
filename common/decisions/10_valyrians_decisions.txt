@@ -3,7 +3,9 @@
 	ai_check_interval = 60
 	
 	sort_order = 88
-
+	cost = {
+		gold = 500
+	}
 	desc = fund_expedition_decision_desc_1
 	selection_tooltip = fund_expedition_decision_desc_2
 	is_shown = {
@@ -14,7 +16,6 @@
 	is_valid_showing_failures_only = {
 		is_available_adult = yes
 		is_at_war = no
-		gold > 500
 		is_imprisoned = no
 	}
 
@@ -35,5 +36,78 @@
 			days = 14
 		}
 	}
+}
+
+hire_master_smith_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
 	
+	sort_order = 81
+
+	desc = hire_master_smith_decision_desc
+	selection_tooltip = hire_master_smith_tooltip
+
+	ai_check_interval = 60
+
+	is_shown = {
+		is_ruler = yes
+	}
+
+	cost = {
+		gold = 300
+	}
+
+	cooldown = { days = 365 }
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		NOT = {
+			employs_court_position = court_smith_court_position
+		}
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = hire_master_smith.0001
+			days = 14
+		}
+		custom_tooltip = hire_master_smith_effect_tooltip
+	}
+}
+
+
+research_dragonlore_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	
+	sort_order = 81
+
+	desc = research_dragonlore_decision_desc
+	selection_tooltip = research_dragonlore_tooltip
+
+	ai_check_interval = 60
+
+	is_shown = {
+		is_ruler = yes
+		any_equipped_character_artifact = {
+			has_variable = vs_book
+		}
+	}
+
+	cooldown = { days = 365 }
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		knows_language = language_valyrian
+		NOT = {
+			has_character_modifier = agot_taught_dragonlore
+		}
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = research_dragonlore.0001
+		}
+		custom_tooltip = research_dragonlore_effect_tooltip
+	}
 }

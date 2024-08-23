@@ -150,3 +150,204 @@ vs_axe_to_court = {
 	out_type = pedestal
 	out_visuals = vs_axe_court
 }
+
+##Dragon Horns
+dragon_horn_brown_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_brown
+	out_type = pedestal
+	out_visuals = dragon_horn_brown
+}
+
+dragon_horn_red_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_red
+	out_type = pedestal
+	out_visuals = dragon_horn_red
+}
+
+dragon_horn_silver_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_silver
+	out_type = pedestal
+	out_visuals = dragon_horn_silver
+}
+
+dragon_horn_black_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_black
+	out_type = pedestal
+	out_visuals = dragon_horn_black
+}
+
+dragon_horn_blackGold_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_blackGold
+	out_type = pedestal
+	out_visuals = dragon_horn_blackGold
+}
+
+dragon_horn_tan_to_court = {
+	in_type = dragon_horn_inactive
+	in_visuals = dragon_horn_tan
+	out_type = pedestal
+	out_visuals = dragon_horn_tan
+}
+
+##inv
+dragon_horn_brown_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_brown
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_brown
+}
+
+dragon_horn_red_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_red
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_red
+}
+
+dragon_horn_silver_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_silver
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_silver
+}
+
+dragon_horn_black_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_black
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_black
+}
+
+dragon_horn_blackGold_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_blackGold
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_blackGold
+}
+
+dragon_horn_tan_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_tan
+	out_type = dragon_horn_inactive
+	out_visuals = dragon_horn_tan
+}
+
+
+##GLOW
+dragon_horn_brown_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_brown_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_brown_glow
+}
+
+dragon_horn_red_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_red_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_red_glow
+}
+
+dragon_horn_silver_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_silver_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_silver_glow
+}
+
+dragon_horn_black_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_black_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_black_glow
+}
+
+dragon_horn_blackGold_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_blackGold_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_blackGold_glow
+}
+
+dragon_horn_tan_to_court = {
+	in_type = dragon_horn
+	in_visuals = dragon_horn_tan_glow
+	out_type = pedestal
+	out_visuals = dragon_horn_tan_glow
+}
+
+##inv
+dragon_horn_brown_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_brown_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_brown_glow
+}
+
+dragon_horn_red_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_red_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_red_glow
+}
+
+dragon_horn_silver_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_silver_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_silver_glow
+}
+
+dragon_horn_black_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_black_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_black_glow
+}
+
+dragon_horn_blackGold_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_blackGold_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_blackGold_glow
+}
+
+dragon_horn_tan_glow_to_inventory = {
+	in_type = pedestal
+	in_visuals = dragon_horn_tan_glow
+	out_type = dragon_horn
+	out_visuals = dragon_horn_tan_glow
+}
+
+valyrian_book_to_inventory = {
+	in_type = pedestal
+	in_visuals = valyrian_book
+	out_type = valyrian_book
+	out_visuals = valyrian_book
+}
+
+valyrian_book_to_court = {
+	in_type = valyrian_book
+	in_visuals = valyrian_book
+	out_type = pedestal
+	out_visuals = valyrian_book
+}
+
+valyrian_goblet_to_court = {
+	in_type = miscellaneous_when_not_court
+	in_visuals = vs_goblet
+	out_type = pedestal
+	out_visuals = vs_goblet
+}
+
+valyrian_goblet_to_inventory = {
+	in_type = pedestal
+	in_visuals = vs_goblet
+	out_type = miscellaneous_when_not_court
+	out_visuals = vs_goblet
+}

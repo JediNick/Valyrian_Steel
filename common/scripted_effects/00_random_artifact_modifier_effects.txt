@@ -171,6 +171,23 @@ get_random_misc_modifier_effect = {
 	}
 }
 
+
+get_random_learning_modifier = {
+	random_list = {
+		1 = {
+			add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_1_modifier
+		}
+		3 = {
+			add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_2_modifier
+		}
+		2 = {
+			add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_3_modifier
+		}
+		1 = {
+			add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_4_modifier
+		}
+	}
+}
 get_random_lifestyle_modifier_effect = {
 	random_list = {
 		1 = {
@@ -1118,4 +1135,137 @@ get_random_martial_lifestyle = {
 		}
 	}
 
+}
+
+get_random_dragon_tame_modifier_low = {
+	random_list = {
+		3 = {
+		}
+		1 = {
+			random_list = {
+				1 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_1_modifier
+				}
+				3 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_2_modifier
+				}
+				2 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_3_modifier
+				}
+				1 = {
+					add_artifact_modifier = artifact_monthly_martial_lifestyle_xp_4_modifier
+				}
+			}
+		}
+	}
+}
+
+get_random_bond_modifier = {
+	random_list = {
+		5 = {
+			get_random_bond_modifier_low = yes
+		}
+		3 = {
+			get_random_bond_modifier_mid = yes
+		}
+		1 = {
+			get_random_bond_modifier_high = yes
+		}
+	}
+}
+
+
+get_random_whip_modifier = {
+	random_list = {
+		5 = {
+			add_artifact_modifier = artifact_dragon_whip_add_1
+		}
+		5 = {
+			add_artifact_modifier = artifact_dragon_whip_add_2
+		}
+		5 = {
+			add_artifact_modifier = artifact_dragon_whip_add_3
+		}
+		5 = {
+			add_artifact_modifier = artifact_dragon_whip_add_4
+		}
+	}
+}
+
+get_random_valyrian_book_modifier = {
+	random_list = {
+		20 = {
+			add_artifact_modifier = artifact_valyrian_book_add_1
+		}
+		15 = {
+			add_artifact_modifier = artifact_valyrian_book_add_2
+		}
+		10 = {
+			add_artifact_modifier = artifact_valyrian_book_add_3
+		}
+		1 = {
+			add_artifact_modifier = artifact_valyrian_book_add_4
+		}
+	}
+}
+
+get_random_bond_modifier_low = {
+	random_list = {
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_low_add_1
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_low_add_2
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_low_add_3
+		}
+	}
+}
+
+
+
+get_random_bond_modifier_mid = {
+	random_list = {
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_mid_add_1
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_mid_add_2
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_mid_add_3
+		}
+	}
+}
+
+
+get_random_bond_modifier_high = {
+	random_list = {
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_high_add_1
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_high_add_2
+		}
+		1 = {
+			add_artifact_modifier = artifact_dragon_bond_high_add_3
+		}
+	}
+}
+
+get_random_dragon_horn_modifier = {
+	random_list = {
+		1 = {
+			get_random_dread_or_tyranny_modifier_effect = yes
+		}
+		1 = {
+			get_random_scheme_modifier_effect = yes
+		}
+		1 = {
+			get_random_religous_modifier_effect = yes
+		}
+	}
+	get_random_misc_modifier_effect = yes
+	get_random_misc_modifier_effect = yes
 }
