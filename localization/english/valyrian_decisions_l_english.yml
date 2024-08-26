@@ -141,6 +141,9 @@ fund_expedition_0011_valyrian_alt_desc:0 "One of the crew members approaches me 
 
 fund_expedition_0011.a:0 "Such power..."
 
+
+fund_expedition_00021_desc:0 "[choice.GetFirstName] gathers a crew and prepares to leave at once. While my instructions are to find any artifacts, with a bit of extra gold it is likely that [choice.GetFirstName] could focus [choice.GetHerHis] efforts on finding a specific item..."
+
 fund_expedition_00021.a:0 "Find me a Dragon Egg..."
 fund_expedition_00021.b:0 "Bring me a weapon of Valyrian Steel..."
 fund_expedition_00021.c:0 "Bring back a Trinket..."
