@@ -32,6 +32,7 @@
 				count = 0
 			}
 			NOT = { has_trait = dragonwidowed }
+			NOT = { has_character_modifier = agot_dragon_disinterest }
 		}
 		scope:target = {
 			has_trait = dragon
