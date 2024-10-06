@@ -1,5 +1,7 @@
 ﻿enchant_dragon_horn = {
-	picture = "gfx/interface/illustrations/decisions/dragon_horn_enchant.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/dragon_horn_enchant.dds"
+	}
 	ai_check_interval = 60
 	
 	sort_order = 88
@@ -47,7 +49,9 @@
 }
 
 un_enchant_dragon_horn = {
-	picture = "gfx/interface/illustrations/decisions/dragon_horn_unenchant.dds"
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/dragon_horn_unenchant.dds"
+	}
 	ai_check_interval = 60
 	
 	sort_order = 88

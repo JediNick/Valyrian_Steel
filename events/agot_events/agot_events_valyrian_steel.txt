@@ -643,12 +643,12 @@ agot_valyrian_steel.1011 = {
 			limit = {
 				can_start_scheme = {
 					type = steal_back_artifact
-					target = scope:vs_artifact_thief
+					target_character = scope:vs_artifact_thief
 				}
 			}
 			start_scheme = {
 				type = steal_back_artifact
-				target = scope:vs_artifact_thief
+				target_character = scope:vs_artifact_thief
 				artifact = scope:looted_vs_sword
 			}
 			custom_tooltip = agot_valyrian_steel.1011.feud.tt
@@ -656,7 +656,7 @@ agot_valyrian_steel.1011 = {
 				random_scheme = {
 					limit = {
 						scheme_type = steal_back_artifact
-						scheme_target = scope:vs_artifact_thief
+						scheme_target_character = scope:vs_artifact_thief
 					}
 					add_scheme_modifier = {
 						type = extra_success_chance_modifier
@@ -695,12 +695,12 @@ agot_valyrian_steel.1011 = {
 		trigger = {
 			can_start_scheme = {
 				type = steal_back_artifact
-				target = scope:vs_artifact_thief
+				target_character = scope:vs_artifact_thief
 			}
 		}
 		start_scheme = {
 			type = steal_back_artifact
-			target = scope:vs_artifact_thief
+			target_character = scope:vs_artifact_thief
 			artifact = scope:looted_vs_sword
 		}
 

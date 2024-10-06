@@ -1,5 +1,7 @@
 ﻿fund_expedition_decision = {
-	picture = "gfx/interface/illustrations/decisions/valyria_coast.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/valyria_coast.dds"
+	}
 	ai_check_interval = 60
 	
 	sort_order = 88
@@ -10,6 +12,7 @@
 	selection_tooltip = fund_expedition_decision_desc_2
 	is_shown = {
 		is_ai = no
+		is_landed = yes
 		root.culture = { agot_is_wildling_culture = no}
 	}
 
@@ -39,7 +42,9 @@
 }
 
 hire_master_smith_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
 	
 	sort_order = 81
 
@@ -50,6 +55,7 @@ hire_master_smith_decision = {
 
 	is_shown = {
 		is_ruler = yes
+		is_landed = yes
 	}
 
 	cost = {
@@ -77,7 +83,9 @@ hire_master_smith_decision = {
 
 
 research_dragonlore_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
 	
 	sort_order = 81
 
@@ -87,7 +95,7 @@ research_dragonlore_decision = {
 	ai_check_interval = 60
 
 	is_shown = {
-		is_ruler = yes
+		is_playable_character = yes
 		any_equipped_character_artifact = {
 			has_variable = vs_book
 		}
