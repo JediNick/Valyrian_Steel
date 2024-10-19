@@ -7,7 +7,14 @@
 	can_benefit = {
 
 		trigger_if = {
-			limit = { has_game_rule = dragons_dragonblood_only }
+			limit = { 
+				OR = {
+					has_game_rule = dragon_dragonblood_2_gen
+					has_game_rule = dragon_dragonblood_3_gen 
+					has_game_rule = dragon_valyrian_2_gen 
+					has_game_rule = dragon_valyrian_3_gen 
+				}
+			}
 			custom_tooltip = {
 				text = is_dragon_blood
 				agot_has_dragonblood_heritage = yes
@@ -32,7 +39,14 @@ dragon_whip_template = {
 	can_benefit = {
 
 		trigger_if = {
-			limit = { has_game_rule = dragons_dragonblood_only }
+			limit = { 
+				OR = {
+					has_game_rule = dragon_dragonblood_2_gen
+					has_game_rule = dragon_dragonblood_3_gen 
+					has_game_rule = dragon_valyrian_2_gen 
+					has_game_rule = dragon_valyrian_3_gen 
+				}
+			}
 			custom_tooltip = {
 				text = is_dragon_blood
 				agot_has_dragonblood_heritage = yes
@@ -57,7 +71,14 @@ valyrian_book_template = {
 	can_benefit = {
 
 		trigger_if = {
-			limit = { has_game_rule = dragons_dragonblood_only }
+			limit = {
+				OR = {
+					has_game_rule = dragon_dragonblood_2_gen
+					has_game_rule = dragon_dragonblood_3_gen 
+					has_game_rule = dragon_valyrian_2_gen 
+					has_game_rule = dragon_valyrian_3_gen 
+				}
+			 }
 			knows_language = language_valyrian
 			custom_tooltip = {
 				text = is_dragon_blood

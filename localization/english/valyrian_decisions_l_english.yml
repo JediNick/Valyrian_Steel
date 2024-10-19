@@ -125,7 +125,7 @@ impassable_sea_2:0 "Old Valyria"
  
 is_dragon_blood:0 "Has [Concept('dragonblood','Dragonblood')|E]."
  
-bond_with_dragon_scheme_scheme_power_add:0 "Dragon Horn Bond/Tame Chance"
+bond_with_dragon_scheme_success_chance_add:0 "Dragon Horn Bond/Tame Chance"
 
 DEBUG_I_HAVE_MORE_GOLD_TRIGGER:0 "Not enough gold"
 

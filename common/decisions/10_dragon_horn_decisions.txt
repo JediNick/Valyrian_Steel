@@ -19,7 +19,12 @@
 
 		OR = {
 			AND = {
-				has_game_rule = dragons_dragonblood_only
+				OR = {
+					has_game_rule = dragon_dragonblood_2_gen
+					has_game_rule = dragon_dragonblood_3_gen 
+					has_game_rule = dragon_valyrian_2_gen 
+					has_game_rule = dragon_valyrian_3_gen 
+				}
 				agot_has_dragonblood_heritage = yes
 			}
 			has_game_rule = dragons_anyone

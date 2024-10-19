@@ -18,94 +18,148 @@ artifact_monthly_martial_lifestyle_xp_1_negative_modifier = { monthly_martial_li
 
 artifact_dragon_bond_low_add_1 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 10
+	scale = {
+		value = 10
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_low_add_2 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 15
+	scale = {
+		value = 15
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_low_add_3 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 20
+	scale = {
+		value = 20
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_mid_add_1 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 25
+	scale = {
+		value = 25
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_mid_add_2 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 30
+	scale = {
+		value = 30
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_mid_add_3 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 35
+	scale = {
+		value = 35
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_high_add_1 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 40
+	scale = {
+		value = 40
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_high_add_2 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 45
+	scale = {
+		value = 45
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_high_add_3 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 50
+	scale = {
+		value = 50
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_bond_enchanted = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 15
+	scale = {
+		value = 15
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 
 ##Whip
 artifact_dragon_whip_add_1 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 10
+	scale = {
+		value = 10
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_whip_add_2 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 15
+	scale = {
+		value = 15
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_whip_add_3 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 20
+	scale = {
+		value = 20
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_dragon_whip_add_4 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 25
+	scale = {
+		value = 25
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 ##Book
 artifact_valyrian_book_add_1 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 12
+	scale = {
+		value = 12
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_valyrian_book_add_2 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 16
+	scale = {
+		value = 16
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_valyrian_book_add_3 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 20
+	scale = {
+		value = 20
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
 artifact_valyrian_book_add_4 = {
 	icon = beast_positive
-	bond_with_dragon_scheme_scheme_power_add = 40
+	scale = {
+		value = 40
+		desc = bond_with_dragon_scheme_success_chance_add
+	}
 }
 
