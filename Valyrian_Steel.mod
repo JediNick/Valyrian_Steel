@@ -6,5 +6,5 @@ tags={
 }
 name="Valyrian Steel"
 picture="thumbnail.png"
-supported_version="1.13.*"
+supported_version="1.14.*"
 remote_file_id="2962713441"
