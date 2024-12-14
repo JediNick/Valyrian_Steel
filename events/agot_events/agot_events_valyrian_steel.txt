@@ -19,7 +19,7 @@ agot_valyrian_steel.0001 = {
 
 	trigger = {
 		any_character_artifact = {
-			has_variable = dawn_artifact
+			has_artifact_modifier = vs_dawn_modifier
 		}
 		NOT = { has_character_flag = is_sword_of_morning }
 		scope:my_relation = { save_temporary_scope_as = potential_sword_of_morning }
@@ -93,7 +93,7 @@ agot_valyrian_steel.0002 = {
 
 		dynasty:dynn_Dayne.dynast = {
 			random_character_artifact = {
-				limit  = { has_variable = dawn_artifact }
+				limit  = { has_artifact_modifier = vs_dawn_modifier }
 				save_scope_as = dawn
 			}
 		}
@@ -187,13 +187,13 @@ agot_valyrian_steel.0003 = {
 	trigger = {
 		dynasty = dynasty:dynn_Dayne
 		any_character_artifact = {
-			has_variable = dawn_artifact
+			has_artifact_modifier = vs_dawn_modifier
 		}
 	}
 
 	immediate = {
 		random_character_artifact = {
-			limit  = { has_variable = dawn_artifact }
+			limit  = { has_artifact_modifier = vs_dawn_modifier }
 			save_scope_as = dawn
 		}
 		scope:dawn = {
@@ -233,7 +233,7 @@ agot_valyrian_steel.0004 = {
 
 	trigger = {
 		any_character_artifact = {
-			has_variable = dawn_artifact
+			has_artifact_modifier = vs_dawn_modifier
 		}
 		NOT = { has_character_flag = is_sword_of_morning }
 
@@ -847,7 +847,7 @@ agot_valyrian_steel.2000 = {
 		NOT = { has_character_flag = search_for_lamentation }
 		NOT = {
 			any_artifact = {
-				has_variable = lamentation_artifact
+				has_artifact_modifier = vs_lamentation_modifier
 			}
 		}
 	}
@@ -1516,7 +1516,7 @@ agot_valyrian_steel.8000 = {
 		every_character_artifact = {
 			limit = {
 				has_variable = valyrian_steel
-				NOT = { has_variable = dawn_artifact }
+				NOT = { has_artifact_modifier = vs_dawn_modifier }
 			}
 			root = {
 				add_to_variable_list = {
@@ -1876,43 +1876,43 @@ agot_valyrian_steel.8001 = {
 
 		if = {
 			limit = {
-				var:selected_artifact = { has_variable = black_death_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_black_death_modifier }
 			}
 			agot_create_artifact_vs_black_death_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = mothers_grief_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_mothers_grief_modifier }
 			}
 			agot_create_artifact_vs_mothers_grief_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = talon_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_talon_modifier }
 			}
 			agot_create_artifact_vs_talon_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = glory_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_glory_modifier }
 			}
 			agot_create_artifact_vs_glory_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = stormy_nights_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_stormy_nights_modifier }
 			}
 			agot_create_artifact_vs_stormy_nights_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = strangers_touch_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_strangers_touch_modifier }
 			}
 			agot_create_artifact_vs_strangers_touch_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = dragonbane_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_dragonbane_modifier }
 			}
 			agot_create_artifact_vs_dragonbane_effect = { OWNER = this }
 		}
