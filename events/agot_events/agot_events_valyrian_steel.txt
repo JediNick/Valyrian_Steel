@@ -2002,7 +2002,7 @@ agot_valyrian_steel.8001 = {
 		}
 		else_if = {
 			limit = {
-				var:selected_artifact = { has_variable = widows_wail_artifact }
+				var:selected_artifact = { has_artifact_modifier = vs_widows_wail_modifier }
 			}
 			agot_create_artifact_vs_widows_wail_effect = { OWNER = this }
 		}
