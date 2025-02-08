@@ -1621,6 +1621,13 @@ agot_valyrian_steel.8001 = {
 						target = scope:newly_created_artifact
 					}
 				}
+				agot_create_artifact_vs_dark_moon_effect = { OWNER = this }
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = scope:newly_created_artifact
+					}
+				}
 				agot_create_artifact_vs_widows_wail_effect = { OWNER = this }
 				root = {
 					add_to_variable_list = {
@@ -1629,6 +1636,13 @@ agot_valyrian_steel.8001 = {
 					}
 				}
 				agot_create_artifact_vs_glory_effect = { OWNER = this }
+				root = {
+					add_to_variable_list = {
+						name = possible_artifacts
+						target = scope:newly_created_artifact
+					}
+				}
+				agot_create_artifact_vs_skinpeeler_effect = { OWNER = this }
 				root = {
 					add_to_variable_list = {
 						name = possible_artifacts
@@ -1894,9 +1908,21 @@ agot_valyrian_steel.8001 = {
 		}
 		else_if = {
 			limit = {
+				var:selected_artifact = { has_artifact_modifier = vs_dark_moon_modifier }
+			}
+			agot_create_artifact_vs_dark_moon_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
 				var:selected_artifact = { has_artifact_modifier = vs_glory_modifier }
 			}
 			agot_create_artifact_vs_glory_effect = { OWNER = this }
+		}
+		else_if = {
+			limit = {
+				var:selected_artifact = { has_artifact_modifier = vs_skinpeeler_modifier }
+			}
+			agot_create_artifact_vs_skinpeeler_effect = { OWNER = this }
 		}
 		else_if = {
 			limit = {
