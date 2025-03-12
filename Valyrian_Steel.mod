@@ -1,4 +1,4 @@
-version="1.3.5"
+version="1.3.6"
 tags={
 	"Decisions"
 	"Events"
@@ -6,5 +6,5 @@ tags={
 }
 name="Valyrian Steel"
 picture="thumbnail.png"
-supported_version="1.14.*"
+supported_version="1.15.*"
 remote_file_id="2962713441"
