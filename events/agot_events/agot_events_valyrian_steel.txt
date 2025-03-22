@@ -186,6 +186,7 @@ agot_valyrian_steel.0003 = {
 
 	trigger = {
 		dynasty = dynasty:dynn_Dayne
+		exists = dynasty:dynn_Dayne.dynast
 		any_character_artifact = {
 			has_artifact_modifier = vs_dawn_modifier
 		}
@@ -197,7 +198,15 @@ agot_valyrian_steel.0003 = {
 			save_scope_as = dawn
 		}
 		scope:dawn = {
-			set_owner = dynasty:dynn_Dayne.dynast
+			set_owner = {
+				target = dynasty:dynn_Dayne.dynast
+				history = {
+					location = root.location
+					actor = root
+					recipient = dynasty:dynn_Dayne.dynast
+					type = inherited
+				}
+			}
 		}
 
 		save_scope_as = dead_relative
@@ -1481,6 +1490,325 @@ agot_valyrian_steel.2010 = { #Find the swordo
 	}
 }
 
+scripted_trigger basic_dark_sister_worthy_trigger = {
+	OR = {
+		has_trait = education_martial_prowess_3
+		has_trait = education_martial_prowess_4
+		has_trait = education_martial_prowess_5
+		AND = {
+			has_trait = lifestyle_blademaster
+			age < 16
+		}
+	}
+	age > 12
+	age < 30
+	prowess > 12
+	NOR = {
+		has_trait = incapable
+		has_trait = crippled
+		has_trait = infirm
+
+		has_trait = septon
+		has_trait = maester
+		has_trait = nightswatch
+	}
+}
+
+agot_valyrian_steel.3000 = {
+	scope = artifact
+	hidden = yes
+
+	trigger = {
+		OR = {
+			has_artifact_modifier = vs_dark_sister_modifier
+			has_artifact_modifier = vs_blackfyre_modifier
+		}
+		scope:owner = {
+			dynasty = dynasty:dynn_Targaryen
+		}
+	}
+
+	immediate = {
+		scope:owner = {
+			trigger_event = {
+				id = agot_valyrian_steel.3001
+				days = 1
+			}
+		}
+	}
+}
+
+agot_valyrian_steel.3001 = {
+	type = character_event
+	title = agot_valyrian_steel.3001.t
+	desc = agot_valyrian_steel.3001.desc
+	theme = dynasty
+
+	override_background = {
+		trigger = { has_title = title:c_kings_landing }
+		reference = agot_iron_throne
+	}
+	override_background = {
+		trigger = {
+			NOT = { has_title = title:c_kings_landing }
+			has_title = title:c_dragonstone
+		}
+		reference = agot_dragonstone_throneroom
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:heir_choice
+		animation = personality_honorable
+	}
+	lower_left_portrait  = {
+		character = scope:family_choice
+	}
+	lower_center_portrait  = {
+		character = scope:center_portrait
+	}
+	lower_right_portrait  = {
+		character = scope:house_choice
+	}
+
+	trigger = {
+		dynasty = dynasty:dynn_Targaryen
+
+		any_character_artifact = {
+			has_artifact_modifier = vs_dark_sister_modifier
+		}
+		any_character_artifact = {
+			has_artifact_modifier = vs_blackfyre_modifier
+		}
+	}
+
+	immediate = {
+		dynasty = { save_scope_as = targ_dynn }
+		random_character_artifact = {
+			limit = { has_artifact_modifier = vs_dark_sister_modifier }
+			save_scope_as = darksister
+		}
+		random_character_artifact = {
+			limit = { has_artifact_modifier = vs_blackfyre_modifier }
+			save_scope_as = blackfyre
+		}
+
+		player_heir ?= {
+			if = {
+				limit = { age > 12 }
+				save_scope_as = heir_choice
+			}
+		}
+		house = {
+			ordered_house_member = {
+				limit = {
+					has_trait = kingsguard
+					basic_dark_sister_worthy_trigger = yes
+					is_male = yes
+					NAND = {
+						exists = scope:heir_choice
+						this = scope:heir_choice
+					}
+				}
+				order_by = prowess
+				save_scope_as = kingsguard_choice
+			}
+			ordered_house_member = {
+				limit = {
+					basic_dark_sister_worthy_trigger = yes
+					is_male = yes
+					NAND = {
+						exists = scope:heir_choice
+						this = scope:heir_choice
+					}
+					NAND = {
+						exists = scope:kingsguard_choice
+						this = scope:kingsguard_choice
+					}
+				}
+				order_by = prowess
+				save_scope_as = house_choice
+			}
+			ordered_house_member = {
+				limit = {
+					basic_dark_sister_worthy_trigger = yes
+					is_female = yes
+					NAND = {
+						exists = scope:heir_choice
+						this = scope:heir_choice
+					}
+				}
+				order_by = prowess
+				save_scope_as = girl_choice
+			}
+		}
+		ordered_close_or_extended_family_member = {
+			limit = {
+				house ?= root.house
+				basic_dark_sister_worthy_trigger = yes
+				is_male = yes
+				NAND = {
+					exists = scope:heir_choice
+					this = scope:heir_choice
+				}
+				NAND = {
+					exists = scope:kingsguard_choice
+					this = scope:kingsguard_choice
+				}
+				NAND = {
+					exists = scope:house_choice
+					this = scope:house_choice
+				}
+			}
+			order_by = prowess
+			save_scope_as = family_choice
+		}
+
+		if = {
+			limit = { exists = scope:kingsguard_choice }
+			scope:kingsguard_choice = { save_scope_as = center_portrait }
+		}
+		else_if = {
+			limit = { exists = scope:girl_choice }
+			scope:girl_choice = { save_scope_as = center_portrait }
+		}
+	}
+
+	#Highest Prowess Close Family Member
+	option = {
+		name = agot_valyrian_steel.3001.a
+		trigger = { exists = scope:family_choice }
+
+		scope:darksister = {
+			set_owner = scope:family_choice
+		}
+
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				add = 10
+				scope:family_choice = {
+					NOT = {
+						has_trait = education_martial_prowess_3
+					}
+				}
+			}
+
+			modifier = {
+				add = 10
+				scope:family_choice = {
+					has_trait = lifestyle_blademaster
+				}
+			}
+		}
+	}
+
+	#Highest Prowess House Member
+	option = {
+		name = agot_valyrian_steel.3001.b
+		trigger = { exists = scope:house_choice }
+
+		scope:darksister = {
+			set_owner = scope:house_choice
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	#Heir
+	option = {
+		name = agot_valyrian_steel.3001.c
+		trigger = { exists = scope:heir_choice }
+
+		scope:darksister = {
+			set_owner = scope:heir_choice
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	#Kingsguard
+	option = {
+		name = agot_valyrian_steel.3001.d
+		trigger = { exists = scope:kingsguard_choice }
+
+		scope:darksister = {
+			set_owner = scope:kingsguard_choice
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#Woman
+	option = {
+		name = agot_valyrian_steel.3001.e
+		trigger = { exists = scope:girl_choice }
+
+		scope:darksister = {
+			set_owner = scope:girl_choice
+		}
+
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				add = 10
+				scope:girl_choice = {
+					NOT = {
+						has_trait = education_martial_prowess_3
+					}
+				}
+			}
+
+			modifier = {
+				add = 10
+				scope:girl_choice = {
+					has_trait = lifestyle_blademaster
+				}
+			}
+		}
+	}
+
+	#Keep
+	option = {
+		name = agot_valyrian_steel.3001.f
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+agot_valyrian_steel.3010 = {
+	hidden = yes
+
+	trigger = {
+		dynasty = dynasty:dynn_Targaryen
+		any_character_artifact = {
+			has_artifact_modifier = vs_dark_sister_modifier
+		}
+		any_character_artifact = {
+			has_artifact_modifier = vs_blackfyre_modifier
+		}
+	}
+
+	immediate = {
+		random_character_artifact = {
+			limit = { has_artifact_modifier = vs_dark_sister_modifier }
+			set_owner = scope:my_relation
+		}
+	}
+}
+
 #Reforging
 agot_valyrian_steel.8000 = {
 	type = character_event
@@ -2160,6 +2488,149 @@ agot_valyrian_steel.8001 = {
 					destroy_artifact = this
 				}
 			}
+		}
+	}
+}
+
+scripted_effect give_vs_sword_to_appropriate_heir = {
+	if = {
+		limit = {
+			exists = scope:current_owner.house
+			scope:current_owner.house = {
+				any_house_member = {
+					count > 1
+				}
+			}
+			NOT = {
+				scope:current_owner = scope:current_owner.house.house_head
+			}
+		}
+		scope:current_owner.house.house_head = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.house
+			scope:current_owner.house = {
+				any_house_member = {
+					count > 1
+				}
+			}
+			scope:current_owner = scope:current_owner.house.house_head
+			exists = scope:current_owner.player_heir
+			scope:current_owner.house = scope:current_owner.player_heir.house
+		}
+		scope:current_owner.house.house_head = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.dynasty
+			scope:current_owner.dynasty = {
+				any_dynasty_member = {
+					count > 1
+				}
+			}
+			NOT = {
+				scope:current_owner = scope:current_owner.dynasty.dynast
+			}
+		}
+		scope:current_owner.dynasty.dynast = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.dynasty
+			scope:current_owner.dynasty = {
+				any_dynasty_member = {
+					count > 1
+				}
+			}
+			scope:current_owner = scope:current_owner.dynasty.dynast
+			exists = scope:current_owner.player_heir
+			scope:current_owner.dynasty = scope:current_owner.player_heir.dynasty
+		}
+		scope:current_owner.dynasty.dynast = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.player_heir
+		}
+		scope:current_owner.player_heir = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.primary_heir
+		}
+		scope:current_owner.primary_heir = {
+			save_scope_as = new_owner
+		}
+	}
+	else_if = {
+		limit = {
+			exists = scope:current_owner.liege_or_court_owner
+			NOT = {
+				scope:current_owner = scope:current_owner.liege_or_court_owner
+			}
+		}
+		scope:current_owner.liege_or_court_owner = {
+			save_scope_as = new_owner
+		}
+	}
+
+	if = {
+		limit = { exists = scope:new_owner }
+		set_owner = {
+			target = scope:new_owner
+			history = {
+				location = scope:current_owner.location
+				actor = scope:current_owner
+				recipient = scope:new_owner
+				type = inherited
+			}
+		}
+	}
+	#fuck you, a pirate stole your sword
+	else = {
+		create_character = {
+			template = agot_pirate_character_leader
+			location = scope:current_owner.location
+			save_scope_as = pirate_thief
+		}
+		set_owner = {
+			target = scope:pirate_thief
+			history = {
+				location = scope:current_owner.location
+				actor = scope:current_owner
+				recipient = scope:pirate_thief
+				type = stolen
+			}
+		}
+	}
+}
+
+agot_valyrian_steel.9000 = {
+	hidden = yes
+
+	trigger = {
+		any_character_artifact = {
+			has_variable = valyrian_steel
+			NOT = { has_artifact_modifier = vs_dawn_modifier }
+		}
+	}
+
+	immediate = {
+		save_scope_as = current_owner
+		every_character_artifact = {
+			limit  = { has_variable = valyrian_steel }
+			give_vs_sword_to_appropriate_heir = yes
 		}
 	}
 }
