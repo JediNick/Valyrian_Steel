@@ -1,75 +1,113 @@
 ﻿l_russian:
-
- vs_sword_1_poses_list_name:0 "Меч из валирийской стали (Вариант 1)"
- vs_sword_2_poses_list_name:0 "Меч из валирийской стали (Вариант 2)"
- vs_sword_3_poses_list_name:0 "Меч из валирийской стали (Вариант 3)"
-
- vs_mace_poses_list_name:0 "Булава из валирийской стали"
- vs_spear_1_poses_list_name:0 "Копье из валирийской стали"
- vs_axe_poses_list_name:0 "Топор из валирийской стали"
- 
- vs_dagger_1_poses_list_name:0 "Кинжал из валирийской стали"
-
- valyrian_invasion_seafoam_1_name:0 "Морская пена внизу"
- valyrian_invasion_seafoam_2_name:0 "Морская пена на плече"
- valyrian_invasion_seafoam_3_name:0 "Морская пена на дуэли"
- 
- valyrian_invasion_calamity_1_name:0 "Бедствие внизу"
- valyrian_invasion_calamity_2_name:0 "Бедствие на дуэли"
- valyrian_invasion_calamity_3_name:0 "Бедствие на празднике"
- 
- valyrian_invasion_subterfuge_1_name:0 "Уловка тайный советник"
- valyrian_invasion_subterfuge_2_name:0 "Уловка на дуэли"
- valyrian_invasion_subterfuge_3_name:0 "Уловка убийца"
- 
- valyrian_invasion_egg_black_name:0 "Черное яйцо"
- valyrian_invasion_egg_vhagar_name:0 "Яйцо Вхагара"
- valyrian_invasion_egg_meraxes_name:0 "Яйцо Мераксеса"
-
- valyrian_invasion_egg_tan_name:0 "Цветное яйцо"
- valyrian_invasion_egg_orange_name:0 "Оранжевое яйцо"
- valyrian_invasion_egg_grey_name:0 "Серое яйцо"
-
- valyrian_invasion_egg_green_name:0 "Зеленое яйцо"
- valyrian_invasion_egg_pink_name:0 "Розовое яйцо"
- valyrian_invasion_egg_white_name:0 "Белое яйцо"
- 
- valyrian_invasion_egg_brown_name:0 "Коричневое яйцо"
- valyrian_invasion_egg_red_name:0 "Красное яйцо"
- valyrian_invasion_egg_purple_name:0 "Фиолетовое яйцо"
-
- valyrian_invasion_egg_blue_name:0 "Синее яйцо"
- valyrian_invasion_egg_yellow_name:0 "Жёлтое яйцо"
- valyrian_invasion_egg_rainbow_name:0 "Радужное яйцо"
-
- valyrian_invasion_darksister_1_name:0 "Тёмная сестра внизу"
- valyrian_invasion_darksister_2_name:0 "Тёмная сестра на плече"
- valyrian_invasion_darksister_3_name:0 "Тёмная сестра на дуэли"
- 
- valyrian_invasion_vs_sword_1_1_name:0 "Меч внизу"
- valyrian_invasion_vs_sword_1_2_name:0 "Меч на плече"
- valyrian_invasion_vs_sword_1_3_name:0 "Меч на дуэли"
- 
- valyrian_invasion_vs_sword_2_1_name:0 "Меч внизу"
- valyrian_invasion_vs_sword_2_2_name:0 "Меч на плече"
- valyrian_invasion_vs_sword_2_3_name:0 "Меч на дуэли"
- 
- valyrian_invasion_vs_sword_3_1_name:0 "Меч внизу"
- valyrian_invasion_vs_sword_3_2_name:0 "Меч на плече"
- valyrian_invasion_vs_sword_3_3_name:0 "Меч на дуэли"
- 
- valyrian_invasion_vs_mace_1_name:0 "Булава внизу"
- valyrian_invasion_vs_mace_2_name:0 "Булава на плече"
- valyrian_invasion_vs_mace_3_name:0 "Булава на дуэли"
- 
- valyrian_invasion_vs_spear_1_1_name:0 "Копьё внизу"
- valyrian_invasion_vs_spear_1_2_name:0 "Празднование с копьём"
- valyrian_invasion_vs_spear_1_3_name:0 "Копьё на дуэли"
- 
- valyrian_invasion_vs_axe_1_name:0 "Топор внизу"
- valyrian_invasion_vs_axe_2_name:0 "Топор на дуэли"
- valyrian_invasion_vs_axe_3_name:0 "Празднование с топором"
   
- valyrian_invasion_vs_dagger_1_1_name:0 "Кинжал тайный советник"
- valyrian_invasion_vs_dagger_1_2_name:0 "Кинжал на дуэли"
- valyrian_invasion_vs_dagger_1_3_name:0 "Кинжал убийца"
+ vs_sword_1_poses_list: "Меч из валирийской стали (Вариант 1)"
+ vs_sword_2_poses_list: "Меч из валирийской стали (Вариант 2)"
+ vs_sword_3_poses_list: "Меч из валирийской стали (Вариант 3)"
+ vs_sword_4_poses_list: "Меч из валирийской стали (Вариант 4)"
+  
+ vs_mace_poses_list: "Булава из валирийской стали"
+ vs_spear_1_poses_list: "Копье из валирийской стали"
+ vs_axe_poses_list: "Топор из валирийской стали"
+  
+ vs_dagger_1_poses_list: "Кинжал из валирийской стали"
+  
+ valyrian_invasion_egg_black: "@valyrian_invasion_egg_blue! Черное яйцо"
+ valyrian_invasion_egg_vhagar: "@valyrian_invasion_egg_blue! Яйцо Вхагар"
+ valyrian_invasion_egg_meraxes: "@valyrian_invasion_egg_blue! Яйцо Мераксес"
+  
+ valyrian_invasion_egg_tan: "@valyrian_invasion_egg_blue! Светло-коричневое яйцо"
+ valyrian_invasion_egg_orange: "@valyrian_invasion_egg_blue! Оранжевое яйцо"
+ valyrian_invasion_egg_grey: "@valyrian_invasion_egg_blue! Серое яйцо"
+  
+ valyrian_invasion_egg_green: "@valyrian_invasion_egg_blue! Зеленое яйцо"
+ valyrian_invasion_egg_pink: "@valyrian_invasion_egg_blue! Розовое яйцо"
+ valyrian_invasion_egg_white: "@valyrian_invasion_egg_blue! Белое яйцо"
+  
+ valyrian_invasion_egg_brown: "@valyrian_invasion_egg_blue! Коричневое яйцо"
+ valyrian_invasion_egg_red: "@valyrian_invasion_egg_blue! Красное яйцо"
+ valyrian_invasion_egg_purple: "@valyrian_invasion_egg_blue! Фиолетовое яйцо"
+  
+ valyrian_invasion_egg_blue: "@valyrian_invasion_egg_blue! Синее яйцо"
+ valyrian_invasion_egg_yellow: "@valyrian_invasion_egg_blue! Желтое яйцо"
+ valyrian_invasion_egg_rainbow: "@valyrian_invasion_egg_blue! Радужное яйцо"
+  
+ valyrian_invasion_vs_sword_1_1: "@valyrian_steel_icon! Меч из валирийской стали 1 Низ"
+ valyrian_invasion_vs_sword_1_2: "@valyrian_steel_icon! Меч из валирийской стали 1 Плечо"
+ valyrian_invasion_vs_sword_1_3: "@valyrian_steel_icon! Меч из валирийской стали 1 Дуэль"
+  
+ valyrian_invasion_vs_sword_2_1: "@valyrian_steel_icon! Меч из валирийской стали 2 Низ"
+ valyrian_invasion_vs_sword_2_2: "@valyrian_steel_icon! Меч из валирийской стали 2 Плечо"
+ valyrian_invasion_vs_sword_2_3: "@valyrian_steel_icon! Меч из валирийской стали 2 Дуэль"
+  
+ valyrian_invasion_vs_sword_3_1: "@valyrian_steel_icon! Меч из валирийской стали 3 Низ"
+ valyrian_invasion_vs_sword_3_2: "@valyrian_steel_icon! Меч из валирийской стали 3 Плечо"
+ valyrian_invasion_vs_sword_3_3: "@valyrian_steel_icon! Меч из валирийской стали 3 Дуэль"
+  
+  
+ valyrian_invasion_vs_sword_4_1: "@valyrian_steel_icon! Меч из валирийской стали 4 Низ"
+ valyrian_invasion_vs_sword_4_2: "@valyrian_steel_icon! Меч из валирийской стали 4 Плечо"
+ valyrian_invasion_vs_sword_4_3: "@valyrian_steel_icon! Меч из валирийской стали 4 Дуэль"
+  
+ valyrian_invasion_vs_mace_1: "@valyrian_steel_icon! Булава из валирийской стали 1 Низ"
+ valyrian_invasion_vs_mace_2: "@valyrian_steel_icon! Булава из валирийской стали 1 Плечо"
+ valyrian_invasion_vs_mace_3: "@valyrian_steel_icon! Булава из валирийской стали 1 Дуэль"
+  
+ valyrian_invasion_vs_spear_1_1: "@valyrian_steel_icon! Копье из валирийской стали Удерживать"
+ valyrian_invasion_vs_spear_1_2: "@valyrian_steel_icon! Копье из валирийской стали Празднование"
+ valyrian_invasion_vs_spear_1_3: "@valyrian_steel_icon! Копье из валирийской стали Дуэль"
+  
+ valyrian_invasion_vs_axe_1: "@valyrian_steel_icon! Топор из валирийской стали Низ"
+ valyrian_invasion_vs_axe_2: "@valyrian_steel_icon! Топор из валирийской стали Дуэль"
+ valyrian_invasion_vs_axe_3: "@valyrian_steel_icon! Топор из валирийской стали Празднование"
+  
+ valyrian_invasion_vs_dagger_1_1: "@valyrian_steel_icon! Кинжал из валирийской стали Тайный советник"
+ valyrian_invasion_vs_dagger_1_2: "@valyrian_steel_icon! Кинжал из валирийской стали Дуэль"
+ valyrian_invasion_vs_dagger_1_3: "@valyrian_steel_icon! Кинжал из валирийской стали Убийца"
+  
+ valyrian_invasion_vs_sword_5_1: "@valyrian_steel_icon! Меч из валирийской стали 5 Низ"
+ valyrian_invasion_vs_sword_5_2: "@valyrian_steel_icon! Меч из валирийской стали 5 Плечо"
+ valyrian_invasion_vs_sword_5_3: "@valyrian_steel_icon! Меч из валирийской стали 5 Дуэль"
+  
+ valyrian_invasion_vs_mace_2_2_1: "@valyrian_steel_icon! Булава из валирийской стали 2 Низ"
+ valyrian_invasion_vs_mace_2_2: "@valyrian_steel_icon! Булава из валирийской стали 2 Плечо"
+ valyrian_invasion_vs_mace_2_3: "@valyrian_steel_icon! Булава из валирийской стали 2 Дуэль"
+  
+ valyrian_invasion_vs_halberd_1: "@valyrian_steel_icon! Алебарда из валирийской стали Удерживать"
+ valyrian_invasion_vs_halberd_2: "@valyrian_steel_icon! Алебарда из валирийской стали Празднование"
+ valyrian_invasion_vs_halberd_3: "@valyrian_steel_icon! Алебарда из валирийской стали Дуэль"
+  
+  
+ dragon_horn_black_1: "@valyrian_steel_icon! Драконий рог черный"
+ dragon_horn_black_2: "@valyrian_steel_icon! Драконий рог черный (Светиться)"
+ dragon_horn_black_3: "@valyrian_steel_icon! Драконий рог черный (Светиться/Дует)"
+  
+ dragon_horn_red_1: "@valyrian_steel_icon! Драконий рог красный"
+ dragon_horn_red_2: "@valyrian_steel_icon! Драконий рог красный (Светиться)"
+ dragon_horn_red_3: "@valyrian_steel_icon! Драконий рог красный (Светиться/Дует)"
+  
+ dragon_horn_tan_1: "@valyrian_steel_icon! Драконий рог светло-коричневый"
+ dragon_horn_tan_2: "@valyrian_steel_icon! Драконий рог светло-коричневый (Светиться)"
+ dragon_horn_tan_3: "@valyrian_steel_icon! Драконий рог светло-коричневый (Светиться/Дует)"
+  
+ dragon_horn_silver_1: "@valyrian_steel_icon! Серебряный драконий рог"
+ dragon_horn_silver_2: "@valyrian_steel_icon! Серебряный драконий рог (Светиться)"
+ dragon_horn_silver_3: "@valyrian_steel_icon! Серебряный драконий рог (Светиться/Дует)"
+  
+ dragon_horn_blackGold_1: "@valyrian_steel_icon! Драконий рог черный/золотой"
+ dragon_horn_blackGold_2: "@valyrian_steel_icon! Драконий рог черный/золотой (Светиться)"
+ dragon_horn_blackGold_3: "@valyrian_steel_icon! Драконий рог черный/золотой (Светиться/Дует)"
+  
+ dragon_horn_brown_1: "@valyrian_steel_icon! Драконий рог коричневый"
+ dragon_horn_brown_2: "@valyrian_steel_icon! Драконий рог коричневый (Светиться)"
+ dragon_horn_brown_3: "@valyrian_steel_icon! Драконий рог коричневый (Светиться/Дует)"
+  
+ dragon_whip_black: "@valyrian_steel_icon! Драконий хлыст черный"
+ dragon_whip_bronze: "@valyrian_steel_icon! Драконий хлыст бронзовый"
+ dragon_whip_silver: "@valyrian_steel_icon! Драконий хлыст серебряный"
+  
+ wedding_vs_drunk: 0 "@valyrian_steel_icon! Кубок из валирийской стали (Пьяный)" "@valyrian_steel_icon! Кубок из валирийской стали (Пьяный)"
+ drink_vs_goblet: 0 "@valyrian_steel_icon! Кубок из валирийской стали (Пить)" "@valyrian_steel_icon! Кубок из валирийской стали (Пить)"
+ toast_vs_goblet: 0 "@valyrian_steel_icon! Кубок из валирийской стали (Тост)" "@valyrian_steel_icon! Кубок из валирийской стали (Тост)"
+  
+ valyrian_page_flipping: 0 "@valyrian_steel_icon! Валирийская книга (Чтение)" "@valyrian_steel_icon! Валирийская книга (Чтение)"
+ valyrian_throne_room_writer: 0 "@valyrian_steel_icon! Валирийская книга (Писать/Перо)" "@valyrian_steel_icon! Валирийская книга (Писать/Перо)"

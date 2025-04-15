@@ -1,0 +1,8 @@
+﻿l_russian:
+ DRAGON_PREFIX: "@temperament_icon!"
+ scheme_dragon_horn: "Драконий рог: $VALUE|+0=-+$"
+ scheme_dragon_whip: "Драконий хлыст: $VALUE|+0=-+$"
+ scheme_valyrian_book: "Валирийская книга: $VALUE|+0=-+$"
+ scheme_dragon_horn_enchanted: "Зачарованный артефакт: $VALUE|+0=-+$"
+ artifact_dragon_bond_enchanted: "Зачарованный артефакт"
+ artifact_health_penalty_4_modifier: "Побочный эффект зачарования"

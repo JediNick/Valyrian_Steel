@@ -1,46 +1,46 @@
 ﻿l_russian:
- hurt_exploring_valyria:0 "Раненые исследуют Валирию."
- hurt_exploring_valyria_arm:0 "Раненые исследуют Валирию."
- hurt_exploring_valyria_leg:0 "Раненые исследуют Валирию."
-
- hurt_exploring_valyria_desc:0 "Я был тяжело ранен, когда исследовал Валирию."
- hurt_exploring_valyria_desc_second_perspective:0 "вы были тяжело ранены, исследуя Валирию."
- hurt_exploring_valyria_desc_third_perspective:0 "[owner.GetName] был тяжело ранен при исследовании Валирии."
-
- hurt_exploring_leg_valyria_desc:0 "Я потерял ногу, исследуя Валирию."
- hurt_exploring_leg_valyria_desc_second_perspective:0 "вы потеряли ногу во время исследования Валирии."
- hurt_exploring_leg_valyria_desc_third_perspective:0 "[owner.GetName] потерял [owner.GetHerHis] ногу во время исследования Валирии."
-
- hurt_exploring_arm_valyria_desc:0 "Я потерял руку, исследуя Валирию."
- hurt_exploring_arm_valyria_desc_second_perspective:0 "вы потеряли руку во время исследования Валирии."
- hurt_exploring_arm_valyria_desc_third_perspective:0 "[owner.GetName] потерял [owner.GetHerHis] руку во время исследования Валирии."
-
-
- funded_expedition_valyria:0 "Профинансировал экспедицию."
-
- funded_expedition_valyria_desc:0 "Я финансировал экспедицию [adventurer.GetFullNamePossessiveRegnal] в Валирию."
- funded_expedition_valyria_desc_second_perspective:0 "Вы финансировали экспедицию [adventurer.GetFullNamePossessiveRegnal] в Валирию."
- funded_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] финансирует [adventurer.GetFullNamePossessiveRegnal] экспедицию в Валирию."
-
- funded_my_expedition_valyria:0 "Профинансировал экспедицию"
-
- funded_my_expedition_valyria_desc:0 "[funder.GetFullNameNicknamedRegnal] профинансировал мою экспедицию в Валирию"
- funded_my_expedition_valyria_desc_second_perspective:0 "[funder.GetFullNameNicknamedRegnal] профинансировал вашу экспедицию в Валирию"
- funded_my_expedition_valyria_desc_third_perspective:0 "[funder.GetFullNameNicknamedRegnal] финансирует [adventurer.GetFullNamePossessiveRegnal] экспедицию в Валирию"
-
- sent_relative_to_valyria:0 "Отправил родственника умирать в Валирию"
-
- returned_expedition_valyria_desc:0 "Я вернулся из экспедиции в Валирию."
- returned_expedition_valyria_desc_second_perspective:0 "Вы вернулся из экспедиции в Валирию."
- returned_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] вернулся из [owner.GetHerHis] экспедиции в Валирию"
- returned_sick_expedition_valyria:0 "Вернулся из экспедиции"
- returned_expedition_valyria:0 "Вернулся из экспедиции"
- returned_hurt_expedition_valyria:0 "Вернулся из экспедиции"
-
- returned_hurt_expedition_valyria_desc:0 "Я вернулся тяжело раненым из экспедиции в Валирию."
- returned_hurt_expedition_valyria_desc_second_perspective:0 "Вы вернулись тяжело раненным из экспедиции в Валирию"
- returned_hurt_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] вернулся тяжелораненым из [owner.GetHerHis] экспедиции в Валирию"
-
- returned_sick_expedition_valyria_desc:0 "Я вернулся со смертельной болезнью из экспедиции в Валирию."
- returned_sick_expedition_valyria_desc_second_perspective:0 "Вы вернулись со смертельной болезнью из экспедиции в Валирию"
- returned_sick_expedition_valyria_desc_third_perspective:0 "[owner.GetFullName] вернулся со смертельной болезнью из [owner.GetHerHis] экспедиции в Валирию"
+ hurt_exploring_valyria: "Раненые исследуют Валирию."
+ hurt_exploring_valyria_arm: "Раненые исследуют Валирию."
+ hurt_exploring_valyria_leg: "Раненые исследуют Валирию."
+  
+ hurt_exploring_valyria_desc: "Я был тяжело ранен, когда исследовал Валирию."
+ hurt_exploring_valyria_desc_second_perspective: "вы были тяжело ранены, исследуя Валирию."
+ hurt_exploring_valyria_desc_third_perspective: "[owner.GetName] был тяжело ранен при исследовании Валирии."
+  
+ hurt_exploring_leg_valyria_desc: "Я потерял ногу, исследуя Валирию."
+ hurt_exploring_leg_valyria_desc_second_perspective: "вы потеряли ногу во время исследования Валирии."
+ hurt_exploring_leg_valyria_desc_third_perspective: "[owner.GetName] потерял [owner.GetHerHis] ногу во время исследования Валирии."
+  
+ hurt_exploring_arm_valyria_desc: "Я потерял руку, исследуя Валирию."
+ hurt_exploring_arm_valyria_desc_second_perspective: "вы потеряли руку во время исследования Валирии."
+ hurt_exploring_arm_valyria_desc_third_perspective: "[owner.GetName] потерял [owner.GetHerHis] руку во время исследования Валирии."
+  
+  
+ funded_expedition_valyria: "Профинансировал экспедицию."
+  
+ funded_expedition_valyria_desc: "Я финансировал экспедицию [adventurer.GetFullNamePossessiveRegnal] в Валирию."
+ funded_expedition_valyria_desc_second_perspective: "Вы финансировали экспедицию [adventurer.GetFullNamePossessiveRegnal] в Валирию."
+ funded_expedition_valyria_desc_third_perspective: "[owner.GetFullName] финансирует [adventurer.GetFullNamePossessiveRegnal] экспедицию в Валирию."
+  
+ funded_my_expedition_valyria: "Профинансировал экспедицию"
+  
+ funded_my_expedition_valyria_desc: "[funder.GetFullNameNicknamedRegnal] профинансировал мою экспедицию в Валирию"
+ funded_my_expedition_valyria_desc_second_perspective: "[funder.GetFullNameNicknamedRegnal] профинансировал вашу экспедицию в Валирию"
+ funded_my_expedition_valyria_desc_third_perspective: "[funder.GetFullNameNicknamedRegnal] финансирует [adventurer.GetFullNamePossessiveRegnal] экспедицию в Валирию"
+  
+ sent_relative_to_valyria: "Отправил родственника умирать в Валирию"
+  
+ returned_expedition_valyria_desc: "Я вернулся из экспедиции в Валирию."
+ returned_expedition_valyria_desc_second_perspective: "Вы вернулся из экспедиции в Валирию."
+ returned_expedition_valyria_desc_third_perspective: "[owner.GetFullName] вернулся из [owner.GetHerHis] экспедиции в Валирию"
+ returned_sick_expedition_valyria: "Вернулся из экспедиции"
+ returned_expedition_valyria: "Вернулся из экспедиции"
+ returned_hurt_expedition_valyria: "Вернулся из экспедиции"
+  
+ returned_hurt_expedition_valyria_desc: "Я вернулся тяжело раненым из экспедиции в Валирию."
+ returned_hurt_expedition_valyria_desc_second_perspective: "Вы вернулись тяжело раненным из экспедиции в Валирию"
+ returned_hurt_expedition_valyria_desc_third_perspective: "[owner.GetFullName] вернулся тяжелораненым из [owner.GetHerHis] экспедиции в Валирию"
+  
+ returned_sick_expedition_valyria_desc: "Я вернулся со смертельной болезнью из экспедиции в Валирию."
+ returned_sick_expedition_valyria_desc_second_perspective: "Вы вернулись со смертельной болезнью из экспедиции в Валирию"
+ returned_sick_expedition_valyria_desc_third_perspective: "[owner.GetFullName] вернулся со смертельной болезнью из [owner.GetHerHis] экспедиции в Валирию"
