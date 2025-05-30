@@ -1,0 +1,1393 @@
+﻿agot_spawn_vs_forgeables_for_selection_effect = {
+	title:c_ruins.holder = {
+		save_scope_as = owner
+		save_scope_as = creator
+		agot_create_artifact_vs_black_death_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_mothers_grief_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_talon_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_dark_moon_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_widows_wail_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_glory_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_skinpeeler_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_stormy_nights_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_strangers_touch_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_dragonbane_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_iron_price_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_unkindness_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_andal_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_andal_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_andal_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_andal_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_armingsword_bronze_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_firstman_longsword_bronze_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_valyrian_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_valyrian_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_valyrian_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_valyrian_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		
+		##SUB#
+		##MOD
+		##CORE
+		create_artifact_vs_sword_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_sword_2_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_sword_3_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_sword_4_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_sword_5_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_dagger_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_spear_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_halberd_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_mace_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_mace_2_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_axe_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		create_artifact_vs_goblet_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		##SUB
+		##MOD
+		##CORE#
+	}
+}
+
+agot_build_vs_forgeables_list_for_selection_effect = {
+	$VIEWER$ = {
+		save_scope_as = viewer
+	}
+	title:c_ruins.holder = {
+		every_character_artifact = {
+			limit = { has_variable = valyrian_steel }
+			save_scope_as = possible_artifact
+			scope:viewer = {
+				add_to_variable_list = {
+					name = possible_artifacts
+					target = scope:possible_artifact
+				}
+			}
+		}
+		random_character_artifact = {
+			limit = { has_artifact_modifier = vs_black_death_modifier } #first in list
+			save_scope_as = possible_artifact
+			scope:viewer = {
+				set_variable = { name = selected_artifact value = scope:possible_artifact }
+			}
+		}
+	}
+}
+
+agot_create_selected_vs_forgeable = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_black_death_modifier }
+		}
+		agot_create_artifact_vs_black_death_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_dark_moon_modifier }
+		}
+		agot_create_artifact_vs_dark_moon_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_dragonbane_modifier }
+		}
+		agot_create_artifact_vs_dragonbane_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_glory_modifier }
+		}
+		agot_create_artifact_vs_glory_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_iron_price_modifier }
+		}
+		agot_create_artifact_vs_iron_price_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_mothers_grief_modifier }
+		}
+		agot_create_artifact_vs_mothers_grief_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_skinpeeler_modifier }
+		}
+		agot_create_artifact_vs_skinpeeler_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_stormy_nights_modifier }
+		}
+		agot_create_artifact_vs_stormy_nights_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_strangers_touch_modifier }
+		}
+		agot_create_artifact_vs_strangers_touch_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_talon_modifier }
+		}
+		agot_create_artifact_vs_talon_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_unkindness_modifier }
+		}
+		agot_create_artifact_vs_unkindness_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_widows_wail_modifier }
+		}
+		agot_create_artifact_vs_widows_wail_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = andal_armingsword_gold_artifact }
+		}
+		agot_create_artifact_vs_andal_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = andal_armingsword_silver_artifact }
+		}
+		agot_create_artifact_vs_andal_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = andal_longsword_gold_artifact }
+		}
+		agot_create_artifact_vs_andal_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = andal_longsword_silver_artifact }
+		}
+		agot_create_artifact_vs_andal_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_armingsword_gold_artifact }
+		}
+		agot_create_artifact_vs_firstman_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_armingsword_silver_artifact }
+		}
+		agot_create_artifact_vs_firstman_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_armingsword_bronze_artifact }
+		}
+		agot_create_artifact_vs_firstman_armingsword_bronze_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_longsword_gold_artifact }
+		}
+		agot_create_artifact_vs_firstman_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_longsword_silver_artifact }
+		}
+		agot_create_artifact_vs_firstman_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = firstman_longsword_bronze_artifact }
+		}
+		agot_create_artifact_vs_firstman_longsword_bronze_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = valyrian_armingsword_gold_artifact }
+		}
+		agot_create_artifact_vs_valyrian_armingsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = valyrian_armingsword_silver_artifact }
+		}
+		agot_create_artifact_vs_valyrian_armingsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = valyrian_longsword_gold_artifact }
+		}
+		agot_create_artifact_vs_valyrian_longsword_gold_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = valyrian_longsword_silver_artifact }
+		}
+		agot_create_artifact_vs_valyrian_longsword_silver_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	##SUB#
+	##MOD
+	##CORE
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_sword_1 }
+		}
+		create_artifact_vs_sword_1_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_sword_2 }
+		}
+		create_artifact_vs_sword_2_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_sword_3 }
+		}
+		create_artifact_vs_sword_3_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_sword_4 }
+		}
+		create_artifact_vs_sword_4_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_sword_5 }
+		}
+		create_artifact_vs_sword_5_basic_effect = { OWNER = this }
+	}
+	##DAGGER
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_dagger_1 }
+		}
+		create_artifact_vs_dagger_1_basic_effect = { OWNER = this }
+	}
+	#SPEAR
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_spear_1 }
+		}
+		create_artifact_vs_spear_1_basic_effect = { OWNER = this }
+	}
+	#HALBERD
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_halberd }
+		}
+		create_artifact_vs_halberd_basic_effect = { OWNER = this }
+	}
+	#MACE
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_mace }
+		}
+		create_artifact_vs_mace_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_mace_2 }
+		}
+		create_artifact_vs_mace_2_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_axe }
+		}
+		create_artifact_vs_axe_basic_effect = { OWNER = this }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_variable = vs_goblet }
+		}
+		create_artifact_vs_goblet_basic_effect = { OWNER = this }
+	}
+	##SUB
+	##MOD
+	##CORE#
+	#something broke
+	else = {
+		agot_create_artifact_vs_sword_forged_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+}
+
+agot_create_artifact_vs_black_death_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_black_death_name
+		visuals = vs_black_death_visuals
+		description = vs_black_death_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_black_death_template
+		modifier = vs_black_death_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_dark_moon_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_dark_moon_name
+		visuals = vs_dark_moon_visuals
+		description = vs_dark_moon_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_dark_moon_template
+		modifier = vs_dark_moon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_dragonbane_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_dragonbane_name
+		visuals = vs_dragonbane_visuals
+		description = vs_dragonbane_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_dragonbane_template
+		modifier = vs_dragonbane_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_glory_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_glory_name
+		visuals = vs_glory_visuals
+		description = vs_glory_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_glory_template
+		modifier = vs_glory_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_iron_price_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_iron_price_name
+		visuals = vs_iron_price_visuals
+		description = vs_iron_price_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_iron_price_template
+		modifier = vs_iron_price_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_mothers_grief_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_mothers_grief_name
+		visuals = vs_mothers_grief_visuals
+		description = vs_mothers_grief_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_mothers_grief_template
+		modifier = vs_mothers_grief_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_skinpeeler_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_skinpeeler_name
+		visuals = vs_skinpeeler_visuals
+		description = vs_skinpeeler_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_skinpeeler_template
+		modifier = vs_skinpeeler_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_stormy_nights_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_stormy_nights_name
+		visuals = vs_stormy_nights_visuals
+		description = vs_stormy_nights_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_stormy_nights_template
+		modifier = vs_stormy_nights_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_strangers_touch_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_strangers_touch_name
+		visuals = vs_strangers_touch_visuals
+		description = vs_strangers_touch_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_strangers_touch_template
+		modifier = vs_strangers_touch_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_talon_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_talon_name
+		visuals = vs_talon_visuals
+		description = vs_talon_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_talon_template
+		modifier = vs_talon_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_unkindness_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_unkindness_name
+		visuals = vs_unkindness_visuals
+		description = vs_unkindness_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_unkindness_template
+		modifier = vs_unkindness_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_widows_wail_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_widows_wail_name
+		visuals = vs_widows_wail_visuals
+		description = vs_widows_wail_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_widows_wail_template
+		modifier = vs_widows_wail_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+#Generic
+agot_create_artifact_vs_sword_forged_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = agot_valyrian_steel_default_name
+		description = agot_valyrian_steel_default_desc
+		visuals = longsword
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = kingsguard_sword_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_andal_armingsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_andal_armingsword_gold_name
+		visuals = vs_andal_armingsword_gold_visuals
+		description = vs_andal_armingsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_andal_template
+		modifier = vs_generic_andal_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = andal_armingsword_gold_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_andal_armingsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_andal_armingsword_silver_name
+		visuals = vs_andal_armingsword_silver_visuals
+		description = vs_andal_armingsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_andal_template
+		modifier = vs_generic_andal_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = andal_armingsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_andal_longsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_andal_longsword_gold_name
+		visuals = vs_andal_longsword_gold_visuals
+		description = vs_andal_longsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_andal_template
+		modifier = vs_generic_andal_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = andal_longsword_gold_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_andal_longsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_andal_longsword_silver_name
+		visuals = vs_andal_longsword_silver_visuals
+		description = vs_andal_longsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_andal_template
+		modifier = vs_generic_andal_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = andal_longsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_firstman_armingsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_armingsword_gold_name
+		visuals = vs_firstman_armingsword_gold_visuals
+		description = vs_firstman_armingsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_armingsword_gold_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_firstman_armingsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_armingsword_silver_name
+		visuals = vs_firstman_armingsword_silver_visuals
+		description = vs_firstman_armingsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_armingsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_firstman_armingsword_bronze_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_armingsword_bronze_name
+		visuals = vs_firstman_armingsword_bronze_visuals
+		description = vs_firstman_armingsword_bronze_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_armingsword_bronze_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_firstman_longsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_longsword_gold_name
+		visuals = vs_firstman_longsword_gold_visuals
+		description = vs_firstman_longsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_longsword_gold_artifact
+			value = yes
+		}
+	}
+	save_scope_value_as = {
+		name = valyrian_steel
+		value = yes
+	}
+}
+
+agot_create_artifact_vs_firstman_longsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_longsword_silver_name
+		visuals = vs_firstman_longsword_silver_visuals
+		description = vs_firstman_longsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_longsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_firstman_longsword_bronze_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_firstman_longsword_bronze_name
+		visuals = vs_firstman_longsword_bronze_visuals
+		description = vs_firstman_longsword_bronze_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_firstman_template
+		modifier = vs_generic_firstman_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = firstman_longsword_bronze_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_valyrian_armingsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_valyrian_armingsword_gold_name
+		visuals = vs_valyrian_armingsword_gold_visuals
+		description = vs_valyrian_armingsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_valyrian_template
+		modifier = vs_generic_valyrian_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_armingsword_gold_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_valyrian_armingsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_valyrian_armingsword_silver_name
+		visuals = vs_valyrian_armingsword_silver_visuals
+		description = vs_valyrian_armingsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_valyrian_template
+		modifier = vs_generic_valyrian_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_armingsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_valyrian_longsword_gold_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_valyrian_longsword_gold_name
+		visuals = vs_valyrian_longsword_gold_visuals
+		description = vs_valyrian_longsword_gold_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_valyrian_template
+		modifier = vs_generic_valyrian_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_longsword_gold_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_valyrian_longsword_silver_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_valyrian_longsword_silver_name
+		visuals = vs_valyrian_longsword_silver_visuals
+		description = vs_valyrian_longsword_silver_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_generic_valyrian_template
+		modifier = vs_generic_valyrian_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_steel_generic
+			value = yes
+		}
+		set_variable = {
+			name = valyrian_longsword_silver_artifact
+			value = yes
+		}
+		save_scope_value_as = {
+			name = valyrian_steel
+			value = yes
+		}
+	}
+}
