@@ -78,11 +78,9 @@ fund_expedition_0007.a:0 "[choice.GetFirstName] may have brought back more than 
 
 
 dragon_egg_name:0 "Dragon Egg"
-artifact_dragon_egg:0 "Dragon Egg"
 
 dragon_egg_description:0 "This dragon egg once belonged to one of the creatures that gave the Valyrians their power. A dragon. Unfortunately, a dragon egg hasn't been hatched in some time. Many rulers have attempted to hatch such eggs through...unorthodox methods..."
 
-artifact_glass_candle:0 "Glass Candle"
 artifact_glass_candle_name:0 "Glass Candle"
 artifact_glass_candle_desc:0 "This glass candle burned a bright flame long ago within Old Valyria. Since then, candles such as these no longer burn a flame. Their light died with Old Valyria."
 

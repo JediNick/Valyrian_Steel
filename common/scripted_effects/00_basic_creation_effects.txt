@@ -1,12 +1,14 @@
 ﻿create_artifact_vs_sword_1_basic_effect = {
 	
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_sword_1_name
 		description = artifact_vs_sword_1_description
 		template = general_unique_template
+		creator = scope:creator
 		type = sword
 		visuals = vs_sword_1
 		wealth = 50
@@ -32,12 +34,15 @@
 
 create_artifact_vs_sword_2_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_sword_2_name
 		description = artifact_vs_sword_2_description
 		template = general_unique_template
+		creator = scope:creator
 		type = sword
 		visuals = vs_sword_2
 		wealth = 50
@@ -63,12 +68,15 @@ create_artifact_vs_sword_2_basic_effect = {
 
 create_artifact_vs_sword_3_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_sword_3_name
 		description = artifact_vs_sword_3_description
 		template = general_unique_template
+		creator = scope:creator
 		type = sword
 		visuals = vs_sword_3
 		wealth = 60
@@ -94,12 +102,15 @@ create_artifact_vs_sword_3_basic_effect = {
 
 create_artifact_vs_sword_4_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_sword_4_name
 		description = artifact_vs_sword_4_description
 		template = general_unique_template
+		creator = scope:creator
 		type = sword
 		visuals = vs_sword_4
 		wealth = 60
@@ -125,12 +136,15 @@ create_artifact_vs_sword_4_basic_effect = {
 
 create_artifact_vs_sword_5_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_sword_4_name
 		description = artifact_vs_sword_4_description
 		template = general_unique_template
+		creator = scope:creator
 		type = sword
 		visuals = vs_sword_5
 		wealth = 60
@@ -156,12 +170,15 @@ create_artifact_vs_sword_5_basic_effect = {
 
 create_artifact_vs_dagger_1_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_dagger_1_name
 		description = artifact_vs_dagger_1_description
 		template = general_unique_template
+		creator = scope:creator
 		type = dagger
 		visuals = vs_dagger_1
 		wealth = 20
@@ -187,12 +204,15 @@ create_artifact_vs_dagger_1_basic_effect = {
 
 create_artifact_vs_spear_1_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_spear_1_name
 		description = artifact_vs_spear_1_description
 		template = general_unique_template
+		creator = scope:creator
 		type = spear
 		visuals = vs_spear_1
 		wealth = 50
@@ -218,12 +238,15 @@ create_artifact_vs_spear_1_basic_effect = {
 
 create_artifact_vs_halberd_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_halberd_name
 		description = artifact_vs_halberd_description
 		template = general_unique_template
+		creator = scope:creator
 		type = spear
 		visuals = vs_halberd
 		wealth = 50
@@ -250,12 +273,15 @@ create_artifact_vs_halberd_basic_effect = {
 create_artifact_vs_mace_basic_effect = {
 
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_mace_name
 		description = artifact_vs_mace_description
 		template = general_unique_template
+		creator = scope:creator
 		type = mace
 		visuals = vs_mace
 		wealth = 50
@@ -282,12 +308,15 @@ create_artifact_vs_mace_basic_effect = {
 create_artifact_vs_mace_2_basic_effect = {
 
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_mace_name
 		description = artifact_vs_mace_description
 		template = general_unique_template
+		creator = scope:creator
 		type = mace
 		visuals = vs_mace_2
 		wealth = 50
@@ -313,12 +342,15 @@ create_artifact_vs_mace_2_basic_effect = {
 
 create_artifact_vs_axe_basic_effect = {
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_vs_axe_name
 		description = artifact_vs_axe_description
 		template = general_unique_template
+		creator = scope:creator
 		type = axe
 		visuals = vs_axe
 		wealth = 50
@@ -345,11 +377,13 @@ create_artifact_vs_axe_basic_effect = {
 create_artifact_vs_goblet_basic_effect = {
 
 	$OWNER$ = { save_scope_as = owner }
+	$CREATOR$ = { save_scope_as = creator }
 
 	create_artifact = {
 		name = artifact_vs_goblet_name
 		description = artifact_vs_goblet_description
 		template = general_unique_template
+		creator = scope:creator
 		type = miscellaneous_when_not_court
 		visuals = vs_goblet
 		wealth = 100

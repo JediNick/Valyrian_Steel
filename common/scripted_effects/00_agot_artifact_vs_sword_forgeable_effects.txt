@@ -245,77 +245,77 @@ agot_create_selected_vs_forgeable = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_sword_1 }
 		}
-		create_artifact_vs_sword_1_basic_effect = { OWNER = this }
+		create_artifact_vs_sword_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_sword_2 }
 		}
-		create_artifact_vs_sword_2_basic_effect = { OWNER = this }
+		create_artifact_vs_sword_2_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_sword_3 }
 		}
-		create_artifact_vs_sword_3_basic_effect = { OWNER = this }
+		create_artifact_vs_sword_3_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_sword_4 }
 		}
-		create_artifact_vs_sword_4_basic_effect = { OWNER = this }
+		create_artifact_vs_sword_4_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_sword_5 }
 		}
-		create_artifact_vs_sword_5_basic_effect = { OWNER = this }
+		create_artifact_vs_sword_5_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	##DAGGER
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_dagger_1 }
 		}
-		create_artifact_vs_dagger_1_basic_effect = { OWNER = this }
+		create_artifact_vs_dagger_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	#SPEAR
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_spear_1 }
 		}
-		create_artifact_vs_spear_1_basic_effect = { OWNER = this }
+		create_artifact_vs_spear_1_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	#HALBERD
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_halberd }
 		}
-		create_artifact_vs_halberd_basic_effect = { OWNER = this }
+		create_artifact_vs_halberd_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	#MACE
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_mace }
 		}
-		create_artifact_vs_mace_basic_effect = { OWNER = this }
+		create_artifact_vs_mace_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_mace_2 }
 		}
-		create_artifact_vs_mace_2_basic_effect = { OWNER = this }
+		create_artifact_vs_mace_2_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_axe }
 		}
-		create_artifact_vs_axe_basic_effect = { OWNER = this }
+		create_artifact_vs_axe_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
 			var:selected_artifact = { has_variable = vs_goblet }
 		}
-		create_artifact_vs_goblet_basic_effect = { OWNER = this }
+		create_artifact_vs_goblet_basic_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	##SUB
 	##MOD
