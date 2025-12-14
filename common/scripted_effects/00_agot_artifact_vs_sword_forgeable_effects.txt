@@ -9,6 +9,7 @@
 		agot_create_artifact_vs_widows_wail_effect = { OWNER = scope:owner CREATOR = scope:creator }
 		agot_create_artifact_vs_glory_effect = { OWNER = scope:owner CREATOR = scope:creator }
 		agot_create_artifact_vs_skinpeeler_effect = { OWNER = scope:owner CREATOR = scope:creator }
+		agot_create_artifact_vs_sting_effect = { OWNER = scope:owner CREATOR = scope:creator }
 		agot_create_artifact_vs_stormy_nights_effect = { OWNER = scope:owner CREATOR = scope:creator }
 		agot_create_artifact_vs_strangers_touch_effect = { OWNER = scope:owner CREATOR = scope:creator }
 		agot_create_artifact_vs_dragonbane_effect = { OWNER = scope:owner CREATOR = scope:creator }
@@ -123,6 +124,12 @@ agot_create_selected_vs_forgeable = {
 			var:selected_artifact = { has_artifact_modifier = vs_skinpeeler_modifier }
 		}
 		agot_create_artifact_vs_skinpeeler_effect = { OWNER = scope:owner CREATOR = scope:creator }
+	}
+	else_if = {
+		limit = {
+			var:selected_artifact = { has_artifact_modifier = vs_sting_modifier }
+		}
+		agot_create_artifact_vs_sting_effect = { OWNER = scope:owner CREATOR = scope:creator }
 	}
 	else_if = {
 		limit = {
@@ -568,6 +575,40 @@ agot_create_artifact_vs_skinpeeler_effect = {
 		quality = scope:quality
 		template = vs_skinpeeler_template
 		modifier = vs_skinpeeler_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+	scope:newly_created_artifact ?= {
+		equip_artifact_to_owner_replace = yes
+		set_variable = {
+			name = valyrian_steel
+			value = yes
+		}
+		set_variable = {
+			name = historical_unique_artifact
+			value = yes
+		}
+	}
+}
+
+agot_create_artifact_vs_sting_effect = {
+	$OWNER$ = {
+		save_scope_as = owner
+	}
+	$CREATOR$ = {
+		save_scope_as = creator
+	}
+	set_artifact_rarity_illustrious = yes
+	create_artifact = {
+		name = vs_sting_name
+		visuals = vs_sting_visuals
+		description = vs_sting_description
+		creator = scope:creator
+		type = sword
+		wealth = scope:wealth
+		quality = scope:quality
+		template = vs_sting_template
+		modifier = vs_sting_modifier
 		save_scope_as = newly_created_artifact
 		decaying = no
 	}
