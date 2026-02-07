@@ -1510,7 +1510,7 @@ fund_expedition.0011 = {
 					scope:choice = {
 						has_character_flag = returned_ok
 					}
-					knows_language = language_valyrian
+					knows_language = language_agot_valyrian
 				 } 
 				desc = fund_expedition_0011_valyrian_desc
 			}
@@ -1524,7 +1524,7 @@ fund_expedition.0011 = {
 			}
 			triggered_desc = {
 				trigger = { 
-					knows_language = language_valyrian
+					knows_language = language_agot_valyrian
 				 } 
 				desc = fund_expedition_0011_valyrian_alt_desc
 			}

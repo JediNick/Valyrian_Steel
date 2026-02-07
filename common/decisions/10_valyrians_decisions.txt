@@ -105,7 +105,7 @@ research_dragonlore_decision = {
 
 	is_valid_showing_failures_only = {
 		is_imprisoned = no
-		knows_language = language_valyrian
+		knows_language = language_agot_valyrian
 		NOT = {
 			has_character_modifier = agot_taught_dragonlore
 		}

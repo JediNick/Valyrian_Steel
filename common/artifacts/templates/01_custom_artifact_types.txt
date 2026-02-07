@@ -79,7 +79,7 @@ valyrian_book_template = {
 					has_game_rule = dragon_valyrian_3_gen 
 				}
 			 }
-			knows_language = language_valyrian
+			knows_language = language_agot_valyrian
 			custom_tooltip = {
 				text = is_dragon_blood
 				agot_has_dragonblood_heritage = yes
