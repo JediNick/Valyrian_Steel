@@ -41,7 +41,7 @@ hire_master_smith.0001 = {
 		custom_tooltip = hire_master_smith.0001.tt
 		
 		scope:smith = {
-			add_gold = 300
+			add_gold = 500
 		}
 
 
@@ -98,7 +98,7 @@ hire_master_smith.0001 = {
 		scope:smith = {
 			silent_disappearance_effect = yes
 		}
-		add_gold = 300
+		add_gold = 500
 		##custom_tooltip = health.3001.d.tt
 	}
 }

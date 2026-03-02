@@ -140,7 +140,7 @@ fund_expedition_0011_valyrian_alt_desc:0 "One of the crew members approaches me 
 fund_expedition_0011.a:0 "Such power..."
 
 
-fund_expedition_00021_desc:0 "[choice.GetFirstName] gathers a crew and prepares to leave at once. While my instructions are to find any artifacts, with a bit of extra gold it is likely that [choice.GetFirstName] could focus [choice.GetHerHis] efforts on finding a specific item..."
+fund_expedition_00021_desc:0 "[choice.GetFirstName] gathers a crew and prepares to leave at once. While my instructions are to find any artifacts, with a bit of extra gold it is likely that [choice.GetFirstName] could focus [choice.GetHerHis] efforts on finding a specific item...\n\nIt costs 3000 gold to focus on finding Dragon Eggs and 2000 gold to focus on Valyrian Steel Weapons"
 
 fund_expedition_00021.a:0 "Find me a Dragon Egg..."
 fund_expedition_00021.b:0 "Bring me a weapon of Valyrian Steel..."
@@ -151,7 +151,7 @@ fund_expedition_00021.e:0 "Nevermind, cancel the trip..."
 fund_expedition.00021.tt.a:0 "For 200 Gold [choice.GetFirstName] will focus on finding Dragon Eggs"
 fund_expedition.00021.tt.b:0 "For 200 Gold [choice.GetFirstName] will focus on finding Valyrian Steel Weapons"
 fund_expedition.00021.tt.c:0 "For 100 Gold [choice.GetFirstName] will focus on finding Minor Trinkets"
-fund_expedition.00021.tt.d:0 "[choice.GetFirstName] will focus on finding Dragon Eggs at no additional cost"
+fund_expedition.00021.tt.d:0 "[choice.GetFirstName] will have a reduced chance of finding something valuable"
 
 
 enchant_dragon_horn:0 "Enchant Dragon Horn"
