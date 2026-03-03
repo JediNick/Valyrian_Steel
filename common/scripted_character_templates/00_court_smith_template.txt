@@ -23,7 +23,7 @@
 	}
 
 	learning = 50
-	stewardship = 50
+	stewardship = 67
 
 	gender_female_chance = 10
 
